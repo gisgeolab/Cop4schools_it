@@ -54,7 +54,7 @@ Lorenzo Amici was born in Rome, Italy, in 1995. He obtained his BSc degree in En
     :width: 160px
     :align: left
 
-Stefano Brazzoli was born in Crema (Cremona), Italy, in 1998. He received a B.Sc. degree in Environmental Engineering from Politecnico di Milano university where he is also currently enrolled in a M.Sc. in Geoinformatics Engineering. After a period abroad at the University of Bonn (Germany) in 2023, he is now collaborating with Politecnico's GEOlab in the creation of this e-book.
+Stefano Brazzoli was born in Crema (Cremona), Italy, in 1998. He received a B.Sc. degree in Environmental Engineering from Politecnico di Milano university where he is also currently enrolled in a M.Sc. in Geoinformatics Engineering. After a period abroad at the University of Bonn (Germany) in 2023, he is now collaborating with Politecnico's GEOlab in the creation of this e-book.                                                                                    
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 

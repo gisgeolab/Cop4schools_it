@@ -163,6 +163,7 @@ Come mostrato in :numref:`4.1.4.4` impostare **Effect (1)** al valore predefinit
 
    -- Confronto NDWI di Vercelli in Copernicus Browser
 
+.. _Timelapse:
 
 Evoluzione dell'area allagata “Timelapse” in Copernicus Browser
 ----------------------------------------------------------------
@@ -204,6 +205,7 @@ Una volta terminato, cliccare su **(8)** per chiudere questa finestra.
 
    -- Visualizzare e scaricare il Timelapse
 
+.. _Download_2:
 
 Scaricare immagini Sentinel-2
 ------------------------------

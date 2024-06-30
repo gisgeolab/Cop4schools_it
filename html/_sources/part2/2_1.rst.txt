@@ -201,7 +201,7 @@ Un altro strumento è il **Mark point of interest**, cliccarci sopra **(4)** e p
 Con lo strumento **Measure (5)** è invece possibile misurare lunghezze e aree sulle mappe.
 
 
-.. note:: Gli strumenti **Visualize terrain in 3D** , **Create timelapse animation** and **Download image**  verranno mostrati rispettivamente nei capitoli :ref:`2.2.3 <3D_Image>` , :ref:`4.1.5 <Timelapse>` e :ref:`4.1.6 <Download_2>` .
+.. note:: Gli strumenti **Visualize terrain in 3D** , **Create timelapse animation** and **Download image**  verranno mostrati rispettivamente nei capitoli: :ref:`2.2.3 <3D_Image>` , :ref:`4.1.5 <Timelapse>` e :ref:`4.1.6 <Download_2>` .
 
 
 .. _2.1.2.5:

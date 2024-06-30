@@ -106,6 +106,7 @@ Ora fare clic su **Index (1)** (:numref:'2.2.2.5') e applicare l'equazione per i
 
    -- Calcolo e visualizzazione dell'NDWI
 
+.. _3D_Image:
 
 Visualizzazione di immagini satellitari 3D in Copernicus Browser
 ----------------------------------------------------------------

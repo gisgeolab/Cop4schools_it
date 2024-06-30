@@ -3,7 +3,7 @@
 Copernicus EMS
 ==============
 
-'Copernicus Emergency Management Service <https://emergency.copernicus.eu/>'_ (:numref:'3.1.1') è un segmento del programma Copernicus dedicato a fornire informazioni geo-spaziali dettagliate e accurate nel più breve tempo possibile, al fine di aiutare nelle situazioni di emergenza, fornendo avvisi tempestivi e supportando il monitoraggio delle emergenze.
+`Copernicus Emergency Management Service <https://emergency.copernicus.eu/>`_ (:numref:`3.1.1`) è un segmento del programma Copernicus dedicato a fornire informazioni geo-spaziali dettagliate e accurate nel più breve tempo possibile, al fine di aiutare nelle situazioni di emergenza, fornendo avvisi tempestivi e supportando il monitoraggio delle emergenze.
 I dati sono raccolti dal telerilevamento satellitare e combinati con dati open source e fonti di primo livello.
 
 .. _3.1.1:
@@ -13,9 +13,9 @@ I dati sono raccolti dal telerilevamento satellitare e combinati con dati open s
 
    -- Rapid mapping nell’interfaccia EMS
 
-Scorrendo la pagina web (:numref:'3.1.2') si può vedere un elenco di prodotti con una breve descrizione e i link a pagine specifiche per ognuno di essi
+Scorrendo la pagina web (:numref:`3.1.2`) si può vedere un elenco di prodotti con una breve descrizione e i link a pagine specifiche per ognuno di essi
 Copernicus EMS On-Demand Mapping **(1)** è un sistema che può essere richiesto solo da utenti autorizzati. Come suggerisce il nome, questo sistema fornisce informazioni su richiesta su un'area specifica in qualsiasi parte del mondo. Il pubblico può essere informato della richiesta di attivazione e può scaricare i prodotti risultanti come tutti gli altri prodotti Copernicus EMS. 
-Rapid Mapping **(2)** e Risk and Recovery Mapping **(3)** si trovano nella pagina: ' Copernicus EMS mapping page <https://emergency.copernicus.eu/mapping/>'_ . Copernicus Rapid Mapping è predisposto per fornire dati in un breve periodo di tempo, mentre Copernicus Risk and Recovery Mapping è destinato a contribuire alle fasi di prevenzione, preparazione, riduzione del rischio di catastrofi e recupero della gestione delle emergenze e alla loro produzione e non prevede una risposta immediata.
+Rapid Mapping **(2)** e Risk and Recovery Mapping **(3)** si trovano nella pagina: `Copernicus EMS mapping page <https://emergency.copernicus.eu/mapping/>`_ . Copernicus Rapid Mapping è predisposto per fornire dati in un breve periodo di tempo, mentre Copernicus Risk and Recovery Mapping è destinato a contribuire alle fasi di prevenzione, preparazione, riduzione del rischio di catastrofi e recupero della gestione delle emergenze e alla loro produzione e non prevede una risposta immediata.
 
 .. _3.1.2:
 
@@ -24,8 +24,9 @@ Rapid Mapping **(2)** e Risk and Recovery Mapping **(3)** si trovano nella pagin
 
    -- Copernicus EMS On-Demand Mapping
 
-Copernicus EMS Exposure Mapping **(1)** (:numref:'3.1.3') è un sistema che fornisce dati sulla popolazione e sugli insediamenti umani, entrambi scaricabili attraverso il Global Human Settlement Layer (GHSL) come griglie di popolazione **(2)** e superficie edificata **(3)**.
-Note: Copernicus GHSL sarà trattato nella :ref:'lezione 6 <6.1>' .
+Copernicus EMS Exposure Mapping **(1)** (:numref:`3.1.3`) è un sistema che fornisce dati sulla popolazione e sugli insediamenti umani, entrambi scaricabili attraverso il Global Human Settlement Layer (GHSL) come griglie di popolazione **(2)** e superficie edificata **(3)**.
+
+.. note:: Copernicus GHSL sarà trattato nella :ref:`capitolo 6 <6.1>`.
 
 .. _3.1.3:
 
@@ -34,7 +35,7 @@ Note: Copernicus GHSL sarà trattato nella :ref:'lezione 6 <6.1>' .
 
    -- Copernicus EMS Exposure Mapping
 
-Copernicus EMS Early warning & monitoring **(1)** (:numref:'3.1.4') è un sistema che offre informazioni geospaziali basate su osservazioni e previsioni. Si divide in European Flood Awareness System (EFAS) **(2)**, European Forest Fire Information System (EFFIS) **(3)** e European and Global Drought Observatories (EDO) (GDO) **(4)**. Ogni sottosezione ha un proprio sito web.. EFSA ha lo scopo di supportare le procedure di prevenzione in caso di eventi alluvionali. EFFIS fornisce informazioni sugli incendi boschivi in Europa ed è supportato da un gruppo di esperti sparsi in 43 Paesi europei. EDO e GDO forniscono informazioni sulla siccità attraverso mappe di indicatori costruite combinando diverse fonti di informazione come modelli di suolo e umidità, misure di precipitazione e misure satellitari.
+Copernicus EMS Early warning & monitoring **(1)** (:numref:`3.1.4`) è un sistema che offre informazioni geospaziali basate su osservazioni e previsioni. Si divide in European Flood Awareness System (EFAS) **(2)**, European Forest Fire Information System (EFFIS) **(3)** e European and Global Drought Observatories (EDO) (GDO) **(4)**. Ogni sottosezione ha un proprio sito web. EFSA ha lo scopo di supportare le procedure di prevenzione in caso di eventi alluvionali. EFFIS fornisce informazioni sugli incendi boschivi in Europa ed è supportato da un gruppo di esperti sparsi in 43 Paesi europei. EDO e GDO forniscono informazioni sulla siccità attraverso mappe di indicatori costruite combinando diverse fonti di informazione come modelli di suolo e umidità, misure di precipitazione e misure satellitari.
 
 .. _3.1.4:
 
@@ -43,7 +44,7 @@ Copernicus EMS Early warning & monitoring **(1)** (:numref:'3.1.4') è un sistem
 
    -- Copernicus EMS Early warning & monitoring
 
-Nella homepage 'Copernicus Emergency Management Service <https://emergency.copernicus.eu/>'_ homepage (:numref:'3.1.5') , è possibile trovare la sezione **FAQ/Service Overview**, dove si possono scaricare Flyer e Poster.
+Nella homepage `Copernicus Emergency Management Service <https://emergency.copernicus.eu/>`_ homepage (:numref:`3.1.5`) , è possibile trovare la sezione **FAQ/Service Overview**, dove si possono scaricare Flyer e Poster.
 
 .. _3.1.5:
 
@@ -52,7 +53,7 @@ Nella homepage 'Copernicus Emergency Management Service <https://emergency.coper
 
    -- FAQ/Service Overview - Flyers and Posters
 
-Scorrendo la pagina si trova una lista delle risposte alle domande più comuni riguardanti il servizio Copernicus EMS: frequently asked questions (FAQ) (:numref:'3.1.6'). Inoltre, se necessario, è possibile cliccare su **Contact Support Office (1)** e i relativi dettagli di contatto saranno visualizzati sul lato destro dello schermo **(2)**.
+Scorrendo la pagina si trova una lista delle risposte alle domande più comuni riguardanti il servizio Copernicus EMS: frequently asked questions (FAQ) (:numref:`3.1.6`). Inoltre, se necessario, è possibile cliccare su **Contact Support Office (1)** e i relativi dettagli di contatto saranno visualizzati sul lato destro dello schermo **(2)**.
 
 .. _3.1.6:
 
@@ -61,7 +62,7 @@ Scorrendo la pagina si trova una lista delle risposte alle domande più comuni r
 
    -- FAQ/Service Overview - FAQ
 
-L’ultima pagina raggiungibile dal menu principale del sito 'Copernicus Emergency Management Service <https://emergency.copernicus.eu/>'_ si chiama **Access to EMS data (1)** (:numref:'3.1.7') ed è composta da un riepilogo di tutti i siti web da cui è possibile recuperare i dati EMS di Copernicus. 
+L’ultima pagina raggiungibile dal menu principale del sito `Copernicus Emergency Management Service <https://emergency.copernicus.eu/>`_ si chiama **Access to EMS data (1)** (:numref:`3.1.7`) ed è composta da un riepilogo di tutti i siti web da cui è possibile recuperare i dati EMS di Copernicus. 
 Clicchiamo ora su **List of EMS Rapid Mapping Activations (2)**.
 
 .. _3.1.7:
@@ -74,7 +75,7 @@ Clicchiamo ora su **List of EMS Rapid Mapping Activations (2)**.
 Copernicus Rapid Mapping
 ------------------------
 
-Come già detto all'inizio del :ref:'capitolo 3.1 <3.1>' , Copernicus Rapid Mapping (:numref:'3.1.1.1') è uno dei servizi forniti dal Copernicus EMS e consiste in un servizio on-demand che fornisce informazioni geospaziali a supporto della gestione delle attività successive a un'emergenza.
+Come già detto all'inizio del :ref:`capitolo 3.1 <3.1>` , Copernicus Rapid Mapping (:numref:`3.1.1.1`) è uno dei servizi forniti dal Copernicus EMS e consiste in un servizio on-demand che fornisce informazioni geospaziali a supporto della gestione delle attività successive a un'emergenza.
 
 .. _3.1.1.1:
 
@@ -86,7 +87,7 @@ Come già detto all'inizio del :ref:'capitolo 3.1 <3.1>' , Copernicus Rapid Mapp
 Lista delle Attivazioni
 ************************
 
-Un elenco esaustivo e continuamente aggiornato di attivazioni di EMS Rapid Mapping (Mappe relative a situazioni di emergenza) è disponibile 'qui <https://emergency.copernicus.eu/mapping/list-of-activations-risk-and-recovery>'_ (:numref:'3.1.1.2'), lo si può raggiungere cliccando su **List of Activations (1)**. Le attivazioni sono classificate per Paesi, date e tipo di evento. Tra i tipi di evento si possono notare alluvioni, terremoti, incendi e molti altri. Si noti inoltre che per ogni attivazione e per ogni area di interesse può essere presente più di un prodotto.
+Un elenco esaustivo e continuamente aggiornato di attivazioni di EMS Rapid Mapping (Mappe relative a situazioni di emergenza) è disponibile `qui <https://emergency.copernicus.eu/mapping/list-of-activations-risk-and-recovery>`_ (:numref:`3.1.1.2`), lo si può raggiungere cliccando su **List of Activations (1)**. Le attivazioni sono classificate per Paesi, date e tipo di evento. Tra i tipi di evento si possono notare alluvioni, terremoti, incendi e molti altri. Si noti inoltre che per ogni attivazione e per ogni area di interesse può essere presente più di un prodotto.
 
 .. _3.1.1.2:
 
@@ -98,14 +99,16 @@ Un elenco esaustivo e continuamente aggiornato di attivazioni di EMS Rapid Mappi
 Prodotti disponibili
 *********************
 
-Esistono quattro tipi di prodotti Copernicus EMS Rapid Mapping:  Reference products, First Estimate Product (FEP), Delineation products e Grading products (li vedremo nel capitolo  :ref:'capitolo 3.1.2 <Download flooded area delineation map>' ). Il primo prodotto è progettato per fornire informazioni sul territorio prima dell'evento, mentre il FEP è progettato per valutare le aree più colpite nel modo più rapido possibile, fornendo la prima immagine disponibile dopo l'evento. In questa lezione ci concentreremo sugli altri due tipi.
+Esistono quattro tipi di prodotti Copernicus EMS Rapid Mapping:  Reference products, First Estimate Product (FEP), Delineation products e Grading products (li vedremo nel :ref:`capitolo 3.1.2 <Download flooded area delineation map>` ). Il primo prodotto è progettato per fornire informazioni sul territorio prima dell'evento, mentre il FEP è progettato per valutare le aree più colpite nel modo più rapido possibile, fornendo la prima immagine disponibile dopo l'evento. In questa lezione ci concentreremo sugli altri due tipi.
 
-..note:: è possibile leggere ulteriori informazioni sul Rapid Mapping Portfolio cliccando su questo 'link <https://emergency.copernicus.eu/mapping/ems/rapid-mapping-portfolio>'_
+.. note:: E' possibile leggere ulteriori informazioni sul Rapid Mapping Portfolio cliccando su questo `link <https://emergency.copernicus.eu/mapping/ems/rapid-mapping-portfolio>`_
 
 **Delineation Map**
+
 Lo scopo delle Delineation Maps è quello di fornire una valutazione approfondita dell'impatto e dell'estensione dell'evento. Possono anche essere richieste per fornire un aggiornamento della situazione attraverso il monitoraggio. Queste mappe sono ricavate da immagini acquisite il più presto possibile dopo l'evento di emergenza. I tempi di consegna dei dati possono essere consegnati a partire da 7 ore dopo la richiesta.
 
 **Grading Map**
+
 Questi prodotti hanno lo scopo di fornire informazioni sul grado di danno, sull'estensione dell'impatto e sulla distribuzione spaziale. Come per le Delineation Maps, è possibile presentare richieste di monitoraggio. È importante notare che questo prodotto è derivato dalle Delineation Maps.
 
 .. _Download flooded area delineation map:
@@ -113,7 +116,7 @@ Questi prodotti hanno lo scopo di fornire informazioni sul grado di danno, sull'
 Download della Delineation Map dell’area interessata all’alluvione
 -------------------------------------------------------------------
 
-Aprire 'EMS website <https://emergency.copernicus.eu/>'_  (:numref:'3.1.2.1') e, nella sezione **Rapid Mapping (1)**, cliccare su **Mapping (2)**, in questo modo si apre la EMS mapping page.
+Aprire `EMS website <https://emergency.copernicus.eu/>`_  (:numref:`3.1.2.1`) e, nella sezione **Rapid Mapping (1)**, cliccare su **Mapping (2)**, in questo modo si apre la EMS mapping page.
 
 .. _3.1.2.1:
 
@@ -122,7 +125,7 @@ Aprire 'EMS website <https://emergency.copernicus.eu/>'_  (:numref:'3.1.2.1') e,
 
    -- Rapid mapping nell’interfaccia EMS
 
-Sotto **RAPID MAPPING** (:numref:'3.1.2.2') cliccare su **List of activations (1)**. 
+Sotto **RAPID MAPPING** (:numref:`3.1.2.2`) cliccare su **List of activations (1)**. 
 
 .. _3.1.2.2:
 
@@ -131,13 +134,13 @@ Sotto **RAPID MAPPING** (:numref:'3.1.2.2') cliccare su **List of activations (1
 
    -- Copernicus Emergency Management Service – Mapping
 
-Per cercare un evento alluvionale in Piemonte, compilare i parametri di ricerca (:numref:'3.1.2.3') nel modo seguente:
+Per cercare un evento alluvionale in Piemonte, compilare i parametri di ricerca (:numref:`3.1.2.3`) nel modo seguente:
 
-+ **Name (1)**: Piedmont
-+ **Event (2)**: Flood
-+ **Countries (3)**: Italy  
++ **Name (1)**: Piedmont;
++ **Event (2)**: Flood;
++ **Countries (3)**: Italy.  
 
-Una volta fatto, cliccare su **Apply Filters (4)**, apparirà una lista delle attivazioni corrispondente a questi criteri. Selezionare l’evento: “ 'Flood in Piedmont region, Italy <https://emergency.copernicus.eu/mapping/list-of-components/EMSR468>'_   ” **(5)**. 
+Una volta fatto, cliccare su **Apply Filters (4)**, apparirà una lista delle attivazioni corrispondente a questi criteri. Selezionare l’evento: “ `Flood in Piedmont region, Italy <https://emergency.copernicus.eu/mapping/list-of-components/EMSR468>`_   ” **(5)**. 
 
 .. _3.1.2.3:
 
@@ -146,13 +149,13 @@ Una volta fatto, cliccare su **Apply Filters (4)**, apparirà una lista delle at
 
    -- Ricerca dell’evento: alluvione in Piemonte
 
-A questo punto si apre una pagina in cui si possono scaricare i dati EMS relativi all’evento selezionato. Scorrendo la pagina fino in fondo si trova **Filter by AOI** (:numref:'3.1.2.4') **(1)**; 
+A questo punto si apre una pagina in cui si possono scaricare i dati EMS relativi all’evento selezionato. Scorrendo la pagina fino in fondo si trova **Filter by AOI** (:numref:`3.1.2.4`) **(1)**; 
 selezionare “Vercelli” **(2)**. Il primo della lista dei file che possono essere scaricati è quello oggetto di queste lezioni e, per scaricarlo, cliccare su **ZIP (3)**. Si osservi inoltre che è possibile applicare filtri sul tipo (**GRADING** , 
 **DELINEATION** or **FIRST ESTIMATE**) **(4)** . Si osservi in particolare la pagina **Activation Extent Map: live (5)** 
 dalla quale si possono estendere le attivazioni in tempo reale e la pagina **GeoRSS: feed (6)** 
 dove RSS sta per Really Simple Syndication e che permette di visualizzare un feed cronologico di tutti i prodotti relativi all'attivazione selezionata. 
 
-..note:: il pacchetto dei dati in formato vettoriale verrà scaricato in formato “zip” e deve essere estratto.
+.. note:: Il pacchetto dei dati in formato vettoriale verrà scaricato in formato “zip” e deve essere estratto.
 
 .. _3.1.2.4:
 
@@ -167,7 +170,7 @@ Importare i dati EMS in QGIS
 Apertura di un progetto QGIS esistente
 ***************************************
 
-Per aprire un progetto QGIS esistente, nella barra degli strumenti dell'interfaccia di QGIS, in alto a sinistra, cliccare su **Project (1)** e poi su **Open (2)** (:numref:'3.1.3.1') . In alternativa, utilizzare la scorciatoia "CTRL+O", quindi navigare nella cartella che contiene il file ".qgz". Il progetto è stato salvato nel :ref:'capitolo 1.2.2.5 <Save project>' .
+Per aprire un progetto QGIS esistente, nella barra degli strumenti dell'interfaccia di QGIS, in alto a sinistra, cliccare su **Project (1)** e poi su **Open (2)** (:numref:`3.1.3.1`) . In alternativa, utilizzare la scorciatoia "CTRL+O", quindi navigare nella cartella che contiene il file ".qgz". Il progetto è stato salvato nel :ref:`capitolo 1.2.2.5 <Save project>` .
 
 .. _3.1.3.1:
 
@@ -179,12 +182,12 @@ Per aprire un progetto QGIS esistente, nella barra degli strumenti dell'interfac
 Importare i dati vettoriali EMS in QGIS
 ****************************************
 
-Assicurarsi che la cartella **Vector Package** scaricata sia stata estratta. All'interno della cartella scaricata si vedranno molti file con estensioni diverse (:numref:'3.1.3.2'); 
+Assicurarsi che la cartella **Vector Package** scaricata sia stata estratta. All'interno della cartella scaricata si vedranno molti file con estensioni diverse (:numref:`3.1.3.2`); 
 per lo scopo di questa lezione interessano solo gli shapefile, le altre estensioni saranno spiegate nei capitoli successivi. In genere, quando si parla di "shapefile" si intende 
 un insieme di file con estensioni diverse, di cui il principale è un file .shp  **(1)** che contiene la geometria (punti, linee o poligoni) dei dati. Gli altri due file principali che compongono uno shapefile sono il file .shx, 
 che è un file indice, e il file .dbf che contiene i dati degli attributi.
 
-NOTE:: per avere una spiegazione più tecnica e approfondita degli shapefile, riferirsi alla 'ESRI Shapefile Technical Description <https://support.esri.com/en-us/technical-paper/esri-shapefile-technical-description-279>'_ . 
+.. note:: Per avere una spiegazione più tecnica e approfondita degli shapefile, riferirsi alla `ESRI Shapefile Technical Description <https://support.esri.com/en-us/technical-paper/esri-shapefile-technical-description-279>`_ . 
 
 .. _3.1.3.2:
 
@@ -193,15 +196,15 @@ NOTE:: per avere una spiegazione più tecnica e approfondita degli shapefile, ri
 
    -- Importazione dati vettoriali in QGIS
 
-L'importazione di dati vettoriali in QGIS (:numref:'3.1.3.3') può essere effettuata facendo clic su **Layer (1)** nel menu della barra strumenti, poi su **Add Layer (2)** e **Add Vector Layer (3)**; si aprirà un nuovo menu chiamato **Data Source Manager (4)** . 
+L'importazione di dati vettoriali in QGIS (:numref:`3.1.3.3`) può essere effettuata facendo clic su **Layer (1)** nel menu della barra strumenti, poi su **Add Layer (2)** e **Add Vector Layer (3)**; si aprirà un nuovo menu chiamato **Data Source Manager (4)** . 
 In alternativa, è possibile aprire lo stesso menu facendo clic su **Open Data Source Manager (5)**. Da **Data Source Manager** cliccare sull'icona con i tre puntini **(6)** ; sarà necessario sfogliare la cartella del pc per trovare i dati da importare. Selezionare i seguenti dati:
 
-+ EMSR468_AOI05_DEL_PRODUCT_areaOfInterestA_r1_v1.shp
-+ EMSR468_AOI05_DEL_PRODUCT_hydrographyA_r1_v1.shp
-+ EMSR468_AOI05_DEL_PRODUCT_hydrographyL_r1_v1.shp
-+ EMSR468_AOI05_DEL_PRODUCT_imageFootprintA_r1_v1.shp
-+ EMSR468_AOI05_DEL_PRODUCT_observedEventA_r1_v1.shp
-+ EMSR468_AOI05_DEL_PRODUCT_transportationL_r1_v1.shp
++ EMSR468_AOI05_DEL_PRODUCT_areaOfInterestA_r1_v1.shp;
++ EMSR468_AOI05_DEL_PRODUCT_hydrographyA_r1_v1.shp;
++ EMSR468_AOI05_DEL_PRODUCT_hydrographyL_r1_v1.shp;
++ EMSR468_AOI05_DEL_PRODUCT_imageFootprintA_r1_v1.shp;
++ EMSR468_AOI05_DEL_PRODUCT_observedEventA_r1_v1.shp;
++ EMSR468_AOI05_DEL_PRODUCT_transportationL_r1_v1.shp.
 
 Una volta fatto, cliccare su  **Add (7)**.
 Nei prossimi paragrafi vedremo quali sono i dati caricati e come è meglio rappresentarli. In questo modo, si modificheranno gli stili nella rappresentazione dei dati in base alle loro caratteristiche (linea, poligono, ...) e alle informazioni che contengono.
@@ -216,9 +219,9 @@ Nei prossimi paragrafi vedremo quali sono i dati caricati e come è meglio rappr
 Visualizzazione dei dati in formato vettoriale in QGIS 
 *******************************************************
 
-Ora è possibile visualizzare i dati nella lista dei Layer **(1)** (:numref:'3.1.3.4') .
+Ora è possibile visualizzare i dati nella lista dei Layer **(1)** (:numref:`3.1.3.4`) .
 Cliccando sulla casella vicino al nome di un layer lo si disattiva o attiva, per esempio si disattivi “EMSR468_AOI05_DEL_PRODUCT_imageFootprintA_r1_v1” **(2)**. 
-Ora è possibile eseguire uno zoom in avanti per avere una visione migliore dei dati; in alternativa, è possibile fare clic con il pulsante destro del mouse su un layer attivo **(3)**,  : si aprirà un nuovo menù in cui è possibile selezionare l'opzione **Zoom to Layer(s) (4)**.
+Ora è possibile eseguire uno zoom in avanti per avere una visione migliore dei dati; in alternativa, è possibile fare clic con il pulsante destro del mouse su un layer attivo **(3)** : si aprirà un nuovo menù in cui è possibile selezionare l'opzione **Zoom to Layer(s) (4)**.
 
 .. _3.1.3.4:
 
@@ -228,7 +231,8 @@ Ora è possibile eseguire uno zoom in avanti per avere una visione migliore dei 
    -- Visualizzazione dati in formato vettoriale in QGIS
 
 **Single symbol style**
-Per esplorare come modificare lo stile dei diversi layer, si consideri il layer “EMSR468_AOI05_DEL_PRODUCT_areaOfInterestA_r1_v1” (:numref:'3.1.3.5') . 
+
+Per esplorare come modificare lo stile dei diversi layer, si consideri il layer “EMSR468_AOI05_DEL_PRODUCT_areaOfInterestA_r1_v1” (:numref:`3.1.3.5`) . 
 Dell'area interessata dall'evento considerato è necessario evidenziare solo il bordo dato che non ci sono altre informazioni. Pertanto, si vuole visualizzarla con un semplice bordo ben definito (colore rosso), di seguito i passi per realizzarlo.
 Fare doppio clic sul livello di cui sopra o cliccare con il pulsante destro del mouse **(1)** e selezionare **Properties (2)**. 
 Apparirà il pannello Layer Properties, selezionare **Symbology (3)**, quindi **Single Symbol (4)**. 
@@ -243,7 +247,7 @@ A questo punto scegliere lo stile **outline red (5)** e cliccare su **ok (6)**.
 
 **Categorized style**
 
-È ora il turno del layer “EMSR468_AOI05_DEL_PRODUCT_hydrographyA_r1_v1” layer (:numref:'3.1.3.6') . 
+È ora il turno del layer “EMSR468_AOI05_DEL_PRODUCT_hydrographyA_r1_v1” layer (:numref:`3.1.3.6`) . 
 Il layer "idrografia", se rappresentato con un solo colore (cioè una sola categoria), non fornisce ulteriori informazioni. Rappresentato invece con uno stile diverso, consente di visualizzare maggiori dettagli.
 Come in precedenza, aprire Symbology Property facendo clic con il tasto destro del mouse su **(1)** quindi selezionare **Properties (2)** e **Symbology (3)**. 
 Questa volta, cambiare lo stile in  **Categorize (4)**  e impostare il campo Value come **obj_type (5)**. Fare clic su **classify (6)** ed eventualmente modificare i colori **(7)**. 
@@ -256,7 +260,7 @@ Quando si è soddisfatti, cliccare su **ok (8)**. Si può notare che ci sono tre
 
    -- Categorized style
 
-Il risultato dell’operazione è mostrato qui (:numref:'3.1.3.7') .
+Il risultato dell’operazione è mostrato qui (:numref:`3.1.3.7`) .
 
 .. _3.1.3.7:
 
@@ -267,7 +271,7 @@ Il risultato dell’operazione è mostrato qui (:numref:'3.1.3.7') .
 
 **Feature labels**
 
-Aprire ora il pannello Layer Properties del layer: “EMSR468_AOI05_DEL_PRODUCT_hydrographyL_r1_v1” **(1)** (:numref:'3.1.3.8') .
+Aprire ora il pannello Layer Properties del layer: “EMSR468_AOI05_DEL_PRODUCT_hydrographyL_r1_v1” **(1)** (:numref:`3.1.3.8`) .
 Nel caso di informazioni idrografiche con "linee", queste rappresentano la posizione dei corsi d'acqua nell'area considerata. È interessante associare a questi elementi (se disponibili) i loro nomi, ciò avviene operando sulle “labels” (o etichette).
 Scegliere  la scheda **Labels (2)** e selezionare **Single Labels (3)** dal menu a tendina. Selezionare ora il campo che verrà utilizzato per etichettare i dati nell'area di disegno della mappa, scegliendo "nome" nel campo **Value (4)**. Selezionare **Text (5)** per modificare lo stile del testo dell'etichetta e impostare **Size** del carattere su 5.0 **(6)**.
 Se si clicca su **Apply (7)** e si sposta il Layer Properties livello per poter guardare la mappa, si noterà che a prima vista è difficile leggere le nostre etichette; nel prossimo passo si vedrà come risolvere questo problema.
@@ -279,7 +283,7 @@ Se si clicca su **Apply (7)** e si sposta il Layer Properties livello per poter 
 
    -- Feature labels Text
 
-Tornare al pannello Layer Properties e fare clic su **(1)** (:numref:'3.1.3.9') . 
+Tornare al pannello Layer Properties e fare clic su **(1)** (:numref:`3.1.3.9`) . 
 Attivare la casella **Draw background (2)** e selezionare un colore a scelta nella palette dei colori **(3)** della barra dei colori; si osservi che il colore del testo è nero, quindi scegliendo toni più scuri sarà più difficile vederlo. L'aggiunta di uno sfondo coprirà parzialmente ciò che si trova sotto il testo delle etichette, ma renderà il testo molto più leggibile.
 
 .. _3.1.3.9:
@@ -289,7 +293,7 @@ Attivare la casella **Draw background (2)** e selezionare un colore a scelta nel
 
    -- Feature labels Background
 
-Il risultato di questa operazione è mostrato qui (:numref:'3.1.3.10').
+Il risultato di questa operazione è mostrato qui (:numref:`3.1.3.10`).
 
 .. _3.1.3.10:
 
@@ -300,10 +304,11 @@ Il risultato di questa operazione è mostrato qui (:numref:'3.1.3.10').
 
 **Graduated style**
 
-Modificheremo ora lo stile  del layer “EMSR468_AOI05_DEL_PRODUCT_observedEventA_r1_v1” **(1)** (:numref:'3.1.3.11') . 
-L'evento osservato che stiamo considerando è un'alluvione.  Il territorio non è colpito dall'alluvione in modo costante (colore unico): ci sono aree più esposte e altre meno, quindi è necessaria una visualizzazione che ne tenga conto.
+Modificheremo ora lo stile  del layer “EMSR468_AOI05_DEL_PRODUCT_observedEventA_r1_v1” **(1)** (:numref:`3.1.3.11`) . 
+L'evento osservato che stiamo considerando è un'alluvione.  Il territorio non è colpito dall'alluvione in modo costante (colore unico) ma ci sono aree più esposte e altre meno, quindi è necessaria una visualizzazione che ne tenga conto.
 
-Aprire la scheda **Symbology** e selezionare **Graduated (2)** dal menu a tendina. Scegliere "area" nel campo **Value field (3)**; il nostro obiettivo sarà quello di visualizzare le aree allagate con colori diversi in base alle loro dimensioni. Seleziona una palette di colore a scelta (4). Nel nostro set di dati abbiamo molte aree piccole e solo poche grandi; data questa distribuzione, possiamo selezionare la modalità **Logarithmic Scale** o **Natural Breaks (Jenks) (5)** per migliorare la distanza tra le classi. Imposta il numero di classi a 15 **(6)** e cliccare su **Classify (7)**: è possibile visualizzare l'anteprima della classificazione nel pannello di anteprima **(8)**. Infine, cliccare su **Ok (9)**.
+Aprire la scheda **Symbology** e selezionare **Graduated (2)** dal menu a tendina. Scegliere "area" nel campo **Value field (3)**; l’obiettivo è visualizzare le aree allagate con colori diversi in base alle loro dimensioni. Selezionare una palette di colore (4).
+Nel set di dati in esame si hanno molte aree piccole e solo poche grandi; data questa distribuzione, selezionare la modalità **Logarithmic Scale** o **Natural Breaks (Jenks) (5)** per migliorare la distanza tra le classi. Impostare il numero di classi per esempio  pari a 15 **(6)** e cliccare su **Classify (7)**: è possibile visualizzare l'anteprima della classificazione nel pannello di anteprima **(8)**. Infine, cliccare su **Ok (9)**.
 
 .. _3.1.3.11:
 
@@ -312,7 +317,7 @@ Aprire la scheda **Symbology** e selezionare **Graduated (2)** dal menu a tendin
 
    -- Graduated style
 
-Il risultato di questa operazione è mostrato qui (:numref:'3.1.3.12') .
+Il risultato di questa operazione è mostrato qui (:numref:`3.1.3.12`) .
 
 .. _3.1.3.12:
 
@@ -322,7 +327,8 @@ Il risultato di questa operazione è mostrato qui (:numref:'3.1.3.12') .
    -- Graduated style - Risultato
 
 **Salvare uno stile**
-Se si è soddisfatti di uno stile e si desidera salvarlo per utilizzarlo in futuro, è possibile fare clic su **Style (1)** (:numref:'3.1.3.13') nel pannello **Symbology** del **Layer Properties** e selezionare **Save Style (2)** dal menu che si aprirà. Nella nuova finestra che si aprirà è possibile selezionare il formato in cui si desidera salvare il file **(3)** e avere un'anteprima delle categorie che verranno salvate **(4)**; si avrà anche la possibilità di disattivare quelle che non interessano facendo clic sulle caselle spuntate, ma non ci interessa farlo ora. Facendo clic sui tre puntini **(5)** potrai navigare nelle vostre cartelle e scegliere il percorso in cui salvare il vostro stile; al termine, fate clic su **ok (6)**.
+
+Se si è soddisfatti di uno stile e si desidera salvarlo per utilizzarlo in futuro, è possibile fare clic su **Style (1)** (:numref:`3.1.3.13`) nel pannello **Symbology** del **Layer Properties** e selezionare **Save Style (2)** dal menu che si aprirà. Nella nuova finestra è possibile selezionare il formato in cui si desidera salvare il file **(3)** e avere un'anteprima delle categorie che verranno salvate **(4)**; si ha anche la possibilità di disattivare eventualmente quelle che non interessano cliccando sulle caselle spuntate. Cliccando sui tre puntini **(5)** è possibile navigare tra le cartelle e scegliere il percorso in cui salvare lo stile personalizzato; al termine, cliccare su **ok (6)**.
 
 .. _3.1.3.13:
 
@@ -334,24 +340,24 @@ Se si è soddisfatti di uno stile e si desidera salvarlo per utilizzarlo in futu
 Attribute table
 ***************
 
-Di solito quando si lavora su dati vettoriali si ha accesso a una tabella degli attributi (:numref:'3.1.3.14') , che mostra le informazioni sulle caratteristiche del layer scelto. Vediamo ora la tabella degli attributi del layer "EMSR468_AOI05_DEL_PRODUCT_observedEventA_r1_v1" **(1)** Per aprirla è necessario fare clic con il tasto destro del mouse sul layer e selezionare  **Open Attribute Table (2)** tra le varie opzioni. Verrà visualizzata la tabella degli attributi **(3)**; qui possiamo vedere gli attributi che compongono il nostro livello rappresentati come titoli delle colonne **(4)**, ogni riga rappresenta una voce.
+Di solito quando si lavora su dati vettoriali si ha accesso a una tabella degli attributi (:numref:`3.1.3.14`) , che mostra le informazioni sulle caratteristiche del layer scelto. Vediamo ora la tabella degli attributi del layer "EMSR468_AOI05_DEL_PRODUCT_observedEventA_r1_v1" **(1)** Per aprirla è necessario fare clic con il tasto destro del mouse sul layer e selezionare  **Open Attribute Table (2)** tra le varie opzioni. Verrà visualizzata la tabella degli attributi **(3)**; qui possiamo vedere gli attributi che compongono il nostro livello rappresentati come titoli delle colonne **(4)**, ogni riga rappresenta una voce.
 Sopra la tabella degli attributi sono presenti alcuni pulsanti che offrono diverse opzioni:
 
-+ Toggle editing mode **(5)**
-+ Reload the table **(6)**
-+ Select features using an Expression **(7)**
-+ Select All **(8)**
-+ Invert selection **(9)**
-+ Deselect all **(10)**
-+ Filter/Select features using form **(11)**
-+ Move selected to top **(12)**
-+ Pan map to the selected rows **(13)**
-+ Zoom map to the selected rows **(14)**
-+ Organize Columns **(15)**
-+ Open field calculator **(16)**
-+ Conditional formatting **(17)**
-+ Actions **(18)**
-+ Dock Attribute Table **(19)**
++ Toggle editing mode **(5)**;
++ Reload the table **(6)**;
++ Select features using an Expression **(7)**;
++ Select All **(8)**;
++ Invert selection **(9)**;
++ Deselect all **(10)**;
++ Filter/Select features using form **(11)**;
++ Move selected to top **(12)**;
++ Pan map to the selected rows **(13)**;
++ Zoom map to the selected rows **(14)**;
++ Organize Columns **(15)**;
++ Open field calculator **(16)**;
++ Conditional formatting **(17)**;
++ Actions **(18)**;
++ Dock Attribute Table **(19)**.
 
 .. _3.1.3.14:
 
@@ -362,7 +368,7 @@ Sopra la tabella degli attributi sono presenti alcuni pulsanti che offrono diver
 
 **Selezionare la più grande area colpita dall'alluvione**
 
-Per selezionare l'area più grande colpita dall'alluvione cliccare sull'attributo "area" della attribute table **(1)** (:numref:'3.1.3.15'); poiché i valori sono numerici, i dati saranno automaticamente ordinati per valori decrescenti, quindi l'area più grande sarà rappresentata nell’ultima riga. Facendo nuovamente clic sullo stesso attributo, i dati verranno ordinati in modo crescente. Ora fare clic sul numero di riga corrispondente per selezionare la nostra caratteristica **(2)**. Una volta effettuata la selezione, è possibile fare clic con il tasto destro del mouse su un punto qualsiasi della caratteristica selezionata **(3)** e selezionare **Zoom to feature (4)**. In alternativa, dato che si è eseguita una selezione, è possibile fare clic su **Zoom map to the selected rows (5)**.
+Per selezionare l'area più grande colpita dall'alluvione cliccare sull'attributo "area" della attribute table **(1)** (:numref:`3.1.3.15`); poiché i valori sono numerici, i dati saranno automaticamente ordinati per valori decrescenti, quindi l'area più grande sarà rappresentata nell’ultima riga. Facendo nuovamente clic sullo stesso attributo, i dati verranno ordinati in modo crescente. Ora fare clic sul numero di riga corrispondente per selezionare la nostra caratteristica **(2)**. Una volta effettuata la selezione, è possibile fare clic con il tasto destro del mouse su un punto qualsiasi della caratteristica selezionata **(3)** e selezionare **Zoom to feature (4)**. In alternativa, dato che si è eseguita una selezione, è possibile fare clic su **Zoom map to the selected rows (5)**.
 
 .. _3.1.3.15:
 
@@ -373,7 +379,7 @@ Per selezionare l'area più grande colpita dall'alluvione cliccare sull'attribut
 
 **Calcolare l'area totale colpita dall'alluvione**
 
-Per eseguire calcoli si può utilizzare Field Calculator (:numref:'3.1.3.16') . Per prima cosa cliccare su **Toggle editing mode (1)** e poi sul pulsante **Field calculator (2)** per aprirlo.
+Per eseguire calcoli si può utilizzare Field Calculator (:numref:`3.1.3.16`) . Per prima cosa cliccare su **Toggle editing mode (1)** e poi sul pulsante **Field calculator (2)** per aprirlo.
 La prima cosa da fare è spuntare la casella **Create virtual field  (3)**, poi dare un nome alla nuova colonna che ospiterà il risultato del nostro calcolo, in questo caso "Total_area" **(4)**. Impostare l' **Output Field Type** su “Decimal” **(5)**, poiché impostandolo su "Intero" si eliminano tutti i valori dopo la virgola. Poiché si vogliono sommare tutti i valori del campo area, cercare la funzione somma nella barra di ricerca digitando "sum" **(6)**; una volta trovata, fare clic su di essa due volte per aggiungerla alla expression tab (questa verrà esaminata in seguito). A destra della Field calculator si aprirà una spiegazione approfondita del funzionamento della funzione scelta **(7)**. Fare clic su **Fields and Values (8)** per aprire il menu a tendina e fare doppio clic su "area" **(9)**. Ora è necessario completare la formula aggiungendo la parentesi di chiusura " ) " **(10)**. In alternativa, è sufficiente digitare la formula nella scheda come: " sum( "area" ) " (eliminando le virgolette esterne). Se la formula è stata scritta nella forma corretta, si dovrebbe vedere una **Preview** del risultato **(11)**. La procedura si conclude facendo clic su **ok (12)**.
 
 .. _3.1.3.16:
@@ -386,7 +392,7 @@ La prima cosa da fare è spuntare la casella **Create virtual field  (3)**, poi 
 Salvare un progetto in QGIS
 ****************************
 
-Per salvare un progetto in QGIS (:numref:'3.1.3.17'), cliccare su **Project (1)** e poi su **Save (2)**. Successivamente, è necessario selezionare il percorso in cui si desidera salvare il progetto **(3)**, assegnargli un nome **(4)** e fare clic su **Save (5)**.
+Per salvare un progetto in QGIS (:numref:`3.1.3.17`), cliccare su **Project (1)** e poi su **Save (2)**. Successivamente, è necessario selezionare il percorso in cui si desidera salvare il progetto **(3)**, assegnargli un nome **(4)** e fare clic su **Save (5)**.
 
 .. _3.1.3.17:
 

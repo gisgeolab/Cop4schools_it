@@ -63,7 +63,7 @@ Quando apri QGIS, ti appare la sua interfaccia (:numref:`1.2.2.1`) . Nell’ango
 
    -- L’interfaccia di QGIS - pt.1
 
-Nel caso in cui qualche pannello non sia visibile, puoi attivarlo cliccando su **View** nella barra degli strumenti **(1)** (:numref:`1.2.2.2`), e poi muovendo il mouse su **Panels (2) **. Da qui tu puoi selezionare le caselle relative ai pannelli che non vedi. Nel caso illustrato nella figura, abbiamo attivi i seguenti pannelli: **Browser (3)** , **Layers (4)** e **Processing Toolbox (5)**. Se i pannelli non sono posizionati come mostrato o se desideri cambiarne la posizione, puoi fare clic sul nome del pannello e, senza rilasciare il mouse, trascinarlo dove preferisci.
+Nel caso in cui qualche pannello non sia visibile, puoi attivarlo cliccando su **View** nella barra degli strumenti **(1)** (:numref:`1.2.2.2`), e poi muovendo il mouse su **Panels (2)**. Da qui tu puoi selezionare le caselle relative ai pannelli che non vedi. Nel caso illustrato nella figura, abbiamo attivi i seguenti pannelli: **Browser (3)** , **Layers (4)** e **Processing Toolbox (5)**. Se i pannelli non sono posizionati come mostrato o se desideri cambiarne la posizione, puoi fare clic sul nome del pannello e, senza rilasciare il mouse, trascinarlo dove preferisci.
 
 .. _1.2.2.2:
 
@@ -112,7 +112,8 @@ Nel caso in cui alcune mappe non vengano visualizzate, è possibile attivarle cl
 
 .. figure:: /img/1/1.2.2.6.png
    :align: center
-   -- Attivare le mappe di QuickMapService
+
+   Attivare le mappe di QuickMapService
 
 Individuare il Sistema di Riferimento delle Coordinate dei layer e del progetto 
 *********************************************************************************

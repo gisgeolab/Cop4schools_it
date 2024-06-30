@@ -6,7 +6,7 @@ CLMS
 
 
 Il `Copernicus Land Monitoring Service (CLMS) <https://land.copernicus.eu/en>`_  è un servizio del programma Copernicus che mira a fornire informazioni geografiche sull'uso e la copertura del suolo (e la sua evoluzione nel tempo), sul movimento del suolo, sullo stato della vegetazione, il ciclo dell'acqua e le variabili energetiche della superficie terrestre. Il tutto in un contesto paneuropeo e globale. Tutti i prodotti sono gratuiti e possono essere utilizzati per qualsiasi scopo.
-Una volta aperto il sito Web del CLMS, si viene accolti dalla sua home page (:numref:`5.1.1`). Dalla barra superiore della home page è possibile accedere ad altre sezioni del sito dedicate a: richiedere assistenza tecnica **(1)**, visualizzare gli aggiornamenti dei prodotti **(2)**, controlla notizie ed eventi **(3)** (verificabili direttamente in homepage) e dare un'occhiata alle opportunità di lavoro **(4)**. Si può anche registrare un nuovo account o accedere **(5)**, come mostrato in :numref:`5.1.1.2`. Infine è possibile effettuare una ricerca diretta delle informazioni di interesse utilizzando la barra di ricerca **(6)**.
+Una volta aperto il sito Web del CLMS, si viene accolti dalla sua home page (:numref:`5.1.1`). Dalla barra superiore della home page è possibile accedere ad altre sezioni del sito dedicate a: richiedere assistenza tecnica **(1)**, visualizzare gli aggiornamenti dei prodotti **(2)**, controllare notizie ed eventi **(3)** (verificabili direttamente in homepage) e dare un'occhiata alle opportunità di lavoro **(4)**. Si può anche registrare un nuovo account o accedere **(5)**, come mostrato in :numref:`5.1.1.2`. Infine è possibile effettuare una ricerca diretta delle informazioni di interesse utilizzando la barra di ricerca **(6)**.
 E’ possibile raggiungere le pagine principali del sito anche utilizzando il menu principale **(7)**, come verrà mostrato più avanti.
 Cliccare sulle tipologie di prodotto elencate **(8)** per accedere alla pagina del Data Viewer già filtrata sui prodotti selezionati. I set di dati sono raggruppati nelle seguenti categorie:
 
@@ -65,7 +65,7 @@ Dalla home page, è possibile aprire la pagina del portfolio CLMS (:numref:`5.1.
    :align: center
 
 
-   -- Sito web CLMS - Portafoglio CLMS pt.1
+   -- Sito web CLMS - Portfolio CLMS pt.1
 
 
 Utilizzare la scheda **Explore** (:numref:`5.1.5`) **(1)** **(1)** per vedere e successivamente aprire la pagina di ogni prodotto. Cliccare su **Filters (2)** per aprire la barra laterale **(3)** da cui è possibile selezionare un sottoinsieme dei prodotti spuntando le caselle di interesse **(4)**.
@@ -78,7 +78,7 @@ Utilizzare la scheda **Explore** (:numref:`5.1.5`) **(1)** **(1)** per vedere e 
    :align: center
 
 
-   -- Sito web CLMS - Portafoglio CLMS pt.2
+   -- Sito web CLMS - Portfolio CLMS pt.2
 
 
 Cliccare su **Dataset catalogue (1)** (:numref:`5.1.6`) per aprire la pagina omonima. Questa pagina è simile a quella del portfolio CLMS ma mostra un elenco di tutti i dati. E’ possibile trovare il prodotto desiderato utilizzando la barra di ricerca **(2)** e/o cliccando sul **Filters (3)** e selezionando i parametri dal menu laterale **(4)**.
@@ -94,7 +94,7 @@ Cliccare su **Dataset catalogue (1)** (:numref:`5.1.6`) per aprire la pagina omo
    -- Sito web CLMS - Dataset catalogue
 
 
-La pagina **(1)** (:numref:`5.1.7`) permette di visualizzare i dati: nel :numref:`5.1.1.1` verranno presentate più dettagliatamente le opzioni offerte.
+La pagina **(1)** (:numref:`5.1.7`) permette di visualizzare i dati: nella :numref:`5.1.1.1` verranno presentate più dettagliatamente le opzioni offerte.
 
 
 .. _5.1.7:
@@ -133,7 +133,7 @@ Scorrendo verso il basso in questa scheda, è visibile un elenco di tutte le att
    --  Sito web CLMS - Use cases pt.2
 
 
-In cima alla pagina **Use Cases** page (:numref:`5.1.10`), è possibile aprire la seconda scheda, **Find Use Cases in your Country (1)**. Da lì la mappa interattiva **(2)** permette di cercare casi d’uso in un paese specifico.
+In cima alla pagina **Use Cases** (:numref:`5.1.10`), è possibile aprire la seconda scheda, **Find Use Cases in your Country (1)**. Da lì la mappa interattiva **(2)** permette di cercare casi d’uso in un paese specifico.
 
 
 .. _5.1.10:
@@ -168,10 +168,10 @@ offre un inventario sulla copertura e sull’uso del suolo, costituito da 44 cla
 Nelle sezioni seguenti proponiamo un esercizio basato sull’utilizzo del prodotto CLC. L'esercizio prevede i seguenti passaggi:
 
 
-+ scaricare il layer CLC
-+ importare il layer CLC in QGIS
-+ applicare una simbologia standard
-+ critagliare il layer all’estensione dell’area allagata.
++ scaricare il layer CLC;
++ importare il layer CLC in QGIS;
++ applicare una simbologia standard;
++ ritagliare il layer all’estensione dell’area allagata.
 
 
 Il Data Viewer del CLMS
@@ -202,7 +202,7 @@ Nel menu **Products and Dataset (1)** viene mostrato un elenco di tutti i prodot
    -- LMS data viewer
 
 
-Cliccare su `questo link <https://land.copernicus.eu/en/products/corine-land-cover/clc2018?>`_ per scaricare il layer CORINE Land Cover 2018. Questo collegamento porta alla pagina web illustrata in (:numref:`5.1.1.2`), per avviare il download del layer di copertura del suolo dopo l'accesso al sito web. Innanzitutto, fare clic su **Download (1)**: apparirà una nuova finestra che chiederà di accedere **(2)** . A questo punto, è necessario creare un account UE **(3)** .
+Cliccare su `questo link <https://land.copernicus.eu/en/products/corine-land-cover/clc2018?>`_ per scaricare il layer CORINE Land Cover 2018. Questo collegamento porta alla pagina web illustrata in :numref:`5.1.1.2`, per avviare il download del layer di copertura del suolo dopo l'accesso al sito web. Innanzitutto, fare clic su **Download (1)**: apparirà una nuova finestra che chiederà di accedere **(2)** . A questo punto, è necessario creare un account UE **(3)** .
 Infatti, per scaricare i dati da CLMS è necessario effettuare l'accesso.
 
 
@@ -219,7 +219,7 @@ Infatti, per scaricare i dati da CLMS è necessario effettuare l'accesso.
    -- Autenticazione utente
 
 
-Dopo aver effettuato l'accesso, comparirà il nome utente nella barra in alto **(1)** come illustrato in (:numref:`5.1.1.3`), insieme al carrello che si può riempire con i dati di interesse **(2)** . E’ possibile visualizzare il layer di copertura del suolo e selezionare l'area di interesse: cliccare su **Go to download by area (3)** . La selezione di una specifica area di interesse ha il vantaggio di occupare meno spazio di archiviazione e di richiedere meno tempo di calcolo quando si gestiscono i dati in QGIS.
+Dopo aver effettuato l'accesso, comparirà il nome utente nella barra in alto **(1)** come illustrato in :numref:`5.1.1.3`, insieme al carrello che si può riempire con i dati di interesse **(2)** . E’ possibile visualizzare il layer di copertura del suolo e selezionare l'area di interesse: cliccare su **Go to download by area (3)** . La selezione di una specifica area di interesse ha il vantaggio di occupare meno spazio di archiviazione e di richiedere meno tempo di calcolo quando si gestiscono i dati in QGIS.
 
 
 .. _5.1.1.3:
@@ -243,7 +243,7 @@ quindi selezionare **Draw a rectangle on the map (2)** . Cliccare su un punto de
    :align: center
 
 
-   -- Download della CLC per l'area di interesse parte 1
+   -- Download della CLC per l'area di interesse pt.1
 
 
 Nel carrello (:numref:`5.1.1.5`) sono visibili tutti i prodotti; in questo caso, solo uno. Impostare il **Type** come **RASTER (1)** e la proiezione a **EPSG:4326 (Source system of the dataset) (2)** . Una volta terminato, cliccare su **Process Download Request (3)** . Dopo pochi minuti si riceverà un’e-mail contenente un link per avviare il download.
@@ -256,14 +256,14 @@ Nel carrello (:numref:`5.1.1.5`) sono visibili tutti i prodotti; in questo caso,
    :align: center
 
 
-   -- Download del CLC per l'area di interesse parte 2
+   -- Download del CLC per l'area di interesse pt.2
 
 
 Importare il layer CLC in QGIS
 -----------------------------------------
 
 
-I dati scaricati sono di tipo raster, quindi è possibile aggiungerli in QGIS come visto nel :ref:'capitolo 4.2.1 <Import Sentinel-2 images>'. Come mostrato in (:numref:`5.1.2.1`) , cliccare su **Layer (1)** , poi **Add Layer (2)** e scegliere **Add Raster Layer (3)** . Dal **Data Source Manager** cliccare sul pulsante con i tre puntini **(4)** e cercare il file “.tif” nelle cartelle del proprio computer (il nome del file è “U2018_CLC2018_V2020_20u1.tif”). A questo punto fare clic su **Add (5)** e **Close (6)** .
+I dati scaricati sono di tipo raster, quindi è possibile aggiungerli in QGIS come visto nel :ref:`capitolo 4.2.1 <Import Sentinel-2 images>`. Come mostrato in :numref:`5.1.2.1` , cliccare su **Layer (1)** , poi **Add Layer (2)** e scegliere **Add Raster Layer (3)** . Dal **Data Source Manager** cliccare sul pulsante con i tre puntini **(4)** e cercare il file “.tif” nelle cartelle del proprio computer (il nome del file è “U2018_CLC2018_V2020_20u1.tif”). A questo punto fare clic su **Add (5)** e **Close (6)** .
 
 
 .. _5.1.2.1:
@@ -273,13 +273,13 @@ I dati scaricati sono di tipo raster, quindi è possibile aggiungerli in QGIS co
    :align: center
 
 
-   -- Importa dati raster in QGIS
+   -- Importare dati raster in QGIS
 
 
 Caricare la simbologia
 **********************
 In fase di download, è stato scaricato anche un file contenente lo stile del layer CLC, che può essere facilmente importato in QGIS come segue (:numref:`5.1.2.2`) .
-Innanzitutto, fare clic con il pulsante destro del mouse sul layer appena importato in QGIS (1), accedere a **Properties (2)** e aprire il menu **Simbology (3)** . Nell'angolo in basso a destra cliccare su **Style (4)** e selezionare **Load Style… (5)** . Nel menu Database Styles Manager che verrà visualizzato, fare clic sull'icona coi tre punti **(6)** ; il percorso per trovare i dati dovrebbe essere simile a questo: “...\Results\65791\EEA\U2018_CLC2018_V2020_20u1_raster100m_tiled_doc\Info\Legend\Raster\clc_legend_qgis_raster.qml” ad eccezione della prima parte, in cui è necessario individuare dove è stato salvato il file dei Risultati, e l’identificativo del prodotto, che può essere diverso. Il formato .qml è human-readable e può essere facilmente modificato utilizzando un editor di testo o all'interno dello stesso QGIS. In generale questo formato di file viene utilizzato per definire i layout dell'interfaccia utente, come la posizione delle immagini e dei pulsanti. Una volta importato il file, fare clic su **Load Style (7)** E **OK (8)** .
+Innanzitutto, fare clic con il pulsante destro del mouse sul layer appena importato in QGIS (1), accedere a **Properties (2)** e aprire il menu **Simbology (3)** . Nell'angolo in basso a destra cliccare su **Style (4)** e selezionare **Load Style… (5)** . Nel menu Database Styles Manager che verrà visualizzato, fare clic sull'icona coi tre punti **(6)** ; il percorso per trovare i dati dovrebbe essere simile a questo: “.../Results/65791/EEA/U2018_CLC2018_V2020_20u1_raster100m_tiled_doc/Info/Legend/Raster/clc_legend_qgis_raster.qml” ad eccezione della prima parte, in cui è necessario individuare dove è stato salvato il file dei Risultati, e l’identificativo del prodotto, che può essere diverso. Il formato .qml è human-readable e può essere facilmente modificato utilizzando un editor di testo o all'interno dello stesso QGIS. In generale questo formato di file viene utilizzato per definire i layout dell'interfaccia utente, come la posizione delle immagini e dei pulsanti. Una volta importato il file, fare clic su **Load Style (7)** e **OK (8)** .
 
 
 .. note:: puoi leggere ulteriori informazioni sul formato .qml `qui <https://doc.qt.io/qt-6/qtqml-documents-topic.html>`_ .
@@ -303,7 +303,7 @@ Nei passaggi seguenti, si eseguiranno alcune pre-elaborazioni di base sui dati, 
 
 **Ritagliare il layer di copertura del suolo sull'area di interesse**
 
-Importare il layer dell'area di interesse (“EMSR468_AOI05_DEL_PRODUCT_areaOfInterestA_r1_v1”) e dell'evento osservato (“EMSR468_AOI05_DEL_PRODUCT_observedEventA_r1_v1”) layers used in :ref:'Lezione 3 <3.1>' . Innanzitutto, è fondamentale riproiettare il layer dell’area di interesse (:numref:`5.1.2.3`).
+Importare il layer dell'area di interesse (“EMSR468_AOI05_DEL_PRODUCT_areaOfInterestA_r1_v1”) e dell'evento osservato (“EMSR468_AOI05_DEL_PRODUCT_observedEventA_r1_v1”) layers used in :ref:`Lezione 3 <3.1>` . Innanzitutto, è fondamentale riproiettare il layer dell’area di interesse (:numref:`5.1.2.3`).
 Nel **Processing Toolbox** , cercare “Reproject Layer” **(1)** . Cliccare su **Reproject Layer (2)** che sarà nel gruppo **Vector General** . Impostare “EMSR468_AOI05_DEL_PRODUCT_areaOfInterestA_r1_v1” come **Input Layer (3)** . Sotto **Target CRS** cliccare sul **Select CRS (4)** , si aprirà una nuova sezione, da lì cercare “WGS 84 / UTM zone 32N” nel campo **Filter (5)** . Cliccare sulla proiezione selezionata (WGS 84 / UTM zona 32N EPSG 32632) **(6)** e poi sulla freccia blu per tornare alla scheda precedente **(7)** . Se tutto è stato fatto in modo corretto, si vedrà la proiezione selezionata sotto **Target CRS (8)** . Procedere scegliendo dove salvare il layer riproiettato e dandogli un nome **(9)** ; in questa lezione, verrà chiamato “AreaOfInterest_UTM”. Una volta terminato, fare clic su **Run (10)** . Ripetere questa procedura impostando come **Input Layer** il layer “EMSR468_AOI05_DEL_PRODUCT_observedEventA_r1_v1”, e chiamare l’output corrispondente “ObservedEvent_UTM”.
 
 
@@ -352,7 +352,7 @@ Si può notare che i dati di copertura del suolo scaricati includono un’area m
 **Applicare la simbologia**
 
 
-Dopo i passaggi precedenti, lo stile originario del layer di copertura del suolo sarà stato rimosso. Per recuperarlo, è possibile copiare lo stile di un altro layer. Per fare ciò, fare clic con il pulsante destro del mouse sul layer da cui si desidera prendere lo stile (ovvero “U2018_CLC2018_V2020_20u1”) **(1)** (:numref:`5.1.2.6`) , selezionare **Style (2)** , **Copy Style (3)** e fare clic su **All Style Categories (4)** , come mostrato in (Fig. 5.1.2.2.2b).
+Dopo i passaggi precedenti, lo stile originario del layer di copertura del suolo sarà stato rimosso. Per recuperarlo, è possibile copiare lo stile di un altro layer. Per fare ciò, fare clic con il pulsante destro del mouse sul layer da cui si desidera prendere lo stile (ovvero “U2018_CLC2018_V2020_20u1”) **(1)** (:numref:`5.1.2.6`) , selezionare **Style (2)** , **Copy Style (3)** e fare clic su **All Style Categories (4)** .
 
 
 .. _5.1.2.6:
@@ -378,7 +378,8 @@ Ora bisogna incollare lo stile appena copiato sul layer ritagliato (:numref:`5.1
    -- Incollare la simbologia
 
 
-**Save Layer**
+**Salvare un Layer**
+
 Quando è stato ritagliato il layer, non è stato salvato in locale, come mostra l’icona dei livelli temporanei che appare a sinistra del nome del layer (:numref:`5.1.2.8`) . Dato che il layer è temporaneo, andrà perso una volta chiuso QGIS. Questa funzionalità può risultare molto utile nel caso in cui non si abbia più bisogno di utilizzare il layer, tuttavia non è questo il caso. Per salvare il layer ritagliato, fare clic con il tasto destro su di esso **(1)** , **Export (2)** , **Save As… (3)** . Ora procedere scegliendo dove salvare il layer e dandogli un nome **(4)** ; in questa lezione verrà chiamato “LC_UTM_Clipped”. Una volta terminato, fare clic su **OK (5)** .
 
 

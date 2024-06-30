@@ -65,7 +65,8 @@ Controlla http://thetruesize.com !
 
    -- Deformazione dell’area della Groenlandia nel caso di differenti proiezioni cartografiche. Sorgente:  https://www.axismaps.com  
 
-**Cataloghi digitali **
+**Cataloghi digitali**
+
 Molti sistemi di riferimento delle coordinate e proiezioni sono stati sviluppati e i GIS consentono di convertire set di dati spaziali tra qualsiasi sistema di riferimento delle coordinate e proiezioni. I cataloghi digitali che contengono parametri codificati (come unità, datum e formule di proiezione) dei diversi CRS sono di primaria importanza per convertire in modo sicuro i dati da un CRS a un altro in modo automatico utilizzando il software GIS. 
 Il catalogo più popolare è il Geodetic Parameter Dataset del Gruppo di monitoraggio petrolifero europeo (EPSG), che è un database di informazioni sui CRS gestito dall'Associazione Internazionale dei Produttori di Petrolio e Gas. Ogni CRS ha un identificatore univoco (per esempio, il codice EPSG del WGS84 è 4326). Per ulteriori informazioni puoi visitare l' `EPSG <https://epsg.io/>`_ .
 

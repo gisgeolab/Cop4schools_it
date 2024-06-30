@@ -1,11 +1,11 @@
 .. _7.1:
 
 
-Classi di copertura del suolo maggiormente colpite dalle alluvioni
+Classi di copertura del suolo maggiormente colpite dall'alluvione
 =====================================================================
 
 
-In questa lezione è necessario importare in QGIS i seguenti layer, calcolati nella :ref:`lecture 5 <5.1>`:
+In questa lezione è necessario importare in QGIS i seguenti layer, calcolati nella :ref:`lezione 5 <5.1>`:
 
 
 + LC_UTM_Clipped
