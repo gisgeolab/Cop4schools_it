@@ -1,0 +1,101 @@
+.. _8.2:
+
+
+Numero di persone colpite dall’ alluvione
+==========================================
+
+
+Il modello che verrà utilizato è riportato in :numref:`8.2.1` .
+
+
+.. _8.2.1:
+
+
+.. figure:: /img/8/8.2.1.png
+   :align: center
+
+
+   -- Model Designer - modello finale
+
+
+Il primo passo quando si crea un modello è impostare i layer di input (:numref:`8.2.2`) . In questo caso si utilizzeranno il Population Raster Dataset (“Pop_UTM_Clipped”) **(1)** e il layer con l'area allagata (“ObservedEvent_UTM”) **(2)**. Entrambi gli input sono stati impostati come **Mandatory**.
+
+
+.. _8.2.2:
+
+
+.. figure:: /img/8/8.2.2.png
+   :align: center
+
+
+   -- Model Designer - layer in input
+
+
+Il prossimo passo (:numref:`8.2.3`) consiste nell'algoritmo di correzione delle geometrie. Si può notare che l'input di questo blocco è collegato al layer dell'area allagata, questo indicherà che la correzione della geometria è applicata su quel dato. L’algoritmo di correzione delle geometrie **(1)** viene utilizzato per riparare problemi o errori che possono emergere quando si lavora con dati vettoriali, soprattutto quando vengono applicate procedure di conversione o digitalizzazione.
+
+
+.. _8.2.3:
+
+
+.. figure:: /img/8/8.2.3.png
+   :align: center
+
+
+   -- Model Designer - correzione delle geometrie
+
+
+Il passaggio successivo è illustrato in (:numref:`8.2.4`).  Inizialmente verrà utilizzato lo strumento **Clip raster by mask layer (1)** al fine di ridurre il carico computazionale delle operazioni successive. Come si può vedere l'input di questo blocco è composto dal layer della popolazione, che è il layer che verrà tagliato, e dal layer dell'area allagata con le geometrie corrette. Come secondo passo il layer raster ottenuto verrà convertito in un formato vettoriale **(2)** , con questa procedura ogni cella del raster diventerà un poligono. In questa procedura verrà aggiunta una colonna per mantenere le informazioni (il numero di persone in quella cella) riguardanti quella cella.
+
+
+.. _8.2.4:
+
+
+.. figure:: /img/8/8.2.4.png
+   :align: center
+
+
+   -- Model Designer - Ritagliare e Poligonizzare
+
+
+Nella (:numref:`8.2.5`) viene mostrato il passaggio successivo. Questo passaggio prevede il clipping del layer popolazione convertito in vettore sull'area allagata **(1)** .
+
+
+.. _8.2.5:
+
+
+.. figure:: /img/8/8.2.5.png
+   :align: center
+
+
+
+
+   -- Model Designer - Ritagliare
+
+
+L'ultimo passaggio è illustrato in (:numref:`8.2.6`) e coinvolge la funzione **Aggregate (1)**. Questo algoritmo combina elementi sulla base di una relazione spaziale o di un altro attributo, in questo caso l'algoritmo Aggrega è utilizzato per aggregare tutti gli elementi del layer poiché l'input di questo blocco è composto da un layer vettoriale con solo il numero della popolazione. Infine, l'output del modello è il layer “Affected_Population”.
+
+
+.. _8.2.6:
+
+
+.. figure:: /img/8/8.2.6.png
+   :align: center
+
+
+   -- Model Designer - Aggregare la popolazione e calcolarne la somma
+
+
+Fare clic sul pulsante verde per eseguire l'algoritmo **(1)** (:numref:`8.2.7`) . Verrà chiesto di scegliere il layer che rappresenterà l'input al modello. Impostare il campo Flooded_area come "ObservedEvent_UTM" **(2)** e il campo Population Raster Dataset come "Pop_UTM_Clipped" **(3)**. Una volta terminato, fare clic su **Run (4)**.
+
+
+.. _8.2.7:
+
+
+.. figure:: /img/8/8.2.7.png
+   :align: center
+
+
+   -- Model Designer - Eseguire il modello
+
+
+I risultati ottenuti mostrano che nell'evento alluvionale sono state coinvolte 823 persone.

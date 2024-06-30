@@ -1,0 +1,107 @@
+.. _1.1:
+
+Che cosa sono i Sistemi Informativi Geografici (GIS)?
+======================================================
+
+Un sistema informativo geografico (GIS) è un sistema che può essere utilizzato per analizzare, manipolare, integrare e mappare diversi tipi di dati. Attraverso di esso, è anche possibile gestire dati georeferenziati. I GIS sono utilizzati per una vasta gamma di applicazioni che spaziano dalla visualizzazione di mappe della biodiversità degli uccelli utilizzando dati raccolti attraverso la citizen science al monitoraggio di un evento di alluvione. "Un GIS è un sistema integrato di hardware, software e personale specializzato che collega dati topografici, demografici, di utilità, di impianto, di immagini e di altre risorse che sono georeferenziate" NASA (National Aeronautics and Space Administration degli Stati Uniti). 
+I GIS sono composti da diversi elementi: (:numref:`1.1.1`):
+
++ Dati: Informazioni digitali o analogiche che collegano attributi con posizioni geografiche
++ Metodi: Modelli matematici e tecniche analitiche per manipolare dati spaziali
++ Software: Istruzioni scritte (codice sorgente) che possono essere lette dai computer per implementare metodi
++ Hardware: Attrezzature per supportare le attività necessarie per la raccolta, la memorizzazione, l'elaborazione, l'analisi e la visualizzazione dei dati spaziali
++ Persone: Professionisti GIS formati e utenti finali
++ Rete: Fornisce connessioni tra tutti i componenti GIS
+
+.. _1.1.1:
+
+.. figure:: /img/1/1.1.1.png
+   :align: center
+
+   -- Le component di un GIS
+
+La prima raccomandazione per gli utenti principianti per imparare i GIS è attraverso le applicazioni desktop GIS. I desktop GIS sono applicazioni software, che girano su workstation e laptop, che permettono agli utenti di accedere alle informazioni utilizzando la logica e i metodi spaziali, di modificare o creare dati spaziali da zero e di visualizzare i risultati come una mappa. Forniscono anche interfacce grafiche per l'utente e facilitano la cooperazione tra utenti attraverso l'adozione di formati standard (scambio di file di dati spaziali ma anche progetti di mappatura completi e procedure di analisi). Offrono inoltre supporto alla connessione di rete, consentendo l'accesso a risorse GIS online. Esistono molti modelli di sviluppo e distribuzione del software come freeware, shareware, FOSS, ecc. ed è fondamentale conoscere la differenza tra di essi. 
+Qui vedremo due dei più comuni:
+
++ Un software GIS proprietario è protetto da copyright e ha limiti contro la distribuzione e la modifica imposti dal suo proprietario. In genere, l'uso di software GIS proprietario è consentito agli utenti finali con licenze a pagamento.
++ Un GIS FOSS (free and open-source software) è rilasciato sotto una licenza in cui il titolare del copyright concede agli utenti i diritti di utilizzare, studiare, modificare e distribuire il software a chiunque e per qualsiasi scopo. Questi diritti sono garantiti a tutti gli utenti gratuitamente.
+
+.. _1.1.2:
+
+.. figure:: /img/1/1.1.2.png
+   :align: center
+
+   -- Software GIS proprietari (a sinistra)  e a codice aperto (a destra
+
+.. _CRF:
+
+Sistema di riferimento delle coordinate
+------------------------------------------
+La posizione geografica è l'elemento che distingue i dati spaziali da tutti gli altri tipi di informazioni, quindi i metodi per specificare le posizioni sulla superficie terrestre sono essenziali per i GIS. 
+Nel corso dei secoli sono state sviluppate molte tecniche per definire le posizioni, ma solo grazie ai GIS è diventato possibile passare automaticamente da una all'altra. Per capire i GIS e i dati spaziali dobbiamo avere in mente cos'è un sistema di riferimento delle coordinate (detto CRS dall’inglese Coordinate Reference System) e come vengono stabiliti per la Terra. Per definire cosa è un sistema di riferimento delle coordinate dobbiamo prima parlare di Coordinate e Datum.
+Le coordinate sono una sequenza di valori che rappresentano una posizione e costituiscono la base di un sistema di coordinate che data da un insieme di assi delle coordinate con specificata l'unità di misura. 
+Un datum è un modello matematico che specifica la relazione tra un sistema di coordinate e il modello che rappresenta la superficie terrestre. La migliore descrizione della forma della Terra è fornita dal geoide che risulta da complessi modelli fisici e descrive la superficie equipotenziale del campo della gravità che coincide con la superficie media degli oceani e la sua estensione sotto i continenti. Per le applicazioni GIS tradizionali, il geoide può essere approssimato utilizzando una sfera o, meglio, un ellissoide di rotazione.
+L'ellissoide noto come WGS84 (il World Geodetic System del 1984) è attualmente il datum geodetico globale più ampiamente accettato ed è quello utilizzato, ad esempio, dal Sistema di Posizionamento Globale (GPS, che è l’acronimo inglese per Global Positioning System). Quando un sistema di coordinate è integrato con un datum, otteniamo un sistema di riferimento delle coordinate (CRS).  
+Ogni punto nel sistema di coordinate geografiche ha due valori di coordinate: latitudine (φ) e longitudine (𝜆) (:numref:`1.1.1.1`)  :
+la latitudine è l'angolo formato dall'intersezione di una linea perpendicolare alla superficie di riferimento della Terra nel punto, e l'Equatore. Le linee di latitudine costante sono anche chiamate "paralleli". La longitudine è l'angolo tra il piano che attraversa i poli Nord e Sud e un piano di riferimento. Le linee di longitudine costante sono chiamate "meridiani" e il piano di riferimento è identificato dal meridiano primo (riconosciuto con il meridiano che passa per Greenwich, UK).
+
+.. _1.1.1.1:
+
+.. figure:: /img/1/1.1.1.1.png
+   :align: center
+
+   -- Sistema di coordinate geografiche. Le coordinate geografiche di un punto p sono definite dagli angoli  φ (latitudine) e λ (longitudine)
+
+Proiezioni
+***********
+Definiamo una proiezione come un metodo utilizzato per tradurre dati da una superficie tridimensionale della Terra a una rappresentazione 2D. Questo processo porta con sé alcune distorsioni poiché non c'è modo di mantenere contemporaneamente la scala delle aree, delle distanze, degli angoli e delle direzioni. 
+Esistono molte proiezioni (:numref:`1.1.1.2`) ma di solito, quando guardiamo le mappe del mondo, entriamo in contatto con mappe che utilizzano le proiezioni di Mercatore. Questo tipo di proiezione è particolarmente utilizzato per le carte nautiche poiché le linee rette disegnate su di essa sono linee di angolo rispetto al nord (azimuth) costante. La proiezione di Mercatore è anche una proiezione conforme, il che significa che gli angoli e le forme sono mantenuti a discapito della scala dell'area.
+Controlla http://thetruesize.com ! 
+
+.. _1.1.1.2:
+
+.. figure:: /img/1/1.1.1.2.png
+   :align: center
+
+   -- Deformazione dell’area della Groenlandia nel caso di differenti proiezioni cartografiche. Sorgente:  https://www.axismaps.com  
+
+**Cataloghi digitali**
+
+Molti sistemi di riferimento delle coordinate e proiezioni sono stati sviluppati e i GIS consentono di convertire set di dati spaziali tra qualsiasi sistema di riferimento delle coordinate e proiezioni. I cataloghi digitali che contengono parametri codificati (come unità, datum e formule di proiezione) dei diversi CRS sono di primaria importanza per convertire in modo sicuro i dati da un CRS a un altro in modo automatico utilizzando il software GIS. 
+Il catalogo più popolare è il Geodetic Parameter Dataset del Gruppo di monitoraggio petrolifero europeo (EPSG), che è un database di informazioni sui CRS gestito dall'Associazione Internazionale dei Produttori di Petrolio e Gas. Ogni CRS ha un identificatore univoco (per esempio, il codice EPSG del WGS84 è 4326). Per ulteriori informazioni puoi visitare l' `EPSG <https://epsg.io/>`_ .
+
+Dati GIS
+--------
+I dati GIS possono essere raccolti in diversi modi come digitalizzazione delle mappe, rilevamento diretto, rilevamento aereo e misurazioni satellitari, ognuno con i suoi pro e contro. I modelli vengono quindi utilizzati per codificare informazioni geografiche in un ambiente informatico. I modelli di dati GIS sono un insieme di costrutti e astrazioni per descrivere e rappresentare entità geografiche in un sistema digitale, rappresentano entità geografiche mediante oggetti discreti (modelli vettoriali) o superfici continue (modelli raster) e adattano attributi numerici e/o testuali con coordinate in file informatici. La struttura di questi modelli è indipendente da elementi dati specifici e, nella maggior parte dei casi, dall'applicazione GIS che viene utilizzata per manipolarli. Inoltre, i modelli di dati GIS sono spesso interscambiabili in modo che la stessa entità geografica o fenomeno possa essere rappresentato da modelli diversi, vedremo esempi di interscambiabilità nei capitoli successivi.
+
+..note:: Il modello di dati giusto da utilizzare dipende strettamente dall'applicazione specifica (nessun singolo modello di dati è il migliore per tutte le circostanze)
+
+I due principali tipi di dati spaziali utilizzati nei GIS sono rappresentati da dati Raster e Vettoriali.
+
+.. _Raster Data:
+
+Dati Raster
+***********
+
+Attraverso i dati Raster rappresentiamo il mondo come una griglia o matrice regolare di pixel (:numref:`1.1.2.1`). Ogni posizione della cella è definita dal tipo di sistema di coordinate raster, dalle coordinate dell'origine del raster, che di solito è posizionato nell'angolo superiore o inferiore sinistro, e dalla dimensione della cella. La risoluzione di un raster determina il livello di dettaglio che può catturare. Con questa rappresentazione possiamo rappresentare sia fenomeni discreti come coperture terrestri o confini amministrativi che continui, come altezze del terreno, temperatura, classe di copertura del suolo, tipo di suolo, ecc. Le operazioni sui dati raster sono (in generale) computazionalmente veloci grazie al formato di matrice regolare che può essere facilmente gestito dal software GIS, ed è per questo che i dati raster sono particolarmente adatti per la mappatura di vaste porzioni della superficie terrestre.
+
+.. _1.1.2.1:
+
+.. figure:: /img/1/1.1.2.1.png
+   :align: center
+
+   -- Dati Raster
+
+Vector Data
+***********
+
+Con una rappresentazione vettoriale, le caratteristiche del mondo reale sono rappresentate utilizzando tre elementi geometrici, punti, linee e poligoni (:numref:`1.1.2.2`). I punti definiscono la base di questa rappresentazione e la loro posizione è data da un insieme di coordinate, mentre le linee e i poligoni consistono di punti interconnessi. Questi tre elementi possono rappresentare diverse caratteristiche del mondo reale a seconda della scala della mappa, ad esempio una strada può essere rappresentata con una linea in una mappa di piccola scala o con un poligono in una mappa di grande scala. Di solito i dati vettoriali sono forniti con una tabella attributi in cui ogni attributo di uno specifico elemento, come testo, date e orari, è memorizzato in una colonna diversa. I dati vettoriali forniscono una rappresentazione dettagliata e scalabile delle entità geografiche con quasi nessuna perdita di precisione nella rappresentazione poiché i confini delle entità sono delineati direttamente dai loro valori di coordinate. 
+I GIS forniscono molte funzionalità di disegno per modificare manualmente e stilizzare i dati vettoriali sulle mappe. 
+Più alto è il numero di vertici e attributi, migliore è il livello di dettaglio fornito dai dati vettoriali, mentre aumenta la dimensione del file dati. Le operazioni matematiche sui dati vettoriali sono generalmente computazionalmente più lente rispetto ai dati raster a causa del formato di oggetto sparso o irregolare che deve essere gestito dal software GIS, ed è per questo che i dati vettoriali sono particolarmente adatti per applicazioni cartografiche ad alto dettaglio focalizzate su un numero finito di oggetti discreti o che coinvolgono aree geografiche di estensione limitata.
+
+.. _1.1.2.2:
+
+.. figure:: /img/1/1.1.2.2.png
+   :align: center
+
+   -- Dato Vettoriale

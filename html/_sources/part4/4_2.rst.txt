@@ -1,0 +1,163 @@
+.. _4.2:
+
+
+Immagini Sentinel-2 in QGIS
+============================
+
+
+.. _Import Sentinel-2 images:
+
+
+Importare immagini Sentinel-2 in QGIS
+-------------------------------------
+
+
+Per importare i dati, seguire i passaggi mostrati in :numref:'4.2.1.1' . Cliccare su **Layer (1)**, **Add Layer (2)** e scegliere **Add Raster Layer (3)**. Dal **Data Source Manager** faire clic sul pulsante con tre punti **(4)**, cercare la cartella in cui è stato scaricato il prodotto corrispondente alla data: 28-9-2020 (precedente all'evento) e aggiungerlo. Ora, fare clic su **Add (5)** e poi su **Close (6)**.
+
+
+.. _4.2.1.1:
+
+
+.. figure:: /img/4/4.2.1.1.png
+   :align: center
+
+
+   -- Importare immagini Sentinel-2 in QGIS
+
+
+.. _Calculate indices:
+
+
+Calcolo degli indici in QGIS
+----------------------------
+
+
+Calcolare l'indice NDWI utilizzando QGIS tenendo presente che per semplificare il calcolo non applicheremo alcuna tecnica di pre-elaborazione. Unire tutte le nostre diverse bande in un unico raster virtuale, per farlo cliccare su **Raster (1)** (:numref:'4.2.2.1') , **Miscellaneous (2)** e **Build Virtual Raster (3)**
+
+
+.. _4.2.2.1:
+
+
+.. figure:: /img/4/4.2.2.1.png
+   :align: center
+
+
+   -- Creazione di un Raster Virtuale pt.1
+
+
+La :numref:'4.2.2.2' mostra il menu del **Build Virtual Raster**. Scegliere la risoluzione "Massima" dal menu a discesa **(1)** e selezionare la casella chiamata: **Place each input file into a separate band (2)**. Selezionare le bande di interesse, cliccare sull'icona con i tre puntini **(3)**. Verrà visualizzato un nuovo menu **(4)**, da lì selezionare la casella delle bande che si vogliono aggiungere **(5)**, una volta terminato fare clic su **ok (6)**. Ora è possibile eseguire l’algoritmo, ma prima sarà necessario dare un nome al  file, nominarlo: “Pre.vrt” **(7)** (se non si sceglie alcun nome, il software chiamerà il file: “VIRTUAL”), una volta fatto cliccare su **Run (8)**. Al termine dell'elaborazione è possibile chiudere la finestra.
+
+
+.. _4.2.2.2:
+
+
+.. figure:: /img/4/4.2.2.2.png
+   :align: center
+
+
+   -- Creazione di un Raster Virtuale pt.2
+
+
+Ora calcolare gli indici (:numref:'4.2.2.3') , fare clic su **Raster (1)**, **Raster Calculator (2)**. Impostare la posizione in cui salvare l’output facendo clic sul pulsante con tre punti **(3)** e scegliere il nome del file (nome suggerito: “NDWI_pre"). All'interno delle Bande Raster è possibilevedere tutte le bande che compongono il raster virtuale **(4)**. Scrivere ora l'equazione per calcolare l’indice, in questo caso calcolare l'NDWI, come già visto nella :ref:'lezione 2 <2.1>' , l'indice NDWI è calcolato come: (GREEN - NIR) / (GREEN + NIR) le cui bande di sentinel 2 corrispondenti sono: (B03 - B08) / (B03 + B08). Per scrivere questa formula cliccare sulle bande **(4)** e sui pulsanti corrispondenti agli operatori **(5)**, la formula verrà scritta nella casella **Raster Calculator Expression (6)**. Se raster virtuale è stato chiamato come suggerito sopra (“Pre”),copiare la formula: “( "Pre@3" - "Pre@8" ) / ( "Pre@3" + "Pre@8" )”  all'interno dello spazio dedicato alle espressioni del Raster Calculator.
+
+
+.. _4.2.2.3:
+
+
+.. figure:: /img/4/4.2.2.3.png
+   :align: center
+
+
+   -- Calcola l'indice NDWI in QGIS
+
+
+Ripetere tutti i passaggi del capitolo :ref:'capitolo 4.2.1 <Import Sentinel-2 images>' e :ref:'capitolo 4.2.2 <Calculate indices>' ma, questa volta, calcolare l'NDWI utilizzando i dati corrispondenti alla data: 03-10-2020 (dopo l'evento), suggeriamo di chiamare il raster virtuale come “Post” in modo da poter copiare la formula: “( "Post@3" - "Post@8" ) / ( "Post@3" + "Post@8" )" all'interno dello spazio dedicato alle espressioni del Raster Calculator.
+
+
+.. _Identification of zones:
+
+
+Individuazione delle zone con maggiore saturazione idrica
+*********************************************************
+
+
+Per identificare le zone con maggiore saturazione idrica è possibile , in modo semplificato, osservare la differenza tra l’NDWI pre e post evento. Dalla (:numref:'4.2.2.4') , è possibile osservare la scala di valori assegnati ai diversi colori, sia negli eventi pre che post NDWI **(1)**, notare che i valori sono diversi, questo non sarà un confronto corretto. Per risolvere questo problema è possibile cambiarli, fare clic con il tasto destro sull’ indice(2), cliccare su **Properties (3)** e su **Symbology (4)**. Cambiare il valore **Min** su "-1" e il valore **Max** su “+1” **(5)** confermare le scelte cliccando su **ok (6)**.
+
+
+.. _4.2.2.4:
+
+
+.. figure:: /img/4/4.2.2.4.png
+   :align: center
+
+
+   -- Correzione dell'intervallo di valori dell'NDWI
+
+
+In :numref:'4.2.2.5' è possibile apprezzare la differenza fra i due NDWI:
+
+
+.. _4.2.2.5:
+
+
+.. figure:: /img/4/4.2.2.5.png
+   :align: center
+
+
+   -- Individuare le zone con maggiore saturazione idrica
+
+
+Visualizzare raster in QGIS
+-------------------------------
+
+
+Singleband gray
+***************
+
+
+Precedentemente è stata mostrata la visualizzazione tramite Singleband gray ( :ref:'capitolo 4.2.2.1 <Identification of zones>' ) con questo tipo di visualizzazione è possibile renderizzare un layer utilizzando una singola banda. La prima cosa da fare è impostare **Color gradient** da “Black to White” a “White to Black” **(1)** (:numref:'4.2.3.1') .
+Come già visto è possibile modificare i valori di **Min** e **Max** . E’ possibile anche esaltare le differenze, all'interno dei valori di temperatura del raster, modificando i valori **Contrast Enhancement (3)**.
+
+
+.. _4.2.3.1:
+
+
+.. figure:: /img/4/4.2.3.1.png
+   :align: center
+
+
+   -- Singleband gray
+
+
+Singleband-pseudocolor
+**********************
+
+
+Ora è il turno del Singleband pseudocolor (:numref:'4.2.3.2') . Dal menù a tendina selezionare “Singleband pseudocolor” **Render Type (1)**, impostare **Min** e **Max** rispettivamente a “-1” e “+1” **(2)**. Ora cambiare la Color ramp, facendo clic sul simbolo del triangolo rivolto verso il basso **(3)**, invertire la scala di colori corrente **(4)** oppure selezionarne una nuova selezionando: **All Color Ramps (5)** . Selezionare “GnBu” **(6)**. E’ possibile modificare la scala di colori selezionata cliccandoci sopra **(7)**. Lasciare **Mode** come continuo **(8)**, il che bloccherà automaticamente il numero di classi **(9)**, utilizzando altre modalità è invece possibile cambiarli. E’ possibile vedere un'anteprima dei risultati nella sezione centrale **(10)**, una volta terminato, cliccare su **ok (11)**.
+
+
+.. _4.2.3.2:
+
+
+.. figure:: /img/4/4.2.3.2.png
+   :align: center
+
+
+   -- Singleband-pseudocolor
+
+
+Paletted / unique values
+************************
+
+
+Questo tipo di visualizzazione (:numref:'4.2.3.3') consiste nel rappresentare ogni diverso valore del raster con un colore diverso ed è spesso utilizzata per la rappresentazione della copertura del suolo. Selezionare "Paletted / Unique values" come **Render Type (1)**. per quanto riguarda la scala dei colori, cambiarla cliccando su **Color ramp (2)** (come impostazione predefinita, il software assegna un colore casuale a ciascun valore univoco). Per generare le classi, cliccare su **Classify (3)**, questa procedura potrebbe richiedere alcuni secondi a seconda del numero di valori univoci. Questo tipo di rappresentazione non è particolarmente adatta ai dati utilizzati, per cui cliccare su **Cancel (4)**.
+
+
+.. _4.2.3.3:
+
+
+.. figure:: /img/4/4.2.3.3.png
+   :align: center
+
+
+   -- Paletted-unique values

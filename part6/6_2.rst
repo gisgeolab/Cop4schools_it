@@ -1,0 +1,16 @@
+.. _6.2:
+
+Importare dati GHSL in QGIS
+============================
+
+.. Importare dati in QGIS
+.. -------------------------
+
+Importare i dati come mostrato in :numref:`6.2.1.1` , cliccare su **Layer (1)** , **Add Layer (2)** , e **Add Raster Layer (3)** . Dal Data Source Manager cliccare sull'icona a tre punti (4) e trovare la cartella in cui hai salvato i tuoi dati, una volta fatto confermare le scelte cliccando su **Add (5)** .
+
+.. _6.2.1.1:
+
+.. figure:: /img/6/6.2.1.1.png
+   :align: center
+
+   -- Importare layer GHSL in QGIS

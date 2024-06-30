@@ -1,0 +1,39 @@
+.. _7.1:
+
+
+Classi di copertura del suolo maggiormente colpite dalle alluvioni
+=====================================================================
+
+
+In questa lezione è necessario importare in QGIS i seguenti layer, calcolati nella :ref:`lecture 5 <5.1>`:
+
+
++ LC_UTM_Clipped
++ ObservedEvent_UTM
+
+
+Nella (:numref:`7.1.1`) è possibile vedere le classi tematiche che compongono il layer “LC_UTM_Clipped”. Se il layer caricato su QGIS ha lo stile di livello predefinito, è possibile modificarlo e aggiungere lo stile mostrato nella figura sottostante, seguendo i passaggi indicati nel :ref:`capitolo 5.1.2.1 <5.1.2.1>`.
+
+
+.. _7.1.1:
+
+
+.. figure:: /img/7/7.1.1.png
+   :align: center
+
+
+   -- Classi tematiche CLC
+
+
+Per avere informazioni sulle classi di copertura del suolo maggiormente colpite dall’evento alluvionale, bisogna attivare entrambi i layer importati su QGIS. Si può notare che il layer delle aree allagate si sovrappone a quello della copertura del suolo. Inoltre, sembra che la sovrapposizione avvenga soprattutto nell’area con la classe tematica di copertura del suolo più diffusa, ma qual è questa classe? Per rispondere a questa domanda in modo semplice, è possibile usare lo strumento **Identify Features** (:numref:`7.1.2`) .
+Fare clic sul layer di interesse, vale a dire “LC_UTM_Clipped" **(1)**. Cliccare su **Identify Features (2)**, quindi su qualsiasi punto dell'area con la copertura del suolo più comune (Colore Hex: #e6e600 / RGB: 230-230-0) **(3)**: la selezione verrà evidenziata in rosso. Ora si può leggere il valore del campo **Band 1** nel menu **Identify Results (4)**. Il valore ottenuto è pari a 14 che corrisponde alla classe Risaia. E’ possibile verificarlo guardando alla legenda del layer stesso, nella simbologia.
+
+
+.. _7.1.2:
+
+
+.. figure:: /img/7/7.1.2.png
+   :align: center
+
+
+   -- Strumento Identify Features in QGIS

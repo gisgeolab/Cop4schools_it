@@ -1,0 +1,226 @@
+.. _4.1:
+
+
+Come scaricare i dati su Copernicus browser
+================================================
+
+
+Perché Sentinel-2?
+-------------------
+
+
+La missione Sentinel-2 fa parte del programma Copernicus attraverso il quale sono stati lanciati due satelliti con l'obiettivo di fornire immagini multispettrali ad alta risoluzione della superficie terrestre. I due satelliti sono posti a 180° l'uno dall'altro su un'orbita polare eliosincrona a circa 800 km dalla terra offrendo un tempo di rivisitazione della stessa zona all'equatore di 10 giorni. In questo modo la costellazione composta dai due satelliti consente un tempo di rivisitazione di 5 giorni, un tempo di rivisitazione basso è fondamentale quando si cerca di monitorare fenomeni che cambiano nel tempo come un evento di inondazione o un incendio.
+Le immagini catturate da Sentinel-2 sono composte da 13 bande spettrali alcune delle quali rientrano nel campo del visibile mentre altre sono nell'infrarosso. Con questa composizione è possibile analizzare cose come la copertura del suolo, la quantità e qualità dell'acqua, la salute della vegetazione, la composizione del suolo ecc. La risoluzione spaziale di Sentinel 2 varia dai 10 ai 60 m a seconda della banda a cui ci riferiamo, in questo modo è possibile recuperare osservazioni dettagliate
+Parlando di copertura, i satelliti Sentinel-2 offrono una ampiezza di scansione di 290 km; si intende l'ampiezza dell'area terrestre che questi satelliti riescono a catturare passando una sola volta su un'area molto evidente consentendo di ridurre il mosaicatura dei dati. Un'altra caratteristica importante dei dati acquisiti tramite Sentinel-2 è che sono accessibili gratuitamente e disponibili al pubblico.
+
+
+Cerca immagini Sentinel-2 in Copernicus Browser
+--------------------------------------------------
+
+
+Per procedere in questa lezione è necessario possedere dati EMS in formato vettoriale: “EMSR468_AOI05_DEL_PRODUCT_areaOFInterestA_r1_v1.json” scaricati nella  :ref:`lezione 3 <3.1>` .
+Prima di sfogliare l' archivio delle immagini, è necessario accedere al proprio account di `Copernicus Browser <https://browser.dataspace.copernicus.eu/>`_ (:numref:`4.1.2.1`) .
+Cliccare su Login **(1)** quindi compilare il campo Email **(2)** e Password **(3)** con le credenziali che utilizzate per registrarsi nel :ref:`capitolo 2.1.2.1 <Registration>` della seconda lezione. Infine, cliccare su **LOGIN (4)**. Se tutto il procedimento risulta corretto il nome utente apparirà nell'angolo in alto a destra della barra laterale.
+
+
+.. _4.1.2.1:
+
+
+.. figure:: /img/4/4.1.2.1.png
+   :align: center
+
+   -- Accedere a Copernicus Browser
+
+Una volta effettuato l'accesso; verrà sfruttata la flessibilità di Copernicus Browser per trovare i dati di interesse e caricare l'area di interesse (AOI). Per fare ciò, impostare i seguenti parametri nella scheda **SEARCH** (:numref:`4.1.2.2`) :
+
+
++ selezionare la casella L2A **(1)**;
++ impostare la copertura nuvolosa al 40% **(2)**;
++ impostare **TIME RANGE** to 28-09-2020 to 04-10-2020 (dd-mm-yyyy), in questo caso non è necessario modificare hours and minutes range **(3)**.
+
+Questa procedura restringe il campo dei dati che verranno mostrati. Date le dimensioni dell’intero dataset di Copernicus Browser sarebbe stato impossibile trovare i dati che ci interessano senza questa procedura. Successivamente impostare l'area di interesse cliccando su **(4)** e scegliere il metodo "Upload" **(5)**. Ciò consentirà di scaricare i dati relativi ad un'area limitata riducendo lo spazio necessario per memorizzarli. A questo punto cliccare sull'area delimitata dalla linea tratteggiata grigia **(6)** . Sarà ora necessario sfogliare i file salvati cercando:  “EMSR468_AOI05_DEL_PRODUCT_areaOFInterestA_r1_v1.json” **(7)** (questo file è stato scaricato nella :ref:`lezione 2 <2.1>` . Il formato .json (JavaScript Object Notation) è un formato flessibile e leggero utilizzato per memorizzare varie informazioni che possono essere facilmente convertite in oggetti JavaScript. Una volta caricata l'area cliccare su **Open (8)**.
+In alternativa, è possibile trascinare e rilasciare il file nell'area designata **(6)**.
+
+.. note:: è possibile leggere ulteriori informazioni sul formato JavaScript Object Notation `qui <https://www.w3schools.com/js/js_json_intro.asp>`_ .
+
+.. _4.1.2.2:
+
+
+.. figure:: /img/4/4.1.2.2.png
+   :align: center
+
+   -- Impostare l'Area di interesse e i parametri di ricerca
+
+
+Una volta fatto ciò, il poligono blu evidenziato che rappresenta l'area di interesse verrà mostrato come in :numref:`4.1.2.3` . Ora fare clic su **Search (1)**.
+
+.. _4.1.2.3:
+
+
+.. figure:: /img/4/4.1.2.3.png
+   :align: center
+
+
+   -- Area di interesse
+
+
+Visualizzare immagini di Sentinel-2 in Copernicus Browser
+---------------------------------------------------------
+
+Ora verranno mostratii riquadri immagine che coprono l'AOI (:numref:`4.1.3.1`) . E’ necessario cercare un prodotto che copra totalmente l'AOI caricata. Le caratteristiche del prodotto desiderato sono illustrate in (:numref:`4.1.3.2`) .
+E’ possibile selezionare il prodotto cliccando direttamente su **Visualize** dalla barra laterale **(1)** oppure selezionando il riquadro immagine che meglio copre AOI **(2)**  e, successivamente, cliccare su **Visualize (3)** all'interno della finestra che si aprirà.
+
+
+.. note::  Se l'area di interesse non è completamente ricoperta da una singola tessera è anche possibile scaricare più tessere e combinarle attraverso una procedura chiamata data mosaicking.
+
+.. _4.1.3.1:
+
+
+.. figure:: /img/4/4.1.3.1.png
+   :align: center
+
+
+   -- Visualizzare i riquadri per le immagini satellitari
+
+
+.. _4.1.3.2:
+
+
+.. figure:: /img/4/4.1.3.2.png
+   :align: center
+
+
+   -- Dettagli desiderati dell'immagine dell'evento post-alluvione a Vercelli
+
+
+Cambiare la visualizzazione predefinita da **True color** a **NDWI (1)** (:numref:`4.1.3.3`) ; quindi fare clic su **Add to (2)** e infine fare clic su **Add to Pins (3)**. Se tutto è stato fatto correttamente verrà visualizzata una notifica sopra l'icona **(4)** indicando che hai fermato un prodotto. Fare clic sull'icona della puntina **(4)**.
+
+
+.. _4.1.3.3:
+
+
+.. figure:: /img/4/4.1.3.3.png
+   :align: center
+
+
+   -- Visualizzare immagini satellitari successive all’evento in Copernicus Browser
+
+
+.. _Images Comparison:
+
+
+Confronto di immagini  in Copernicus Browser
+----------------------------------------------
+
+
+La seguente procedura consentirà un confronto tra due o più prodotti. Questa operazione può essere utile per capire se i prodotti considerati sono quelli che meglio si adattano alle esigenze dell’utente.
+Il confronto è già iniziato quando si è cliccato su **pins**. Come mostrato in :numref:`4.1.4.1` , cliccare su **(1)** per modificare il nome dell'immagine (è preferibile lasciarlo come predefinito). Cliccare invece sull'icona **(2)** e poi sull'icona **(3)** per aggiungere una descrizione al tuo prodotto.
+Ora inserire in **(4)** la data antecedente all'evento (corrispondente a **28-09-2020**).
+
+.. _4.1.4.1:
+
+
+.. figure:: /img/4/4.1.4.1.png
+   :align: center
+
+
+   --  Appuntare l'immagine Sentinel-2 post evento (28-09-2020)
+
+
+Assicurarsi di visualizzare l’NDWI e aggiungere questo nuovo prodotto al pannello pins come mostrato nel passaggio precedente e aprire il pannello pins **(1)**. (:numref:`4.1.4.2`)
+
+
+.. _4.1.4.2:
+
+
+.. figure:: /img/4/4.1.4.2.png
+   :align: center
+
+   -- Visualizzare immagini satellitari precedenti all’evento in Copernicus Browser
+
+
+Cliccare sull'icona **(1)** per entrambe le immagini (:numref:`4.1.4.3`) , per consentire il confronto delle immagini satellitari tramite **compare panel** . Per aprirlo cliccare sull'icona con le due frecce **(2)**.
+
+.. _4.1.4.3:
+
+
+.. figure:: /img/4/4.1.4.3.png
+   :align: center
+
+   -- Appuntare le immagini pre e post evento
+
+
+Come mostrato in :numref:`4.1.4.4` impostare **Effect (1)** al valore predefinito **Split** a **Opacity**, ora, utilizzando la **interactive bar (2)** è possibile diminuire e aumentare la trasparenza.
+
+.. note:: Usando **Split** l'opzione per la visualizzazione comparativa sarà consentito, tramite l'utilizzo della stessa **barra interattiva**, di nascondere e illustrare lo strato inferiore (come se si stesse girando la pagina di un libro da destra a sinistra).
+
+.. _4.1.4.4:
+
+
+.. figure:: /img/4/4.1.4.4.png
+   :align: center
+
+
+   -- Confronto NDWI di Vercelli in Copernicus Browser
+
+
+Evoluzione dell'area allagata “Timelapse” in Copernicus Browser
+----------------------------------------------------------------
+
+
+Che tipo di proprietà dell'immagine si ritiene abbia il ruolo principale rispetto al termine “evoluzione dell’alluvione”? Poiché il termine evoluzione è legato al tempo, la risposta migliore è Temporale.
+E’ possibile eseguire il confronto in Copernicus Browser nell' :ref:`ultima sezione <Images Comparison>` , ma non è sufficiente nel caso in cui si abbiano decine di immagini. Copernicus Browser fornisce la soluzione a questo caso (:numref:`4.1.5.1`), attraverso quello che viene chiamato Timelapse; per utilizzare questa funzionalità è necessario accedere al **Layers Panel** facendo clic sull'icona **(1)** quindi è necessario fare clic sul simbolo **Create time-lapse animation (2)**.
+
+.. _4.1.5.1:
+
+
+.. figure:: /img/4/4.1.5.1.png
+   :align: center
+
+
+   -- Attivare il Timelapse in Copernicus Browser
+
+
+.. warning:: Il time-lapse illustrerà l'ultima visualizzazione utilizzata. Assicurarsi di visualizzare l'NDWI prima di procedere.
+
+
+Verrà visualizzata una nuova finestra in cui è possibile visualizzare e scaricare l'animazione time-lapse. Qui (:numref:`4.1.5.2`) è necessario impostare alcuni parametri:
+
++ **Time range**: il periodo in cui si vuole rilevare l'evoluzione dell'area allagata. In questo caso impostarlo come: 2020-09-28   -   2020-10-03 **(1)**.
++ **Min. tile coverage**: quanto è la percentuale di copertura dell'area rispetto alla zona di interesse. Impostarlo al 100% **(2)**.
++ **Max. cloud coverage**: escludere le immagini con copertura nuvolosa inferiore al valore impostato. Impostare al 100% **(3)** per avere quante più immagini possibili, ne verranno rimosse alcune manualmente in seguito.
++ **Select 1 image per**: qui scegliere l'intervallo tra le immagini, lasciare la configurazione predefinita ovvero: giorno **(4)**.
+
+Ora è possibile deselezionare alcune immagini. Per questo esercizio, escludere la prima immagine poiché la nuvolosità è troppo elevata ed è quasi impossibile distinguere la zona di interesse; cliccare su **(5)** per deselezionare il prodotto corrispondente.
+Per visualizzare l'animazione time-lapse online, con la visualizzazione integrata fare clic su **(6)**. Per scaricare l'animazione cliccare su **Download (7)**.
+Una volta terminato, cliccare su **(8)** per chiudere questa finestra.
+
+.. _4.1.5.2:
+
+
+.. figure:: /img/4/4.1.5.2.png
+   :align: center
+
+
+   -- Visualizzare e scaricare il Timelapse
+
+
+Scaricare immagini Sentinel-2
+------------------------------
+
+
+Una volta chiuso il time-lapse cliccare su **(1)**, per scaricare l'immagine come mostrato in  :numref:`4.1.6.1` . Scegliere il pannello **Analytical (2)** per impostare il formato immagine su TIFF **(3)** (Tagged Image File Format). Il formato .tiff è un formato di file popolare utilizzato per archiviare dati raster, consente la compressione senza perdita di dati (non si verifica alcuna perdita nella qualità dell'immagine durante la compressione del file) e l'archiviazione di immagini con diverse profondità di colore.
+
+
+.. note::  sono disponibili ulteriori informazioni sul formato `qui <https://web.archive.org/web/20210108172855/https://www.adobe.io/open/standards/TIFF.html>`_ .
+
+Impostare la risoluzione dell'immagine a **HIGH (4)** e il sistema di coordinate come WGS84 **(5)**. A questo punto scegliere  livelli **(6)** e bande (per questa lezione selezionare tutte le bande) **(7)** che si desidera salvare, attivando/disattivando **Clip extra bands (8)** nell'immagine, verranno incluse solo le prime 3 bande. Una volta terminato, scaricare le immagini tramite il pulsante **Download (9)**.
+
+.. _4.1.6.1:
+
+
+.. figure:: /img/4/4.1.6.1.png
+   :align: center
+
+
+   -- Scaricare le immagini Sentinel-2 da Copernicus Browser

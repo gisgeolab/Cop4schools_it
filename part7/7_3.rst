@@ -1,0 +1,18 @@
+.. _7.3:
+
+
+Risultati ottenuti
+===================
+
+
+In base ai risultati mostrati in :numref:`7.3.1` si può dire che la classe più colpita (in termini di percentuale di superficie allagata) è rappresentata dalle “Risaie” (circa 58,2%), seguita da “Seminativi non irrigati” (15%), “Terreni occupati principalmente da agricoltura con aree significative di vegetazione naturale” (9,9%) e “Arbusto-bosco di transizione” (6,6%). Le percentuali più elevate rappresentano le coperture di suolo più vicine alle sponde del fiume. Man mano che ci si allontana dal fiume, è meno probabile che il territorio venga colpito da un evento di inondazione. Un’analisi delle zone critiche in cui le inondazioni sono state più gravi potrebbe essere utile per capire quali aree potrebbero essere più sicure di altre. È possibile notare che sulla sinistra idrografica del fiume Sesia le esondazioni non si sono estese così tanto come sulla sponda opposta; ciò può essere dovuto a molteplici fattori come ad esempio gli interventi di rinforzo sulle sponde dei fiumi in prossimità della città, le caratteristiche idrauliche del terreno, ecc.
+
+
+.. _7.3.1:
+
+
+.. figure:: /img/7/7.3.1.png
+   :align: center
+
+
+   -- Risultati
