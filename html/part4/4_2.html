@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>4.2. Immagini Sentinel-2 in QGIS &mdash; COPERNICUS4Schools  documentation</title>
-      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=8a25042d" />
+
+  
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -104,7 +106,7 @@
 <span id="id1"></span><h1><span class="section-number">4.2. </span>Immagini Sentinel-2 in QGIS<a class="headerlink" href="#immagini-sentinel-2-in-qgis" title="Link to this heading"></a></h1>
 <section id="importare-immagini-sentinel-2-in-qgis">
 <span id="import-sentinel-2-images"></span><h2><span class="section-number">4.2.1. </span>Importare immagini Sentinel-2 in QGIS<a class="headerlink" href="#importare-immagini-sentinel-2-in-qgis" title="Link to this heading"></a></h2>
-<p>Per importare i dati, seguire i passaggi mostrati in :numref:’4.2.1.1’ . Cliccare su <strong>Layer (1)</strong>, <strong>Add Layer (2)</strong> e scegliere <strong>Add Raster Layer (3)</strong>. Dal <strong>Data Source Manager</strong> faire clic sul pulsante con tre punti <strong>(4)</strong>, cercare la cartella in cui è stato scaricato il prodotto corrispondente alla data: 28-9-2020 (precedente all’evento) e aggiungerlo. Ora, fare clic su <strong>Add (5)</strong> e poi su <strong>Close (6)</strong>.</p>
+<p>Per importare i dati, seguire i passaggi mostrati in <a class="reference internal" href="#id2"><span class="std std-numref">Fig. 4.2.1.1</span></a> . Cliccare su <strong>Layer (1)</strong>, <strong>Add Layer (2)</strong> e scegliere <strong>Add Raster Layer (3)</strong>. Dal <strong>Data Source Manager</strong> faire clic sul pulsante con tre punti <strong>(4)</strong>, cercare la cartella in cui è stato scaricato il prodotto corrispondente alla data: 28-9-2020 (precedente all’evento) e aggiungerlo. Ora, fare clic su <strong>Add (5)</strong> e poi su <strong>Close (6)</strong>.</p>
 <figure class="align-center" id="id11">
 <span id="id2"></span><img alt="../_images/4.2.1.1.png" src="../_images/4.2.1.1.png" />
 <figcaption>
@@ -114,38 +116,38 @@
 </section>
 <section id="calcolo-degli-indici-in-qgis">
 <span id="calculate-indices"></span><h2><span class="section-number">4.2.2. </span>Calcolo degli indici in QGIS<a class="headerlink" href="#calcolo-degli-indici-in-qgis" title="Link to this heading"></a></h2>
-<p>Calcolare l’indice NDWI utilizzando QGIS tenendo presente che per semplificare il calcolo non applicheremo alcuna tecnica di pre-elaborazione. Unire tutte le nostre diverse bande in un unico raster virtuale, per farlo cliccare su <strong>Raster (1)</strong> (:numref:’4.2.2.1’) , <strong>Miscellaneous (2)</strong> e <strong>Build Virtual Raster (3)</strong></p>
+<p>Calcolare l’indice NDWI utilizzando QGIS tenendo presente che per semplificare il calcolo non applicheremo alcuna tecnica di pre-elaborazione. Unire tutte le nostre diverse bande in un unico raster virtuale, per farlo cliccare su <strong>Raster (1)</strong> (<a class="reference internal" href="#id3"><span class="std std-numref">Fig. 4.2.2.1</span></a>) , <strong>Miscellaneous (2)</strong> e <strong>Build Virtual Raster (3)</strong></p>
 <figure class="align-center" id="id12">
 <span id="id3"></span><img alt="../_images/4.2.2.1.png" src="../_images/4.2.2.1.png" />
 <figcaption>
 <p><span class="caption-number">Fig. 4.2.2.1 </span><span class="caption-text">– Creazione di un Raster Virtuale pt.1</span><a class="headerlink" href="#id12" title="Link to this image"></a></p>
 </figcaption>
 </figure>
-<p>La :numref:’4.2.2.2’ mostra il menu del <strong>Build Virtual Raster</strong>. Scegliere la risoluzione “Massima” dal menu a discesa <strong>(1)</strong> e selezionare la casella chiamata: <strong>Place each input file into a separate band (2)</strong>. Selezionare le bande di interesse, cliccare sull’icona con i tre puntini <strong>(3)</strong>. Verrà visualizzato un nuovo menu <strong>(4)</strong>, da lì selezionare la casella delle bande che si vogliono aggiungere <strong>(5)</strong>, una volta terminato fare clic su <strong>ok (6)</strong>. Ora è possibile eseguire l’algoritmo, ma prima sarà necessario dare un nome al  file, nominarlo: “Pre.vrt” <strong>(7)</strong> (se non si sceglie alcun nome, il software chiamerà il file: “VIRTUAL”), una volta fatto cliccare su <strong>Run (8)</strong>. Al termine dell’elaborazione è possibile chiudere la finestra.</p>
+<p>La <a class="reference internal" href="#id4"><span class="std std-numref">Fig. 4.2.2.2</span></a> mostra il menu del <strong>Build Virtual Raster</strong>. Scegliere la risoluzione “Massima” dal menu a discesa <strong>(1)</strong> e selezionare la casella chiamata: <strong>Place each input file into a separate band (2)</strong>. Selezionare le bande di interesse, cliccare sull’icona con i tre puntini <strong>(3)</strong>. Verrà visualizzato un nuovo menu <strong>(4)</strong>, da lì selezionare la casella delle bande che si vogliono aggiungere <strong>(5)</strong>, una volta terminato fare clic su <strong>ok (6)</strong>. Ora è possibile eseguire l’algoritmo, ma prima sarà necessario dare un nome al  file, nominarlo: “Pre.vrt” <strong>(7)</strong> (se non si sceglie alcun nome, il software chiamerà il file: “VIRTUAL”), una volta fatto cliccare su <strong>Run (8)</strong>. Al termine dell’elaborazione è possibile chiudere la finestra.</p>
 <figure class="align-center" id="id13">
 <span id="id4"></span><img alt="../_images/4.2.2.2.png" src="../_images/4.2.2.2.png" />
 <figcaption>
 <p><span class="caption-number">Fig. 4.2.2.2 </span><span class="caption-text">– Creazione di un Raster Virtuale pt.2</span><a class="headerlink" href="#id13" title="Link to this image"></a></p>
 </figcaption>
 </figure>
-<p>Ora calcolare gli indici (:numref:’4.2.2.3’) , fare clic su <strong>Raster (1)</strong>, <strong>Raster Calculator (2)</strong>. Impostare la posizione in cui salvare l’output facendo clic sul pulsante con tre punti <strong>(3)</strong> e scegliere il nome del file (nome suggerito: “NDWI_pre”). All’interno delle Bande Raster è possibilevedere tutte le bande che compongono il raster virtuale <strong>(4)</strong>. Scrivere ora l’equazione per calcolare l’indice, in questo caso calcolare l’NDWI, come già visto nella :ref:’lezione 2 &lt;2.1&gt;’ , l’indice NDWI è calcolato come: (GREEN - NIR) / (GREEN + NIR) le cui bande di sentinel 2 corrispondenti sono: (B03 - B08) / (B03 + B08). Per scrivere questa formula cliccare sulle bande <strong>(4)</strong> e sui pulsanti corrispondenti agli operatori <strong>(5)</strong>, la formula verrà scritta nella casella <strong>Raster Calculator Expression (6)</strong>. Se raster virtuale è stato chiamato come suggerito sopra (“Pre”),copiare la formula: “( “Pre&#64;3” - “Pre&#64;8” ) / ( “Pre&#64;3” + “Pre&#64;8” )”  all’interno dello spazio dedicato alle espressioni del Raster Calculator.</p>
+<p>Ora calcolare gli indici (<a class="reference internal" href="#id5"><span class="std std-numref">Fig. 4.2.2.3</span></a>) , fare clic su <strong>Raster (1)</strong>, <strong>Raster Calculator (2)</strong>. Impostare la posizione in cui salvare l’output facendo clic sul pulsante con tre punti <strong>(3)</strong> e scegliere il nome del file (nome suggerito: “NDWI_pre”). All’interno delle Bande Raster è possibilevedere tutte le bande che compongono il raster virtuale <strong>(4)</strong>. Scrivere ora l’equazione per calcolare l’indice, in questo caso calcolare l’NDWI, come già visto nella <a class="reference internal" href="../part2/2_1.html#id1"><span class="std std-ref">lezione 2</span></a> , l’indice NDWI è calcolato come: (GREEN - NIR) / (GREEN + NIR) le cui bande di sentinel 2 corrispondenti sono: (B03 - B08) / (B03 + B08). Per scrivere questa formula cliccare sulle bande <strong>(4)</strong> e sui pulsanti corrispondenti agli operatori <strong>(5)</strong>, la formula verrà scritta nella casella <strong>Raster Calculator Expression (6)</strong>. Se raster virtuale è stato chiamato come suggerito sopra (“Pre”),copiare la formula: “( “Pre&#64;3” - “Pre&#64;8” ) / ( “Pre&#64;3” + “Pre&#64;8” )”  all’interno dello spazio dedicato alle espressioni del Raster Calculator.</p>
 <figure class="align-center" id="id14">
 <span id="id5"></span><img alt="../_images/4.2.2.3.png" src="../_images/4.2.2.3.png" />
 <figcaption>
 <p><span class="caption-number">Fig. 4.2.2.3 </span><span class="caption-text">– Calcola l’indice NDWI in QGIS</span><a class="headerlink" href="#id14" title="Link to this image"></a></p>
 </figcaption>
 </figure>
-<p>Ripetere tutti i passaggi del capitolo :ref:’capitolo 4.2.1 &lt;Import Sentinel-2 images&gt;’ e :ref:’capitolo 4.2.2 &lt;Calculate indices&gt;’ ma, questa volta, calcolare l’NDWI utilizzando i dati corrispondenti alla data: 03-10-2020 (dopo l’evento), suggeriamo di chiamare il raster virtuale come “Post” in modo da poter copiare la formula: “( “Post&#64;3” - “Post&#64;8” ) / ( “Post&#64;3” + “Post&#64;8” )” all’interno dello spazio dedicato alle espressioni del Raster Calculator.</p>
+<p>Ripetere tutti i passaggi del capitolo <a class="reference internal" href="#import-sentinel-2-images"><span class="std std-ref">capitolo 4.2.1</span></a> e <a class="reference internal" href="#calculate-indices"><span class="std std-ref">capitolo 4.2.2</span></a> ma, questa volta, calcolare l’NDWI utilizzando i dati corrispondenti alla data: 03-10-2020 (dopo l’evento), suggeriamo di chiamare il raster virtuale come “Post” in modo da poter copiare la formula: “( “Post&#64;3” - “Post&#64;8” ) / ( “Post&#64;3” + “Post&#64;8” )” all’interno dello spazio dedicato alle espressioni del Raster Calculator.</p>
 <section id="individuazione-delle-zone-con-maggiore-saturazione-idrica">
 <span id="identification-of-zones"></span><h3><span class="section-number">4.2.2.1. </span>Individuazione delle zone con maggiore saturazione idrica<a class="headerlink" href="#individuazione-delle-zone-con-maggiore-saturazione-idrica" title="Link to this heading"></a></h3>
-<p>Per identificare le zone con maggiore saturazione idrica è possibile , in modo semplificato, osservare la differenza tra l’NDWI pre e post evento. Dalla (:numref:’4.2.2.4’) , è possibile osservare la scala di valori assegnati ai diversi colori, sia negli eventi pre che post NDWI <strong>(1)</strong>, notare che i valori sono diversi, questo non sarà un confronto corretto. Per risolvere questo problema è possibile cambiarli, fare clic con il tasto destro sull’ indice(2), cliccare su <strong>Properties (3)</strong> e su <strong>Symbology (4)</strong>. Cambiare il valore <strong>Min</strong> su “-1” e il valore <strong>Max</strong> su “+1” <strong>(5)</strong> confermare le scelte cliccando su <strong>ok (6)</strong>.</p>
+<p>Per identificare le zone con maggiore saturazione idrica è possibile , in modo semplificato, osservare la differenza tra l’NDWI pre e post evento. Dalla (<a class="reference internal" href="#id6"><span class="std std-numref">Fig. 4.2.2.4</span></a>) , è possibile osservare la scala di valori assegnati ai diversi colori, sia negli eventi pre che post NDWI <strong>(1)</strong>, notare che i valori sono diversi, questo non sarà un confronto corretto. Per risolvere questo problema è possibile cambiarli, fare clic con il tasto destro sull’ indice(2), cliccare su <strong>Properties (3)</strong> e su <strong>Symbology (4)</strong>. Cambiare il valore <strong>Min</strong> su “-1” e il valore <strong>Max</strong> su “+1” <strong>(5)</strong> confermare le scelte cliccando su <strong>ok (6)</strong>.</p>
 <figure class="align-center" id="id15">
 <span id="id6"></span><img alt="../_images/4.2.2.4.png" src="../_images/4.2.2.4.png" />
 <figcaption>
 <p><span class="caption-number">Fig. 4.2.2.4 </span><span class="caption-text">– Correzione dell’intervallo di valori dell’NDWI</span><a class="headerlink" href="#id15" title="Link to this image"></a></p>
 </figcaption>
 </figure>
-<p>In :numref:’4.2.2.5’ è possibile apprezzare la differenza fra i due NDWI:</p>
+<p>In <a class="reference internal" href="#id7"><span class="std std-numref">Fig. 4.2.2.5</span></a> è possibile apprezzare la differenza fra i due NDWI:</p>
 <figure class="align-center" id="id16">
 <span id="id7"></span><img alt="../_images/4.2.2.5.png" src="../_images/4.2.2.5.png" />
 <figcaption>
@@ -158,7 +160,7 @@
 <h2><span class="section-number">4.2.3. </span>Visualizzare raster in QGIS<a class="headerlink" href="#visualizzare-raster-in-qgis" title="Link to this heading"></a></h2>
 <section id="singleband-gray">
 <h3><span class="section-number">4.2.3.1. </span>Singleband gray<a class="headerlink" href="#singleband-gray" title="Link to this heading"></a></h3>
-<p>Precedentemente è stata mostrata la visualizzazione tramite Singleband gray ( :ref:’capitolo 4.2.2.1 &lt;Identification of zones&gt;’ ) con questo tipo di visualizzazione è possibile renderizzare un layer utilizzando una singola banda. La prima cosa da fare è impostare <strong>Color gradient</strong> da “Black to White” a “White to Black” <strong>(1)</strong> (:numref:’4.2.3.1’) .
+<p>Precedentemente è stata mostrata la visualizzazione tramite Singleband gray ( <a class="reference internal" href="#identification-of-zones"><span class="std std-ref">capitolo 4.2.2.1</span></a> ) con questo tipo di visualizzazione è possibile renderizzare un layer utilizzando una singola banda. La prima cosa da fare è impostare <strong>Color gradient</strong> da “Black to White” a “White to Black” <strong>(1)</strong> (<a class="reference internal" href="#id8"><span class="std std-numref">Fig. 4.2.3.1</span></a>) .
 Come già visto è possibile modificare i valori di <strong>Min</strong> e <strong>Max</strong> . E’ possibile anche esaltare le differenze, all’interno dei valori di temperatura del raster, modificando i valori <strong>Contrast Enhancement (3)</strong>.</p>
 <figure class="align-center" id="id17">
 <span id="id8"></span><img alt="../_images/4.2.3.1.png" src="../_images/4.2.3.1.png" />
@@ -169,7 +171,7 @@ Come già visto è possibile modificare i valori di <strong>Min</strong> e <stro
 </section>
 <section id="singleband-pseudocolor">
 <h3><span class="section-number">4.2.3.2. </span>Singleband-pseudocolor<a class="headerlink" href="#singleband-pseudocolor" title="Link to this heading"></a></h3>
-<p>Ora è il turno del Singleband pseudocolor (:numref:’4.2.3.2’) . Dal menù a tendina selezionare “Singleband pseudocolor” <strong>Render Type (1)</strong>, impostare <strong>Min</strong> e <strong>Max</strong> rispettivamente a “-1” e “+1” <strong>(2)</strong>. Ora cambiare la Color ramp, facendo clic sul simbolo del triangolo rivolto verso il basso <strong>(3)</strong>, invertire la scala di colori corrente <strong>(4)</strong> oppure selezionarne una nuova selezionando: <strong>All Color Ramps (5)</strong> . Selezionare “GnBu” <strong>(6)</strong>. E’ possibile modificare la scala di colori selezionata cliccandoci sopra <strong>(7)</strong>. Lasciare <strong>Mode</strong> come continuo <strong>(8)</strong>, il che bloccherà automaticamente il numero di classi <strong>(9)</strong>, utilizzando altre modalità è invece possibile cambiarli. E’ possibile vedere un’anteprima dei risultati nella sezione centrale <strong>(10)</strong>, una volta terminato, cliccare su <strong>ok (11)</strong>.</p>
+<p>Ora è il turno del Singleband pseudocolor (<a class="reference internal" href="#id9"><span class="std std-numref">Fig. 4.2.3.2</span></a>) . Dal menù a tendina selezionare “Singleband pseudocolor” <strong>Render Type (1)</strong>, impostare <strong>Min</strong> e <strong>Max</strong> rispettivamente a “-1” e “+1” <strong>(2)</strong>. Ora cambiare la Color ramp, facendo clic sul simbolo del triangolo rivolto verso il basso <strong>(3)</strong>, invertire la scala di colori corrente <strong>(4)</strong> oppure selezionarne una nuova selezionando: <strong>All Color Ramps (5)</strong> . Selezionare “GnBu” <strong>(6)</strong>. E’ possibile modificare la scala di colori selezionata cliccandoci sopra <strong>(7)</strong>. Lasciare <strong>Mode</strong> come continuo <strong>(8)</strong>, il che bloccherà automaticamente il numero di classi <strong>(9)</strong>, utilizzando altre modalità è invece possibile cambiarli. E’ possibile vedere un’anteprima dei risultati nella sezione centrale <strong>(10)</strong>, una volta terminato, cliccare su <strong>ok (11)</strong>.</p>
 <figure class="align-center" id="id18">
 <span id="id9"></span><img alt="../_images/4.2.3.2.png" src="../_images/4.2.3.2.png" />
 <figcaption>
@@ -179,7 +181,7 @@ Come già visto è possibile modificare i valori di <strong>Min</strong> e <stro
 </section>
 <section id="paletted-unique-values">
 <h3><span class="section-number">4.2.3.3. </span>Paletted / unique values<a class="headerlink" href="#paletted-unique-values" title="Link to this heading"></a></h3>
-<p>Questo tipo di visualizzazione (:numref:’4.2.3.3’) consiste nel rappresentare ogni diverso valore del raster con un colore diverso ed è spesso utilizzata per la rappresentazione della copertura del suolo. Selezionare “Paletted / Unique values” come <strong>Render Type (1)</strong>. per quanto riguarda la scala dei colori, cambiarla cliccando su <strong>Color ramp (2)</strong> (come impostazione predefinita, il software assegna un colore casuale a ciascun valore univoco). Per generare le classi, cliccare su <strong>Classify (3)</strong>, questa procedura potrebbe richiedere alcuni secondi a seconda del numero di valori univoci. Questo tipo di rappresentazione non è particolarmente adatta ai dati utilizzati, per cui cliccare su <strong>Cancel (4)</strong>.</p>
+<p>Questo tipo di visualizzazione (<a class="reference internal" href="#id10"><span class="std std-numref">Fig. 4.2.3.3</span></a>) consiste nel rappresentare ogni diverso valore del raster con un colore diverso ed è spesso utilizzata per la rappresentazione della copertura del suolo. Selezionare “Paletted / Unique values” come <strong>Render Type (1)</strong>. per quanto riguarda la scala dei colori, cambiarla cliccando su <strong>Color ramp (2)</strong> (come impostazione predefinita, il software assegna un colore casuale a ciascun valore univoco). Per generare le classi, cliccare su <strong>Classify (3)</strong>, questa procedura potrebbe richiedere alcuni secondi a seconda del numero di valori univoci. Questo tipo di rappresentazione non è particolarmente adatta ai dati utilizzati, per cui cliccare su <strong>Cancel (4)</strong>.</p>
 <figure class="align-center" id="id19">
 <span id="id10"></span><img alt="../_images/4.2.3.3.png" src="../_images/4.2.3.3.png" />
 <figcaption>

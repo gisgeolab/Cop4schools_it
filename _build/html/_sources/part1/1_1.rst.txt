@@ -74,7 +74,7 @@ Dati GIS
 --------
 I dati GIS possono essere raccolti in diversi modi come digitalizzazione delle mappe, rilevamento diretto, rilevamento aereo e misurazioni satellitari, ognuno con i suoi pro e contro. I modelli vengono quindi utilizzati per codificare informazioni geografiche in un ambiente informatico. I modelli di dati GIS sono un insieme di costrutti e astrazioni per descrivere e rappresentare entità geografiche in un sistema digitale, rappresentano entità geografiche mediante oggetti discreti (modelli vettoriali) o superfici continue (modelli raster) e adattano attributi numerici e/o testuali con coordinate in file informatici. La struttura di questi modelli è indipendente da elementi dati specifici e, nella maggior parte dei casi, dall'applicazione GIS che viene utilizzata per manipolarli. Inoltre, i modelli di dati GIS sono spesso interscambiabili in modo che la stessa entità geografica o fenomeno possa essere rappresentato da modelli diversi, vedremo esempi di interscambiabilità nei capitoli successivi.
 
-..note:: Il modello di dati giusto da utilizzare dipende strettamente dall'applicazione specifica (nessun singolo modello di dati è il migliore per tutte le circostanze)
+.. note:: Il modello di dati giusto da utilizzare dipende strettamente dall'applicazione specifica (nessun singolo modello di dati è il migliore per tutte le circostanze)
 
 I due principali tipi di dati spaziali utilizzati nei GIS sono rappresentati da dati Raster e Vettoriali.
 

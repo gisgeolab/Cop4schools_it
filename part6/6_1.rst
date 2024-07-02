@@ -246,7 +246,7 @@ Download dei dati di popolazione
 Per scaricare i dati aprire la pagina web `GHSL JRC <https://ghsl.jrc.ec.europa.eu/download.php?ds=pop>`_
 web page (:numref:`6.1.1.23`) e selezionare **GHS_POP Product (1)**. Impostare **2020** nel campo **Epoch (2)**, **WGS84** come **Coord. system (3)** e **3 arcsec** come **Resolution (4)** . Trovare la tessera (impronta dell'immagine) che copre l'area di interesse “Vercelli”, l’area desiderata è evidenziata all'interno del mappamondo **(5)** e utilizzare l'immagine ingrandita come riferimento **(6)** . Prima di cliccare sull’area selezionata controlla i dettagli **(7)** , devono corrispondere all'ID: "R5_C19" **(8)** . Cliccare sull'impronta con ID riquadro: "R5_C19" per avviare il download.
 
-..note:: i dati scaricati saranno in formato .zip, dunque, sarà necessario estrarre la cartella.
+.. note:: i dati scaricati saranno in formato .zip, dunque, sarà necessario estrarre la cartella.
 
 .. _6.1.1.23:
 
