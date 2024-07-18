@@ -17,8 +17,9 @@ Partners
     :width: 200px
     :align: center
 
-Co-funded by the European Union
---------------------------------
+.. admonition:: Disclaimer
+
+    The product was created in collaboration with ISPRA according to the collaboration agreement dated September 5, 2023, within the framework of an Agreement  No. 241 (article 15) of August 7, 1990. 
 
 .. image:: /img/EU-FPCUP-Logo_full_name.svg
     :align: center
@@ -28,6 +29,17 @@ Co-funded by the European Union
    Co-funded by the European Union’s Caroline Herschel Framework Partnership Agreement on Copernicus User Uptake under grant agreement No FPA 275/G/GRO/COPE/17/10042, project FPCUP (Framework Partnership Agreement on Copernicus User Uptake).
 
 License `Creative Commons — Attribution-NonCommercial-ShareAlike 3.0 Unported — CC-By-NC-SA <https://creativecommons.org/licenses/by-nc-sa/3.0/>`_
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+Web book creation
+-----------------
+
+.. image:: img/bios/Stefano2.png
+    :width: 160px
+    :align: left
+
+Stefano Brazzoli was born in Crema (Cremona), Italy, in 1998. He received a B.Sc. degree in Environmental Engineering from Politecnico di Milano university where he is also currently enrolled in a M.Sc. in Geoinformatics Engineering. After a period abroad at the University of Bonn (Germany) in 2023, he is now collaborating with Politecnico's GEOlab in the creation of this e-book.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -46,15 +58,7 @@ Alberta Albertella. From 2015, Associate Professor at Politecnico di Milano. Pro
     :width: 160px
     :align: left
 
-Lorenzo Amici was born in Rome, Italy, in 1995. He obtained his BSc degree in Environmental Engineering at the University of La Sapienza, Rome, in 2017, and his MSc degree in Geoinformatics Engineering at Politecnico di Milano in 2021, with a thesis focusing on landslide susceptibility mapping and displacement monitoring. In February 2022 he joined the GEOlab team as a temporary research fellow, focusing on the analysis of lake water quality with Remote Sensing data. In November 2022 he started his PhD in Geomatics at Politecnico di Milano. His main field of research is the study of the effects of environmental phenomena on human health with Artificial Intelligence.
-
----------------------------------------------------------------------------------------------------------------------------------------------------
-
-.. image:: img/bios/Stefano2.png
-    :width: 160px
-    :align: left
-
-Stefano Brazzoli was born in Crema (Cremona), Italy, in 1998. He received a B.Sc. degree in Environmental Engineering from Politecnico di Milano university where he is also currently enrolled in a M.Sc. in Geoinformatics Engineering. After a period abroad at the University of Bonn (Germany) in 2023, he is now collaborating with Politecnico's GEOlab in the creation of this e-book.                                                                                    
+Lorenzo Amici was born in Rome, Italy, in 1995. He obtained his BSc degree in Environmental Engineering at the University of La Sapienza, Rome, in 2017, and his MSc degree in Geoinformatics Engineering at Politecnico di Milano in 2021, with a thesis focusing on landslide susceptibility mapping and displacement monitoring. In February 2022 he joined the GEOlab team as a temporary research fellow, focusing on the analysis of lake water quality with Remote Sensing data. In November 2022 he started his PhD in Geomatics at Politecnico di Milano. His main field of research is the study of the effects of environmental phenomena on human health with Artificial Intelligence.                                                                                   
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 
