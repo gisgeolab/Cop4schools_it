@@ -38,7 +38,7 @@ La sezione "Wildfires" si collega a EFFIS - European Forest Fire Information Sys
 .. figure:: /img/3/3.1.4.png
    :align: center
 
-   -- Copernicus EMS -  EFFIS
+   -- Copernicus EMS - EFFIS
 
 La sezione "Floods" **(3)** riporta alla pagina dell'EFAS (European Flood Awareness System) (:numref:`3.1.5`) che sostenere le misure di prevenzione prima che si verifichino grandi eventi alluvionali, in particolare nei grandi bacini fluviali transnazionali e in tutta Europa in generale, e alla pagina  del Global Flood Awareness System (GloFAS) che riguarda i grandi eventi alluvionali previsti e in corso su scala globale (:numref:`3.1.6`).
 
