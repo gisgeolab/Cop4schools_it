@@ -261,7 +261,7 @@ Come selezionare i prodotti corretti su Copernicus Browser
 Ora configureremo i parametri di ricerca (:numref:`2.1.2.8`):
 
 
-+ Cercare l’ **Area di interesse (**Area of interest) (1)** , la nostra area di studio è “Piemonte, Vercelli, Italia”.
++ Cercare l’ **Area di interesse (Area of interest) (1)** , la nostra area di studio è “Piemonte, Vercelli, Italia”.
 + Cliccare su **SEARCH (2)**
 + Stiamo cercando immagini di Sentinel-2. Pertanto, selezionare **Sentinel-2 (3)** nel campo **DATA SOURCES:**
 + Selezionare  **L2A (4)**, limitando così la ricerca alle sole immagini Sentinel-2 sottoposte a correzione atmosferica.
