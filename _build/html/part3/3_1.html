@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3.1. Copernicus EMS &mdash; COPERNICUS4Schools  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=8a25042d" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="4. Immagini Sentinel-2 pre e post evento" href="../part4/part4.html" />
+    <link rel="prev" title="3. Ottenere dati da Copernicus EMS" href="part3.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            COPERNICUS4Schools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../part1/part1.html">1. Introduzione ai GIS (Sistemi Informativi Geografici )</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part2/part2.html">2. GIS e strumenti di analisi</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="part3.html">3. Ottenere dati da Copernicus EMS</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">3.1. Copernicus EMS</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#copernicus-ems-on-demand-mapping">3.1.1. Copernicus EMS On-Demand Mapping</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#download-della-delineation-map-dell-area-interessata-all-alluvione">3.1.2. Download della Delineation Map dell’area interessata all’alluvione</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#importare-i-dati-ems-in-qgis">3.1.3. Importare i dati EMS in QGIS</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#apertura-di-un-progetto-qgis-esistente">3.1.3.1. Apertura di un progetto QGIS esistente</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#importare-i-dati-vettoriali-ems-in-qgis">3.1.3.2. Importare i dati vettoriali EMS in QGIS</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#visualizzazione-dei-dati-in-formato-vettoriale-in-qgis">3.1.3.3. Visualizzazione dei dati in formato vettoriale in QGIS</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#attribute-table">3.1.3.4. Attribute table</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#salvare-un-progetto-in-qgis">3.1.3.5. Salvare un progetto in QGIS</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../part4/part4.html">4. Immagini Sentinel-2 pre e post evento</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part5/part5.html">5. Ottenere dati dal Copernicus Land Monitoring Service (CLMS)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part6/part6.html">6. Ottenere i dati sulla popolazione del JRC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part7/part7.html">7. Calcolo delle classi di copertura di suolo colpite dall’alluvione</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part8/part8.html">8. Calcolo della popolazione colpita dall’alluvione</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../credits.html">Credits</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">COPERNICUS4Schools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="part3.html"><span class="section-number">3. </span>Ottenere dati da Copernicus EMS</a></li>
+      <li class="breadcrumb-item active"><span class="section-number">3.1. </span>Copernicus EMS</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/part3/3_1.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="copernicus-ems">
+<span id="id1"></span><h1><span class="section-number">3.1. </span>Copernicus EMS<a class="headerlink" href="#copernicus-ems" title="Link to this heading"></a></h1>
+<p><a class="reference external" href="https://emergency.copernicus.eu/" rel="noopener noreferrer" target="_blank">Copernicus Emergency Management Service</a> (<a class="reference internal" href="#id2"><span class="std std-numref">Fig. 3.1.1</span></a>) è un segmento del programma Copernicus dedicato a fornire informazioni geo-spaziali dettagliate e accurate nel più breve tempo possibile, al fine di aiutare nelle situazioni di emergenza, fornendo avvisi tempestivi e supportando il monitoraggio delle emergenze. I dati sono raccolti dal telerilevamento satellitare e combinati con dati open source e fonti di primo livello.</p>
+<figure class="align-center" id="id34">
+<span id="id2"></span><img alt="../_images/3.1.1.png" src="../_images/3.1.1.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 3.1.1 </span><span class="caption-text">– Copernicus Emergency Management Service</span><a class="headerlink" href="#id34" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Il servizio è suddiviso in cinque sezioni (<a class="reference internal" href="#id3"><span class="std std-numref">Fig. 3.1.2</span></a>): On Demand Mapping <strong>(1)</strong>, Wildfires <strong>(2)</strong>, Floods <strong>(3)</strong>, Droughts <strong>(4)</strong>, Exposure Mapping <strong>(5)</strong>.</p>
+<figure class="align-center" id="id35">
+<span id="id3"></span><img alt="../_images/3.1.2.png" src="../_images/3.1.2.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 3.1.2 </span><span class="caption-text">– Le sottosezioni del servizio EMS Copernicus</span><a class="headerlink" href="#id35" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>La sezione On-Demand Mapping <strong>(1)</strong> permette di accedere ai dati relativi ad emergenze attivate su un’area specifica in qualsiasi parte del mondo. Gli utenti possono essere informati della richiesta di attivazione e possono scaricare i prodotti risultanti come tutti gli altri prodotti Copernicus EMS (<a class="reference internal" href="#id4"><span class="std std-numref">Fig. 3.1.3</span></a>). Questa azione verrà discussa in dettaglio nel paragrafo successivo.</p>
+<figure class="align-center" id="id36">
+<span id="id4"></span><img alt="../_images/3.1.3.png" src="../_images/3.1.3.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 3.1.3 </span><span class="caption-text">– Copernicus On-Demand Mapping</span><a class="headerlink" href="#id36" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Le sezioni “Wildfires” <strong>(2)</strong>, “Floods” <strong>(3)</strong> e “Droughts” <strong>(4)</strong> riportano a servizi specifici per ciascuna emergenza, offrendo informazioni geospaziali basate su osservazioni e previsioni.
+La sezione “Wildfires” si collega a EFFIS - European Forest Fire Information System (<a class="reference internal" href="#id5"><span class="std std-numref">Fig. 3.1.4</span></a>)  il sistema europeo che fornisce informazioni aggiornate e affidabili sugli incendi boschivi in Europa, supportando i servizi di protezione forestale e le istituzioni dell’Unione Europea, sostenuto da una rete di esperti di 43 paesi.</p>
+<figure class="align-center" id="id37">
+<span id="id5"></span><img alt="../_images/3.1.4.png" src="../_images/3.1.4.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 3.1.4 </span><span class="caption-text">– Copernicus EMS -  EFFIS</span><a class="headerlink" href="#id37" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>La sezione “Floods” <strong>(3)</strong> riporta alla pagina dell’EFAS (European Flood Awareness System) (<a class="reference internal" href="#id6"><span class="std std-numref">Fig. 3.1.5</span></a>) che sostenere le misure di prevenzione prima che si verifichino grandi eventi alluvionali, in particolare nei grandi bacini fluviali transnazionali e in tutta Europa in generale, e alla pagina  del Global Flood Awareness System (GloFAS) che riguarda i grandi eventi alluvionali previsti e in corso su scala globale (<a class="reference internal" href="#id7"><span class="std std-numref">Fig. 3.1.6</span></a>).</p>
+<figure class="align-center" id="id38">
+<span id="id6"></span><img alt="../_images/3.1.5.png" src="../_images/3.1.5.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 3.1.5 </span><span class="caption-text">– Copernicus EFAS</span><a class="headerlink" href="#id38" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id39">
+<span id="id7"></span><img alt="../_images/3.1.6.png" src="../_images/3.1.6.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 3.1.6 </span><span class="caption-text">– Copernicus GloFAS</span><a class="headerlink" href="#id39" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Una struttura analoga si trova anche nella sezione relativa ai fenomeni di siccità <strong>(4)</strong>. In questo caso  i servizi associati sono EDO (European Drought Observatory) e GDO (Global Drought Observatory). La situazione in tempo reale, le previsioni e l’accesso ai dati sono forniti tramite mappe interattive che sono un’interfaccia particolarmente efficace nelle situazioni di emergenza (<a class="reference internal" href="#id8"><span class="std std-numref">Fig. 3.1.7</span></a>).</p>
+<figure class="align-center" id="id40">
+<span id="id8"></span><img alt="../_images/3.1.7.png" src="../_images/3.1.7.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 3.1.7 </span><span class="caption-text">– Mappe interattive per la siccità a livello europeo (EDO) e mondiale (GDO).</span><a class="headerlink" href="#id40" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>La sezione Copernicus EMS Exposure Mapping <strong>(5)</strong> è un sistema che fornisce dati sulla popolazione e sugli insediamenti umani. Tra le diverse funzioni offerte (<a class="reference internal" href="#id9"><span class="std std-numref">Fig. 3.1.8</span></a>), è possibile scaricare i dati attraverso il Global Human Settlement Layer (GHSL) per differenti epoche, risoluzioni e sistemi di coordinate (<a class="reference internal" href="#id10"><span class="std std-numref">Fig. 3.1.9</span></a>).</p>
+<figure class="align-center" id="id41">
+<span id="id9"></span><img alt="../_images/3.1.8.png" src="../_images/3.1.8.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 3.1.8 </span><span class="caption-text">– Funzioni offerte dal Copernicus EMS Exposure Mapping</span><a class="headerlink" href="#id41" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id42">
+<span id="id10"></span><img alt="../_images/3.1.9.png" src="../_images/3.1.9.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 3.1.9 </span><span class="caption-text">– Global Human Settlement Layer (GHSL)</span><a class="headerlink" href="#id42" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<section id="copernicus-ems-on-demand-mapping">
+<h2><span class="section-number">3.1.1. </span>Copernicus EMS On-Demand Mapping<a class="headerlink" href="#copernicus-ems-on-demand-mapping" title="Link to this heading"></a></h2>
+<p>Come già detto all’inizio del <a class="reference internal" href="#id1"><span class="std std-ref">capitolo 3.1</span></a>, Copernicus On-demand Mapping è uno dei principali servizi del Copernicus EMS e consiste in un servizio on-demand che fornisce informazioni geospaziali a supporto della gestione delle attività durante e successive a un’emergenza.
+Le immagini satellitari e altri dati geospaziali vengono utilizzati per fornire un servizio di mappatura gratuito in caso di rischi naturali, situazioni di emergenza causate dall’uomo e crisi umanitarie in tutto il mondo. Ovviamente solo utenti autorizzati possono richiedere l’attivazione di un’emergenza.</p>
+<p>Nella mappa interattiva (<a class="reference internal" href="#id11"><span class="std std-numref">Fig. 3.1.1.1</span></a>) che si apre cliccando sull’icona (<a class="reference internal" href="#id3"><span class="std std-numref">Fig. 3.1.2</span></a> <strong>(1)</strong>), sono visualizzate le attivazioni in corso, quelle in preparazione e quelle risolte. Sulla sinistra della pagina <strong>(1)</strong> è possibile selezionare il tipo di emergenza, il luogo in cui si verifica e la fase dell’emergenza (ongoing, preparedness, recovery, …). Sulla destra <strong>(2)</strong> un menù a tendina permette di selezionare con maggior dettaglio il tipo di emergenza: non solo incendi, inondazioni e siccità, ma anche terremoti, uragani, crisi umanitarie, ….</p>
+<p>Nella parte inferiore della mappa interattiva <strong>(3)</strong> è possibile selezionare l’intervallo di tempo in cui si vuole visualizzare la mappa delle emergenze.</p>
+<p>Si può osservare che per ogni attivazione e per ogni area di interesse può essere presente più di un prodotto.</p>
+<figure class="align-center" id="id43">
+<span id="id11"></span><img alt="../_images/3.1.1.1.png" src="../_images/3.1.1.1.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 3.1.1.1 </span><span class="caption-text">– Copernicus EMS On-Demand Mapping</span><a class="headerlink" href="#id43" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Una volta selezionato l’elemento desiderato sulla mappa, cliccando sul numero che compare, si apre una finestra che consente di accedere a <strong>“Activation Details”</strong> (<a class="reference internal" href="#id12"><span class="std std-numref">Fig. 3.1.1.2</span></a> <strong>(1)</strong>).</p>
+<figure class="align-center" id="id44">
+<span id="id12"></span><img alt="../_images/3.1.1.2.png" src="../_images/3.1.1.2.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 3.1.1.2 </span><span class="caption-text">– Activation Details On-Demand Mapping</span><a class="headerlink" href="#id44" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Il link “Activations details” (<a class="reference internal" href="#id13"><span class="std std-numref">Fig. 3.1.1.3</span></a>) apre una pagina che contiene tutte le informazioni relative all’evento selezionato. Oltra alla definizione del tipo di evento (“EVENT TYPE”), alla data (“EVENT TIME”) e alla posizione geografica (“AFFECTED COUNTRY”), vengono riportati i motivi per cui è stata attivata l’emergenza in questione (“ACTIVATION REASON”). Sulla destra compare infine la lista dei prodotti disponibili.</p>
+<figure class="align-center" id="id45">
+<span id="id13"></span><img alt="../_images/3.1.1.3.png" src="../_images/3.1.1.3.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 3.1.1.3 </span><span class="caption-text">– Esempio di dati disponibili per un evento selezionato</span><a class="headerlink" href="#id45" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Esistono cinque tipi di prodotti (<a class="reference external" href="https://mapping.emergency.copernicus.eu/about/rapid-mapping-portfolio/" rel="noopener noreferrer" target="_blank">più informazioni qui</a>): tre post-evento (con possibilità di aggiornamenti, chiamati <strong>Monitoring</strong>), un prodotto pre-evento e un rapporto online che centralizza tutte le informazioni relative all’attivazione specifica (<strong>Situational Reporting</strong>).</p>
+<ul class="simple">
+<li><p><strong>First Estimate Product (FEP)</strong>: fornisce una valutazione iniziale molto rapida (ma approssimativa) delle aree più colpite, basata sulla prima immagine post-evento disponibile. Serve per evidenziare le zone potenzialmente coinvolte, rivedere le specifiche iniziali dei prodotti richiesti o decidere eventuali cancellazioni.</p></li>
+<li><p><strong>Delineation Products (DEL)</strong>: valutano l’impatto e l’estensione dell’evento tramite immagini acquisite il prima possibile dopo il disastro. Possono essere aggiornati su richiesta per monitorare l’evoluzione della situazione.</p></li>
+<li><p><strong>Grading Products (GRA)</strong>: forniscono informazioni sul grado di danno, la sua distribuzione spaziale e la sua estensione. Sono un’estensione dei prodotti di delineazione, poiché includono sia il tipo di evento e la sua estensione sia la classificazione del danno. Possono essere aggiornati su richiesta e vengono rilasciati insieme ai prodotti di delineazione se richiesti successivamente.</p></li>
+<li><p><strong>Reference Products (REF)</strong>: unico prodotto pre-evento, disponibile solo per attivazioni fuori dall’Europa. Fornisce informazioni territoriali prima dell’emergenza, basandosi su immagini acquisite il più vicino possibile alla data dell’evento.</p></li>
+<li><p><strong>Situational Reporting (SR)</strong>: è un rapporto online che sintetizza visivamente e informativamente l’evento e l’attivazione. Inizia entro 4 ore dall’attivazione con informazioni chiave sull’esposizione e viene aggiornato regolarmente fino alla chiusura dell’attivazione, includendo dati provenienti anche da altre fonti (media, social media, Copernicus EMS).</p></li>
+</ul>
+</section>
+<section id="download-della-delineation-map-dell-area-interessata-all-alluvione">
+<span id="download-flooded-area-delineation-map"></span><h2><span class="section-number">3.1.2. </span>Download della Delineation Map dell’area interessata all’alluvione<a class="headerlink" href="#download-della-delineation-map-dell-area-interessata-all-alluvione" title="Link to this heading"></a></h2>
+<p>Aprire <a class="reference external" href="https://emergency.copernicus.eu/" rel="noopener noreferrer" target="_blank">EMS website</a> e cliccare nella sezione <strong>On-Demand Mapping</strong>. Per individuare l’evento dell’esercizio, selezionare “flood” <strong>(1)</strong>, Country: Italy <strong>(2)</strong> e restringere l’intervallo temporale da gennaio 2020 a novembre 2021 <strong>(3)</strong> (<a class="reference internal" href="#id14"><span class="std std-numref">Fig. 3.1.2.1</span></a>).</p>
+<figure class="align-center" id="id46">
+<span id="id14"></span><img alt="../_images/3.1.2.1.png" src="../_images/3.1.2.1.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 3.1.2.1 </span><span class="caption-text">– On-Demand mapping</span><a class="headerlink" href="#id46" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Nella mappa compaiono 7 eventi, zoomando ci si riporta ad un’area ridotta nella quale si riesce ad individuare l’evento avvenuto in Piemonte nell’ottobre del 2020 (<a class="reference internal" href="#id15"><span class="std std-numref">Fig. 3.1.2.2</span></a>).</p>
+<figure class="align-center" id="id47">
+<span id="id15"></span><img alt="../_images/3.1.2.2.png" src="../_images/3.1.2.2.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 3.1.2.2 </span><span class="caption-text">– Alluvione in Piemonte nell’ottobre del 2020</span><a class="headerlink" href="#id47" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Cliccando su <strong>“Activation details”</strong> si apre una finestra che riporta la lista dei prodotti disponibili corrispondente a 6 zone diverse. Selezioniamo Vercelli <strong>(1)</strong> e scarichiamo i dati disponibili cliccando su vector (<a class="reference internal" href="#id16"><span class="std std-numref">Fig. 3.1.2.3</span></a>).</p>
+<figure class="align-center" id="id48">
+<span id="id16"></span><img alt="../_images/3.1.2.3.png" src="../_images/3.1.2.3.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 3.1.2.3 </span><span class="caption-text">– Download dati EMS riguardanti l’alluvione in Piemonte</span><a class="headerlink" href="#id48" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="importare-i-dati-ems-in-qgis">
+<h2><span class="section-number">3.1.3. </span>Importare i dati EMS in QGIS<a class="headerlink" href="#importare-i-dati-ems-in-qgis" title="Link to this heading"></a></h2>
+<section id="apertura-di-un-progetto-qgis-esistente">
+<h3><span class="section-number">3.1.3.1. </span>Apertura di un progetto QGIS esistente<a class="headerlink" href="#apertura-di-un-progetto-qgis-esistente" title="Link to this heading"></a></h3>
+<p>Per aprire un progetto QGIS esistente, nella barra degli strumenti dell’interfaccia di QGIS, in alto a sinistra, cliccare su <strong>Project (1)</strong> e poi su <strong>Open (2)</strong> (<a class="reference internal" href="#id17"><span class="std std-numref">Fig. 3.1.3.1</span></a>) . In alternativa, utilizzare la scorciatoia “CTRL+O”, quindi navigare nella cartella che contiene il file “.qgz”. Il progetto è stato salvato nel <a class="reference internal" href="../part1/1_2.html#save-project"><span class="std std-ref">capitolo 1.2.2.5</span></a> .</p>
+<figure class="align-center" id="id49">
+<span id="id17"></span><img alt="../_images/3.1.3.1.png" src="../_images/3.1.3.1.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 3.1.3.1 </span><span class="caption-text">– Apertura di un progetto QGIS esistente</span><a class="headerlink" href="#id49" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="importare-i-dati-vettoriali-ems-in-qgis">
+<h3><span class="section-number">3.1.3.2. </span>Importare i dati vettoriali EMS in QGIS<a class="headerlink" href="#importare-i-dati-vettoriali-ems-in-qgis" title="Link to this heading"></a></h3>
+<p>Assicurarsi che la cartella <strong>Vector Package</strong> scaricata sia stata estratta. All’interno della cartella scaricata si vedranno molti file con estensioni diverse (<a class="reference internal" href="#id18"><span class="std std-numref">Fig. 3.1.3.2</span></a>);
+per lo scopo di questa lezione interessano solo gli shapefile, le altre estensioni saranno spiegate nei capitoli successivi. In genere, quando si parla di “shapefile” si intende
+un insieme di file con estensioni diverse, di cui il principale è un file .shp  <strong>(1)</strong> che contiene la geometria (punti, linee o poligoni) dei dati. Gli altri due file principali che compongono uno shapefile sono il file .shx,
+che è un file indice, e il file .dbf che contiene i dati degli attributi.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Per avere una spiegazione più tecnica e approfondita degli shapefile, riferirsi alla <a class="reference external" href="https://support.esri.com/en-us/technical-paper/esri-shapefile-technical-description-279" rel="noopener noreferrer" target="_blank">ESRI Shapefile Technical Description</a> .</p>
+</div>
+<figure class="align-center" id="id50">
+<span id="id18"></span><img alt="../_images/3.1.3.2.png" src="../_images/3.1.3.2.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 3.1.3.2 </span><span class="caption-text">– Importazione dati vettoriali in QGIS</span><a class="headerlink" href="#id50" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>L’importazione di dati vettoriali in QGIS (<a class="reference internal" href="#id19"><span class="std std-numref">Fig. 3.1.3.3</span></a>) può essere effettuata facendo clic su <strong>Layer (1)</strong> nel menu della barra strumenti, poi su <strong>Add Layer (2)</strong> e <strong>Add Vector Layer (3)</strong>; si aprirà un nuovo menu chiamato <strong>Data Source Manager (4)</strong> .
+In alternativa, è possibile aprire lo stesso menu facendo clic su <strong>Open Data Source Manager (5)</strong>. Da <strong>Data Source Manager</strong> cliccare sull’icona con i tre puntini <strong>(6)</strong> ; sarà necessario sfogliare la cartella del pc per trovare i dati da importare. Selezionare i seguenti dati:</p>
+<ul class="simple">
+<li><p>EMSR468_AOI05_DEL_PRODUCT_areaOfInterestA_r1_v1.shp;</p></li>
+<li><p>EMSR468_AOI05_DEL_PRODUCT_hydrographyA_r1_v1.shp;</p></li>
+<li><p>EMSR468_AOI05_DEL_PRODUCT_hydrographyL_r1_v1.shp;</p></li>
+<li><p>EMSR468_AOI05_DEL_PRODUCT_imageFootprintA_r1_v1.shp;</p></li>
+<li><p>EMSR468_AOI05_DEL_PRODUCT_observedEventA_r1_v1.shp;</p></li>
+<li><p>EMSR468_AOI05_DEL_PRODUCT_transportationL_r1_v1.shp.</p></li>
+</ul>
+<p>Una volta fatto, cliccare su  <strong>Add (7)</strong>.
+Nei prossimi paragrafi vedremo quali sono i dati caricati e come è meglio rappresentarli. In questo modo, si modificheranno gli stili nella rappresentazione dei dati in base alle loro caratteristiche (linea, poligono, …) e alle informazioni che contengono.</p>
+<figure class="align-center" id="id51">
+<span id="id19"></span><img alt="../_images/3.1.3.3.png" src="../_images/3.1.3.3.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 3.1.3.3 </span><span class="caption-text">– Import Vector data in QGIS</span><a class="headerlink" href="#id51" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="visualizzazione-dei-dati-in-formato-vettoriale-in-qgis">
+<h3><span class="section-number">3.1.3.3. </span>Visualizzazione dei dati in formato vettoriale in QGIS<a class="headerlink" href="#visualizzazione-dei-dati-in-formato-vettoriale-in-qgis" title="Link to this heading"></a></h3>
+<p>Ora è possibile visualizzare i dati nella lista dei Layer <strong>(1)</strong> (<a class="reference internal" href="#id20"><span class="std std-numref">Fig. 3.1.3.4</span></a>) .
+Cliccando sulla casella vicino al nome di un layer lo si disattiva o attiva, per esempio si disattivi “EMSR468_AOI05_DEL_PRODUCT_imageFootprintA_r1_v1” <strong>(2)</strong>.
+Ora è possibile eseguire uno zoom in avanti per avere una visione migliore dei dati; in alternativa, è possibile fare clic con il pulsante destro del mouse su un layer attivo <strong>(3)</strong> : si aprirà un nuovo menù in cui è possibile selezionare l’opzione <strong>Zoom to Layer(s) (4)</strong>.</p>
+<figure class="align-center" id="id52">
+<span id="id20"></span><img alt="../_images/3.1.3.4.png" src="../_images/3.1.3.4.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 3.1.3.4 </span><span class="caption-text">– Visualizzazione dati in formato vettoriale in QGIS</span><a class="headerlink" href="#id52" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p><strong>Single symbol style</strong></p>
+<p>Per esplorare come modificare lo stile dei diversi layer, si consideri il layer “EMSR468_AOI05_DEL_PRODUCT_areaOfInterestA_r1_v1” (<a class="reference internal" href="#id21"><span class="std std-numref">Fig. 3.1.3.5</span></a>) .
+Dell’area interessata dall’evento considerato è necessario evidenziare solo il bordo dato che non ci sono altre informazioni. Pertanto, si vuole visualizzarla con un semplice bordo ben definito (colore rosso), di seguito i passi per realizzarlo.
+Fare doppio clic sul livello di cui sopra o cliccare con il pulsante destro del mouse <strong>(1)</strong> e selezionare <strong>Properties (2)</strong>.
+Apparirà il pannello Layer Properties, selezionare <strong>Symbology (3)</strong>, quindi <strong>Single Symbol (4)</strong>.
+A questo punto scegliere lo stile <strong>outline red (5)</strong> e cliccare su <strong>ok (6)</strong>.</p>
+<figure class="align-center" id="id53">
+<span id="id21"></span><img alt="../_images/3.1.3.5.png" src="../_images/3.1.3.5.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 3.1.3.5 </span><span class="caption-text">– Single symbol style</span><a class="headerlink" href="#id53" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p><strong>Categorized style</strong></p>
+<p>È ora il turno del layer “EMSR468_AOI05_DEL_PRODUCT_hydrographyA_r1_v1” layer (<a class="reference internal" href="#id22"><span class="std std-numref">Fig. 3.1.3.6</span></a>) .
+Il layer “idrografia”, se rappresentato con un solo colore (cioè una sola categoria), non fornisce ulteriori informazioni. Rappresentato invece con uno stile diverso, consente di visualizzare maggiori dettagli.
+Come in precedenza, aprire Symbology Property facendo clic con il tasto destro del mouse su <strong>(1)</strong> quindi selezionare <strong>Properties (2)</strong> e <strong>Symbology (3)</strong>.
+Questa volta, cambiare lo stile in  <strong>Categorize (4)</strong>  e impostare il campo Value come <strong>obj_type (5)</strong>. Fare clic su <strong>classify (6)</strong> ed eventualmente modificare i colori <strong>(7)</strong>.
+Quando si è soddisfatti, cliccare su <strong>ok (8)</strong>. Si può notare che ci sono tre diverse categorie relative all’idrografia: lago, fiume e bacino idrico, che ora sono distinte anche nella loro rappresentazione.</p>
+<figure class="align-center" id="id54">
+<span id="id22"></span><img alt="../_images/3.1.3.6.png" src="../_images/3.1.3.6.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 3.1.3.6 </span><span class="caption-text">– Categorized style</span><a class="headerlink" href="#id54" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Il risultato dell’operazione è mostrato qui (<a class="reference internal" href="#id23"><span class="std std-numref">Fig. 3.1.3.7</span></a>) .</p>
+<figure class="align-center" id="id55">
+<span id="id23"></span><img alt="../_images/3.1.3.7.png" src="../_images/3.1.3.7.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 3.1.3.7 </span><span class="caption-text">– Categorized Style - Risultato</span><a class="headerlink" href="#id55" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p><strong>Feature labels</strong></p>
+<p>Aprire ora il pannello Layer Properties del layer: “EMSR468_AOI05_DEL_PRODUCT_hydrographyL_r1_v1” <strong>(1)</strong> (<a class="reference internal" href="#id24"><span class="std std-numref">Fig. 3.1.3.8</span></a>) .
+Nel caso di informazioni idrografiche con “linee”, queste rappresentano la posizione dei corsi d’acqua nell’area considerata. È interessante associare a questi elementi (se disponibili) i loro nomi, ciò avviene operando sulle “labels” (o etichette).
+Scegliere  la scheda <strong>Labels (2)</strong> e selezionare <strong>Single Labels (3)</strong> dal menu a tendina. Selezionare ora il campo che verrà utilizzato per etichettare i dati nell’area di disegno della mappa, scegliendo “nome” nel campo <strong>Value (4)</strong>. Selezionare <strong>Text (5)</strong> per modificare lo stile del testo dell’etichetta e impostare <strong>Size</strong> del carattere su 5.0 <strong>(6)</strong>.
+Se si clicca su <strong>Apply (7)</strong> e si sposta il Layer Properties livello per poter guardare la mappa, si noterà che a prima vista è difficile leggere le nostre etichette; nel prossimo passo si vedrà come risolvere questo problema.</p>
+<figure class="align-center" id="id56">
+<span id="id24"></span><img alt="../_images/3.1.3.8.png" src="../_images/3.1.3.8.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 3.1.3.8 </span><span class="caption-text">– Feature labels Text</span><a class="headerlink" href="#id56" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Tornare al pannello Layer Properties e fare clic su <strong>(1)</strong> (<a class="reference internal" href="#id25"><span class="std std-numref">Fig. 3.1.3.9</span></a>) .
+Attivare la casella <strong>Draw background (2)</strong> e selezionare un colore a scelta nella palette dei colori <strong>(3)</strong> della barra dei colori; si osservi che il colore del testo è nero, quindi scegliendo toni più scuri sarà più difficile vederlo. L’aggiunta di uno sfondo coprirà parzialmente ciò che si trova sotto il testo delle etichette, ma renderà il testo molto più leggibile.</p>
+<figure class="align-center" id="id57">
+<span id="id25"></span><img alt="../_images/3.1.3.9.png" src="../_images/3.1.3.9.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 3.1.3.9 </span><span class="caption-text">– Feature labels Background</span><a class="headerlink" href="#id57" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Il risultato di questa operazione è mostrato qui (<a class="reference internal" href="#id26"><span class="std std-numref">Fig. 3.1.3.10</span></a>).</p>
+<figure class="align-center" id="id58">
+<span id="id26"></span><img alt="../_images/3.1.3.10.png" src="../_images/3.1.3.10.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 3.1.3.10 </span><span class="caption-text">– Feature labels - Risultato</span><a class="headerlink" href="#id58" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p><strong>Graduated style</strong></p>
+<p>Modificheremo ora lo stile  del layer “EMSR468_AOI05_DEL_PRODUCT_observedEventA_r1_v1” <strong>(1)</strong> (<a class="reference internal" href="#id27"><span class="std std-numref">Fig. 3.1.3.11</span></a>) .
+L’evento osservato che stiamo considerando è un’alluvione.  Il territorio non è colpito dall’alluvione in modo costante (colore unico) ma ci sono aree più esposte e altre meno, quindi è necessaria una visualizzazione che ne tenga conto.</p>
+<p>Aprire la scheda <strong>Symbology</strong> e selezionare <strong>Graduated (2)</strong> dal menu a tendina. Scegliere “area” nel campo <strong>Value field (3)</strong>; l’obiettivo è visualizzare le aree allagate con colori diversi in base alle loro dimensioni. Selezionare una palette di colore (4).
+Nel set di dati in esame si hanno molte aree piccole e solo poche grandi; data questa distribuzione, selezionare la modalità <strong>Logarithmic Scale</strong> o <strong>Natural Breaks (Jenks) (5)</strong> per migliorare la distanza tra le classi. Impostare il numero di classi per esempio  pari a 15 <strong>(6)</strong> e cliccare su <strong>Classify (7)</strong>: è possibile visualizzare l’anteprima della classificazione nel pannello di anteprima <strong>(8)</strong>. Infine, cliccare su <strong>Ok (9)</strong>.</p>
+<figure class="align-center" id="id59">
+<span id="id27"></span><img alt="../_images/3.1.3.11.png" src="../_images/3.1.3.11.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 3.1.3.11 </span><span class="caption-text">– Graduated style</span><a class="headerlink" href="#id59" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Il risultato di questa operazione è mostrato qui (<a class="reference internal" href="#id28"><span class="std std-numref">Fig. 3.1.3.12</span></a>) .</p>
+<figure class="align-center" id="id60">
+<span id="id28"></span><img alt="../_images/3.1.3.12.png" src="../_images/3.1.3.12.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 3.1.3.12 </span><span class="caption-text">– Graduated style - Risultato</span><a class="headerlink" href="#id60" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p><strong>Salvare uno stile</strong></p>
+<p>Se si è soddisfatti di uno stile e si desidera salvarlo per utilizzarlo in futuro, è possibile fare clic su <strong>Style (1)</strong> (<a class="reference internal" href="#id29"><span class="std std-numref">Fig. 3.1.3.13</span></a>) nel pannello <strong>Symbology</strong> del <strong>Layer Properties</strong> e selezionare <strong>Save Style (2)</strong> dal menu che si aprirà. Nella nuova finestra è possibile selezionare il formato in cui si desidera salvare il file <strong>(3)</strong> e avere un’anteprima delle categorie che verranno salvate <strong>(4)</strong>; si ha anche la possibilità di disattivare eventualmente quelle che non interessano cliccando sulle caselle spuntate. Cliccando sui tre puntini <strong>(5)</strong> è possibile navigare tra le cartelle e scegliere il percorso in cui salvare lo stile personalizzato; al termine, cliccare su <strong>ok (6)</strong>.</p>
+<figure class="align-center" id="id61">
+<span id="id29"></span><img alt="../_images/3.1.3.13.png" src="../_images/3.1.3.13.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 3.1.3.13 </span><span class="caption-text">– Salvataggio dello stile</span><a class="headerlink" href="#id61" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="attribute-table">
+<h3><span class="section-number">3.1.3.4. </span>Attribute table<a class="headerlink" href="#attribute-table" title="Link to this heading"></a></h3>
+<p>Di solito quando si lavora su dati vettoriali si ha accesso a una tabella degli attributi (<a class="reference internal" href="#id30"><span class="std std-numref">Fig. 3.1.3.14</span></a>) , che mostra le informazioni sulle caratteristiche del layer scelto. Vediamo ora la tabella degli attributi del layer “EMSR468_AOI05_DEL_PRODUCT_observedEventA_r1_v1” <strong>(1)</strong> Per aprirla è necessario fare clic con il tasto destro del mouse sul layer e selezionare  <strong>Open Attribute Table (2)</strong> tra le varie opzioni. Verrà visualizzata la tabella degli attributi <strong>(3)</strong>; qui possiamo vedere gli attributi che compongono il nostro livello rappresentati come titoli delle colonne <strong>(4)</strong>, ogni riga rappresenta una voce.
+Sopra la tabella degli attributi sono presenti alcuni pulsanti che offrono diverse opzioni:</p>
+<ul class="simple">
+<li><p>Toggle editing mode <strong>(5)</strong>;</p></li>
+<li><p>Reload the table <strong>(6)</strong>;</p></li>
+<li><p>Select features using an Expression <strong>(7)</strong>;</p></li>
+<li><p>Select All <strong>(8)</strong>;</p></li>
+<li><p>Invert selection <strong>(9)</strong>;</p></li>
+<li><p>Deselect all <strong>(10)</strong>;</p></li>
+<li><p>Filter/Select features using form <strong>(11)</strong>;</p></li>
+<li><p>Move selected to top <strong>(12)</strong>;</p></li>
+<li><p>Pan map to the selected rows <strong>(13)</strong>;</p></li>
+<li><p>Zoom map to the selected rows <strong>(14)</strong>;</p></li>
+<li><p>Organize Columns <strong>(15)</strong>;</p></li>
+<li><p>Open field calculator <strong>(16)</strong>;</p></li>
+<li><p>Conditional formatting <strong>(17)</strong>;</p></li>
+<li><p>Actions <strong>(18)</strong>;</p></li>
+<li><p>Dock Attribute Table <strong>(19)</strong>.</p></li>
+</ul>
+<figure class="align-center" id="id62">
+<span id="id30"></span><img alt="../_images/3.1.3.14.png" src="../_images/3.1.3.14.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 3.1.3.14 </span><span class="caption-text">– Attribute table</span><a class="headerlink" href="#id62" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p><strong>Selezionare la più grande area colpita dall’alluvione</strong></p>
+<p>Per selezionare l’area più grande colpita dall’alluvione cliccare sull’attributo “area” della attribute table <strong>(1)</strong> (<a class="reference internal" href="#id31"><span class="std std-numref">Fig. 3.1.3.15</span></a>); poiché i valori sono numerici, i dati saranno automaticamente ordinati per valori decrescenti, quindi l’area più grande sarà rappresentata nell’ultima riga. Facendo nuovamente clic sullo stesso attributo, i dati verranno ordinati in modo crescente. Ora fare clic sul numero di riga corrispondente per selezionare la nostra caratteristica <strong>(2)</strong>. Una volta effettuata la selezione, è possibile fare clic con il tasto destro del mouse su un punto qualsiasi della caratteristica selezionata <strong>(3)</strong> e selezionare <strong>Zoom to feature (4)</strong>. In alternativa, dato che si è eseguita una selezione, è possibile fare clic su <strong>Zoom map to the selected rows (5)</strong>.</p>
+<figure class="align-center" id="id63">
+<span id="id31"></span><img alt="../_images/3.1.3.15.png" src="../_images/3.1.3.15.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 3.1.3.15 </span><span class="caption-text">– La più grande area colpita dall’alluvione</span><a class="headerlink" href="#id63" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p><strong>Calcolare l’area totale colpita dall’alluvione</strong></p>
+<p>Per eseguire calcoli si può utilizzare Field Calculator (<a class="reference internal" href="#id32"><span class="std std-numref">Fig. 3.1.3.16</span></a>) . Per prima cosa cliccare su <strong>Toggle editing mode (1)</strong> e poi sul pulsante <strong>Field calculator (2)</strong> per aprirlo.
+La prima cosa da fare è spuntare la casella <strong>Create virtual field  (3)</strong>, poi dare un nome alla nuova colonna che ospiterà il risultato del nostro calcolo, in questo caso “Total_area” <strong>(4)</strong>. Impostare l’ <strong>Output Field Type</strong> su “Decimal” <strong>(5)</strong>, poiché impostandolo su “Intero” si eliminano tutti i valori dopo la virgola. Poiché si vogliono sommare tutti i valori del campo area, cercare la funzione somma nella barra di ricerca digitando “sum” <strong>(6)</strong>; una volta trovata, fare clic su di essa due volte per aggiungerla alla expression tab (questa verrà esaminata in seguito). A destra della Field calculator si aprirà una spiegazione approfondita del funzionamento della funzione scelta <strong>(7)</strong>. Fare clic su <strong>Fields and Values (8)</strong> per aprire il menu a tendina e fare doppio clic su “area” <strong>(9)</strong>. Ora è necessario completare la formula aggiungendo la parentesi di chiusura “ ) “ <strong>(10)</strong>. In alternativa, è sufficiente digitare la formula nella scheda come: “ sum( “area” ) “ (eliminando le virgolette esterne). Se la formula è stata scritta nella forma corretta, si dovrebbe vedere una <strong>Preview</strong> del risultato <strong>(11)</strong>. La procedura si conclude facendo clic su <strong>ok (12)</strong>.</p>
+<figure class="align-center" id="id64">
+<span id="id32"></span><img alt="../_images/3.1.3.16.png" src="../_images/3.1.3.16.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 3.1.3.16 </span><span class="caption-text">– Area totale interessata dall’alluvione</span><a class="headerlink" href="#id64" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="salvare-un-progetto-in-qgis">
+<h3><span class="section-number">3.1.3.5. </span>Salvare un progetto in QGIS<a class="headerlink" href="#salvare-un-progetto-in-qgis" title="Link to this heading"></a></h3>
+<p>Per salvare un progetto in QGIS (<a class="reference internal" href="#id33"><span class="std std-numref">Fig. 3.1.3.17</span></a>), cliccare su <strong>Project (1)</strong> e poi su <strong>Save (2)</strong>. Successivamente, è necessario selezionare il percorso in cui si desidera salvare il progetto <strong>(3)</strong>, assegnargli un nome <strong>(4)</strong> e fare clic su <strong>Save (5)</strong>.</p>
+<figure class="align-center" id="id65">
+<span id="id33"></span><img alt="../_images/3.1.3.17.png" src="../_images/3.1.3.17.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 3.1.3.17 </span><span class="caption-text">– Salvare un progetto in QGIS</span><a class="headerlink" href="#id65" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="part3.html" class="btn btn-neutral float-left" title="3. Ottenere dati da Copernicus EMS" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../part4/part4.html" class="btn btn-neutral float-right" title="4. Immagini Sentinel-2 pre e post evento" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, GEOLab.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
