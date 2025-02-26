@@ -110,7 +110,7 @@ Una volta selezionato l'elemento desiderato sulla mappa, cliccando sul numero ch
 
    -- Activation Details On-Demand Mapping
 
-Il link "Activations details" (:numref:`3.1.1.3`) apre una pagina che contiene tutte le informazioni relative all'evento selezionato. Oltra alla definizione del tipo di evento ("EVENT TYPE"), alla data ("EVENT TIME") e alla posizione geografica ("AFFECTED COUNTRY"), vengono riportati i motivi per cui è stata attivata l'emergenza in questione ("ACTIVATION REASON"). Sulla destra compare infine la lista dei prodotti disponibili.
+Il link "Activations details" (:numref:`3.1.1.3`) apre una pagina che contiene tutte le informazioni relative all'evento selezionato. Oltre alla definizione del tipo di evento ("EVENT TYPE"), alla data ("EVENT TIME") e alla posizione geografica ("AFFECTED COUNTRY"), vengono riportati i motivi per cui è stata attivata l'emergenza in questione ("ACTIVATION REASON"). Sulla sinistra compare infine la lista dei prodotti disponibili.
 
 .. _3.1.1.3:
 
@@ -150,7 +150,7 @@ Nella mappa compaiono 7 eventi, zoomando ci si riporta ad un'area ridotta nella 
 
    -- Alluvione in Piemonte nell'ottobre del 2020
 
-Cliccando su **"Activation details"** si apre una finestra che riporta la lista dei prodotti disponibili corrispondente a 6 zone diverse. Selezioniamo Vercelli **(1)** e scarichiamo i dati disponibili cliccando su vector (:numref:`3.1.2.3`).
+Cliccando su **"Activation details"** si apre una finestra che riporta la lista dei prodotti disponibili corrispondente a 6 zone diverse. Selezioniamo "Vercelli" **(1)** e scarichiamo i dati disponibili cliccando su "Vector" **(2)** (:numref:`3.1.2.3`).
 
 .. _3.1.2.3:
 
@@ -165,7 +165,7 @@ Importare i dati EMS in QGIS
 Apertura di un progetto QGIS esistente
 ***************************************
 
-Per aprire un progetto QGIS esistente, nella barra degli strumenti dell'interfaccia di QGIS, in alto a sinistra, cliccare su **Project (1)** e poi su **Open (2)** (:numref:`3.1.3.1`) . In alternativa, utilizzare la scorciatoia "CTRL+O", quindi navigare nella cartella che contiene il file ".qgz". Il progetto è stato salvato nel :ref:`capitolo 1.2.2.5 <Save project>` .
+Per aprire un progetto QGIS esistente, nella barra degli strumenti dell'interfaccia di QGIS, in alto a sinistra, cliccare su **Project (1)** e poi su **Open (2)** (:numref:`3.1.3.1`) . In alternativa, utilizzare la scorciatoia "CTRL+O", quindi navigare nella cartella che contiene il file ".qgz". Il progetto è stato salvato nel :ref:`capitolo 1.2.2.5 <Save project>`.
 
 .. _3.1.3.1:
 
