@@ -2,15 +2,15 @@
 
 
 Visualizzare le immagini satellitari in Copernicus Browser
-============================================================
+==========================================================
 
 
 Visualizzare le immagini satellitari con colori reali
-------------------------------------------------------
+-----------------------------------------------------
 
 
 Di default `Copernicus Browser <https://qgis.org/en/site/forusers/download.html>`_ mostra le immagini in **True color** image :numref:`2.2.1.1`;
-ovvero una combinazione di rosso, verde e blu; per Sentinel-2 si trovano nella banda 4, 3 e 2, ulteriori informazioni su Sentinel-2 possono essere lette ( :ref:`qui < Link to Why Sentinel-2 “4.1.1”>`).
+ovvero una combinazione di rosso, verde e blu; per Sentinel-2 si trovano nella banda 4, 3 e 2, ulteriori informazioni su Sentinel-2 possono essere trovate a questa :ref:`sezione <sezione_4.1.1>`.
 In questo modo, la superficie della Terra viene mostrata come la vedrebbero gli esseri umani. Tutti i livelli sono dotati di una descrizione. Per espandere la finestra e leggerla clicca sull'icona corrispondente **(1)**.
 
 
@@ -65,7 +65,7 @@ Utilizzare la funzionalità zoom concentrandosi su “Vercelli” per avere un'i
    -- NDWI di Vercelli in Copernicus Browser
 
 
-In `Copernicus Browser <https://qgis.org/en/site/forusers/download.html>`_ gli indici hanno una legenda. Questa rappresenta la chiave di lettura dell'immagine satellitare. Si riporta di seguito un esempio di legenda relativa all’NDWI :numref:`2.2.2.3`.
+In `Copernicus Browser <https://qgis.org/en/site/forusers/download.html>`_ gli indici hanno una legenda. Questa rappresenta la chiave di lettura dell'immagine satellitare. Si riporta di seguito un esempio di legenda relativa all’NDWI (:numref:`2.2.2.3`).
 
 
 .. _2.2.2.3:

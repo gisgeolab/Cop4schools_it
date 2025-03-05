@@ -2,15 +2,16 @@
 
 
 Come scaricare i dati su Copernicus browser
-================================================
+===========================================
 
+.. _sezione_4.1.1:
 
 Perché Sentinel-2?
 -------------------
 
 
 La missione Sentinel-2 fa parte del programma Copernicus attraverso il quale sono stati lanciati due satelliti con l'obiettivo di fornire immagini multispettrali ad alta risoluzione della superficie terrestre. I due satelliti sono posti a 180° l'uno dall'altro su un'orbita polare eliosincrona a circa 800 km dalla terra offrendo un tempo di rivisitazione della stessa zona all'equatore di 10 giorni. In questo modo la costellazione composta dai due satelliti consente un tempo di rivisitazione di 5 giorni, un tempo di rivisitazione basso è fondamentale quando si cerca di monitorare fenomeni che cambiano nel tempo come un evento di inondazione o un incendio.
-Le immagini catturate da Sentinel-2 sono composte da 13 bande spettrali alcune delle quali rientrano nel campo del visibile mentre altre sono nell'infrarosso. Con questa composizione è possibile analizzare cose come la copertura del suolo, la quantità e qualità dell'acqua, la salute della vegetazione, la composizione del suolo ecc. La risoluzione spaziale di Sentinel 2 varia dai 10 ai 60 m a seconda della banda a cui ci riferiamo, in questo modo è possibile recuperare osservazioni dettagliate
+Le immagini catturate da Sentinel-2 sono composte da 13 bande spettrali alcune delle quali rientrano nel campo del visibile mentre altre sono nell'infrarosso. Con questa composizione è possibile analizzare cose come la copertura del suolo, la quantità e qualità dell'acqua, la salute della vegetazione, la composizione del suolo ecc. La risoluzione spaziale di Sentinel 2 varia dai 10 ai 60 m a seconda della banda a cui ci riferiamo, in questo modo è possibile recuperare osservazioni dettagliate.
 Parlando di copertura, i satelliti Sentinel-2 offrono una ampiezza di scansione di 290 km; si intende l'ampiezza dell'area terrestre che questi satelliti riescono a catturare passando una sola volta su un'area molto evidente consentendo di ridurre il mosaicatura dei dati. Un'altra caratteristica importante dei dati acquisiti tramite Sentinel-2 è che sono accessibili gratuitamente e disponibili al pubblico.
 
 
@@ -174,7 +175,6 @@ E’ possibile eseguire il confronto in Copernicus Browser nell' :ref:`ultima se
 
 .. _4.1.5.1:
 
-
 .. figure:: /img/4/4.1.5.1.png
    :align: center
 
@@ -198,28 +198,29 @@ Una volta terminato, cliccare su **(8)** per chiudere questa finestra.
 
 .. _4.1.5.2:
 
-
 .. figure:: /img/4/4.1.5.2.png
    :align: center
 
 
    -- Visualizzare e scaricare il Timelapse
 
+
+
 .. _Download_2:
 
 Scaricare immagini Sentinel-2
-------------------------------
+-----------------------------
 
 
-Una volta chiuso il time-lapse cliccare su **(1)**, per scaricare l'immagine come mostrato in  :numref:`4.1.6.1` . Scegliere il pannello **Analytical (2)** per impostare il formato immagine su TIFF **(3)** (Tagged Image File Format). Il formato .tiff è un formato di file popolare utilizzato per archiviare dati raster, consente la compressione senza perdita di dati (non si verifica alcuna perdita nella qualità dell'immagine durante la compressione del file) e l'archiviazione di immagini con diverse profondità di colore.
+Una volta chiuso il time-lapse cliccare su **(1)**, per scaricare l'immagine come mostrato in :numref:`img_4.1.6.1`. Scegliere il pannello **Analytical (2)** per impostare il formato immagine su TIFF **(3)** (Tagged Image File Format). Il formato .tiff è un formato di file popolare utilizzato per archiviare dati raster, consente la compressione senza perdita di dati (non si verifica alcuna perdita nella qualità dell'immagine durante la compressione del file) e l'archiviazione di immagini con diverse profondità di colore.
 
 
-.. note::  sono disponibili ulteriori informazioni sul formato `qui <https://web.archive.org/web/20210108172855/https://www.adobe.io/open/standards/TIFF.html>`_ .
+.. note::  sono disponibili ulteriori informazioni sul formato a `questa pagina <https://web.archive.org/web/20210108172855/https://www.adobe.io/open/standards/TIFF.html>`_ .
 
 Impostare la risoluzione dell'immagine a **HIGH (4)** e il sistema di coordinate come WGS84 **(5)**. A questo punto scegliere  livelli **(6)** e bande (per questa lezione selezionare tutte le bande) **(7)** che si desidera salvare, attivando/disattivando **Clip extra bands (8)** nell'immagine, verranno incluse solo le prime 3 bande. Una volta terminato, scaricare le immagini tramite il pulsante **Download (9)**.
 
-.. _4.1.6.1:
 
+.. _img_4.1.6.1:
 
 .. figure:: /img/4/4.1.6.1.png
    :align: center

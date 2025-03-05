@@ -26,9 +26,22 @@ COPERNICUS4Schools
 
    credits
 
-Co-funded by the European Union
+Partners
+--------
+
+.. image:: img/bios/Partners1.png
+    :align: center
+
+.. image:: img/bios/logo_geolab_poli.png
+    :width: 200px
+    :align: center
+
+.. admonition:: Disclaimer
+
+    The product was created in collaboration with ISPRA according to the collaboration agreement dated September 5, 2023, within the framework of an Agreement  No. 241 (article 15) of August 7, 1990. 
 
 .. image:: /img/EU-FPCUP-Logo_full_name.svg
+   :align: center
 
 .. admonition:: Disclaimer
 
