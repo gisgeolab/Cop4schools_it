@@ -10,7 +10,7 @@ Visualizzare le immagini satellitari con colori reali
 
 
 Di default `Copernicus Browser <https://qgis.org/en/site/forusers/download.html>`_ mostra le immagini in **True color** image :numref:`2.2.1.1`;
-ovvero una combinazione di rosso, verde e blu; per Sentinel-2 si trovano nella banda 4, 3 e 2, ulteriori informazioni su Sentinel-2 possono essere a questa :ref:`sezione <sezione_4.1.1>`.
+ovvero una combinazione di rosso, verde e blu; per Sentinel-2 si trovano nella banda 4, 3 e 2, ulteriori informazioni su Sentinel-2 possono essere trovate a questa :ref:`sezione <sezione_4.1.1>`.
 In questo modo, la superficie della Terra viene mostrata come la vedrebbero gli esseri umani. Tutti i livelli sono dotati di una descrizione. Per espandere la finestra e leggerla clicca sull'icona corrispondente **(1)**.
 
 
