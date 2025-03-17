@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>4.2. Immagini Sentinel-2 in QGIS &mdash; COPERNICUS4Schools  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=8a25042d" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="5. Ottenere dati dal Copernicus Land Monitoring Service (CLMS)" href="../part5/part5.html" />
+    <link rel="prev" title="4.1. Come scaricare i dati su Copernicus browser" href="4_1.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            COPERNICUS4Schools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../part1/part1.html">1. Introduzione ai GIS (Sistemi Informativi Geografici )</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part2/part2.html">2. GIS e strumenti di analisi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part3/part3.html">3. Ottenere dati da Copernicus EMS</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="part4.html">4. Immagini Sentinel-2 pre e post evento</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="4_1.html">4.1. Come scaricare i dati su Copernicus browser</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">4.2. Immagini Sentinel-2 in QGIS</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#importare-immagini-sentinel-2-in-qgis">4.2.1. Importare immagini Sentinel-2 in QGIS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#calcolo-degli-indici-in-qgis">4.2.2. Calcolo degli indici in QGIS</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#individuazione-delle-zone-con-maggiore-saturazione-idrica">4.2.2.1. Individuazione delle zone con maggiore saturazione idrica</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#visualizzare-raster-in-qgis">4.2.3. Visualizzare raster in QGIS</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#singleband-gray">4.2.3.1. Singleband gray</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#singleband-pseudocolor">4.2.3.2. Singleband-pseudocolor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#paletted-unique-values">4.2.3.3. Paletted / unique values</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../part5/part5.html">5. Ottenere dati dal Copernicus Land Monitoring Service (CLMS)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part6/part6.html">6. Ottenere i dati sulla popolazione del JRC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part7/part7.html">7. Calcolo delle classi di copertura di suolo colpite dall’alluvione</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part8/part8.html">8. Calcolo della popolazione colpita dall’alluvione</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../credits.html">Credits</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">COPERNICUS4Schools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="part4.html"><span class="section-number">4. </span>Immagini Sentinel-2 pre e post evento</a></li>
+      <li class="breadcrumb-item active"><span class="section-number">4.2. </span>Immagini Sentinel-2 in QGIS</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/part4/4_2.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="immagini-sentinel-2-in-qgis">
+<span id="id1"></span><h1><span class="section-number">4.2. </span>Immagini Sentinel-2 in QGIS<a class="headerlink" href="#immagini-sentinel-2-in-qgis" title="Link to this heading"></a></h1>
+<section id="importare-immagini-sentinel-2-in-qgis">
+<span id="import-sentinel-2-images"></span><h2><span class="section-number">4.2.1. </span>Importare immagini Sentinel-2 in QGIS<a class="headerlink" href="#importare-immagini-sentinel-2-in-qgis" title="Link to this heading"></a></h2>
+<p>Per importare i dati, seguire i passaggi mostrati in <a class="reference internal" href="#id2"><span class="std std-numref">Fig. 4.2.1.1</span></a> . Cliccare su <strong>Layer (1)</strong>, <strong>Add Layer (2)</strong> e scegliere <strong>Add Raster Layer (3)</strong>. Dal <strong>Data Source Manager</strong> faire clic sul pulsante con tre punti <strong>(4)</strong>, cercare la cartella in cui è stato scaricato il prodotto corrispondente alla data: 28-9-2020 (precedente all’evento) e aggiungerlo. Ora, fare clic su <strong>Add (5)</strong> e poi su <strong>Close (6)</strong>.</p>
+<figure class="align-center" id="id11">
+<span id="id2"></span><img alt="../_images/4.2.1.1.png" src="../_images/4.2.1.1.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.2.1.1 </span><span class="caption-text">– Importare immagini Sentinel-2 in QGIS</span><a class="headerlink" href="#id11" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="calcolo-degli-indici-in-qgis">
+<span id="calculate-indices"></span><h2><span class="section-number">4.2.2. </span>Calcolo degli indici in QGIS<a class="headerlink" href="#calcolo-degli-indici-in-qgis" title="Link to this heading"></a></h2>
+<p>Calcolare l’indice NDWI utilizzando QGIS tenendo presente che per semplificare il calcolo non applicheremo alcuna tecnica di pre-elaborazione. Unire tutte le nostre diverse bande in un unico raster virtuale, per farlo cliccare su <strong>Raster (1)</strong> (<a class="reference internal" href="#id3"><span class="std std-numref">Fig. 4.2.2.1</span></a>) , <strong>Miscellaneous (2)</strong> e <strong>Build Virtual Raster (3)</strong></p>
+<figure class="align-center" id="id12">
+<span id="id3"></span><img alt="../_images/4.2.2.1.png" src="../_images/4.2.2.1.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.2.2.1 </span><span class="caption-text">– Creazione di un Raster Virtuale pt.1</span><a class="headerlink" href="#id12" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>La <a class="reference internal" href="#id4"><span class="std std-numref">Fig. 4.2.2.2</span></a> mostra il menu del <strong>Build Virtual Raster</strong>. Scegliere la risoluzione “Massima” dal menu a discesa <strong>(1)</strong> e selezionare la casella chiamata: <strong>Place each input file into a separate band (2)</strong>. Selezionare le bande di interesse, cliccare sull’icona con i tre puntini <strong>(3)</strong>. Verrà visualizzato un nuovo menu <strong>(4)</strong>, da lì selezionare la casella delle bande che si vogliono aggiungere <strong>(5)</strong>, una volta terminato fare clic su <strong>ok (6)</strong>. Ora è possibile eseguire l’algoritmo, ma prima sarà necessario dare un nome al  file, nominarlo: “Pre.vrt” <strong>(7)</strong> (se non si sceglie alcun nome, il software chiamerà il file: “VIRTUAL”), una volta fatto cliccare su <strong>Run (8)</strong>. Al termine dell’elaborazione è possibile chiudere la finestra.</p>
+<figure class="align-center" id="id13">
+<span id="id4"></span><img alt="../_images/4.2.2.2.png" src="../_images/4.2.2.2.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.2.2.2 </span><span class="caption-text">– Creazione di un Raster Virtuale pt.2</span><a class="headerlink" href="#id13" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Ora calcolare gli indici (<a class="reference internal" href="#id5"><span class="std std-numref">Fig. 4.2.2.3</span></a>) , fare clic su <strong>Raster (1)</strong>, <strong>Raster Calculator (2)</strong>. Impostare la posizione in cui salvare l’output facendo clic sul pulsante con tre punti <strong>(3)</strong> e scegliere il nome del file (nome suggerito: “NDWI_pre”). All’interno delle Bande Raster è possibilevedere tutte le bande che compongono il raster virtuale <strong>(4)</strong>. Scrivere ora l’equazione per calcolare l’indice, in questo caso calcolare l’NDWI, come già visto nella <a class="reference internal" href="../part2/2_1.html#id1"><span class="std std-ref">lezione 2</span></a> , l’indice NDWI è calcolato come: (GREEN - NIR) / (GREEN + NIR) le cui bande di sentinel 2 corrispondenti sono: (B03 - B08) / (B03 + B08). Per scrivere questa formula cliccare sulle bande <strong>(4)</strong> e sui pulsanti corrispondenti agli operatori <strong>(5)</strong>, la formula verrà scritta nella casella <strong>Raster Calculator Expression (6)</strong>. Se raster virtuale è stato chiamato come suggerito sopra (“Pre”),copiare la formula: “( “Pre&#64;3” - “Pre&#64;8” ) / ( “Pre&#64;3” + “Pre&#64;8” )”  all’interno dello spazio dedicato alle espressioni del Raster Calculator.</p>
+<figure class="align-center" id="id14">
+<span id="id5"></span><img alt="../_images/4.2.2.3.png" src="../_images/4.2.2.3.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.2.2.3 </span><span class="caption-text">– Calcola l’indice NDWI in QGIS</span><a class="headerlink" href="#id14" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Ripetere tutti i passaggi del capitolo <a class="reference internal" href="#import-sentinel-2-images"><span class="std std-ref">capitolo 4.2.1</span></a> e <a class="reference internal" href="#calculate-indices"><span class="std std-ref">capitolo 4.2.2</span></a> ma, questa volta, calcolare l’NDWI utilizzando i dati corrispondenti alla data: 03-10-2020 (dopo l’evento), suggeriamo di chiamare il raster virtuale come “Post” in modo da poter copiare la formula: “( “Post&#64;3” - “Post&#64;8” ) / ( “Post&#64;3” + “Post&#64;8” )” all’interno dello spazio dedicato alle espressioni del Raster Calculator.</p>
+<section id="individuazione-delle-zone-con-maggiore-saturazione-idrica">
+<span id="identification-of-zones"></span><h3><span class="section-number">4.2.2.1. </span>Individuazione delle zone con maggiore saturazione idrica<a class="headerlink" href="#individuazione-delle-zone-con-maggiore-saturazione-idrica" title="Link to this heading"></a></h3>
+<p>Per identificare le zone con maggiore saturazione idrica è possibile , in modo semplificato, osservare la differenza tra l’NDWI pre e post evento. Dalla (<a class="reference internal" href="#id6"><span class="std std-numref">Fig. 4.2.2.4</span></a>) , è possibile osservare la scala di valori assegnati ai diversi colori, sia negli eventi pre che post NDWI <strong>(1)</strong>, notare che i valori sono diversi, questo non sarà un confronto corretto. Per risolvere questo problema è possibile cambiarli, fare clic con il tasto destro sull’ indice(2), cliccare su <strong>Properties (3)</strong> e su <strong>Symbology (4)</strong>. Cambiare il valore <strong>Min</strong> su “-1” e il valore <strong>Max</strong> su “+1” <strong>(5)</strong> confermare le scelte cliccando su <strong>ok (6)</strong>.</p>
+<figure class="align-center" id="id15">
+<span id="id6"></span><img alt="../_images/4.2.2.4.png" src="../_images/4.2.2.4.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.2.2.4 </span><span class="caption-text">– Correzione dell’intervallo di valori dell’NDWI</span><a class="headerlink" href="#id15" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>In <a class="reference internal" href="#id7"><span class="std std-numref">Fig. 4.2.2.5</span></a> è possibile apprezzare la differenza fra i due NDWI:</p>
+<figure class="align-center" id="id16">
+<span id="id7"></span><img alt="../_images/4.2.2.5.png" src="../_images/4.2.2.5.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.2.2.5 </span><span class="caption-text">– Individuare le zone con maggiore saturazione idrica</span><a class="headerlink" href="#id16" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="visualizzare-raster-in-qgis">
+<h2><span class="section-number">4.2.3. </span>Visualizzare raster in QGIS<a class="headerlink" href="#visualizzare-raster-in-qgis" title="Link to this heading"></a></h2>
+<section id="singleband-gray">
+<h3><span class="section-number">4.2.3.1. </span>Singleband gray<a class="headerlink" href="#singleband-gray" title="Link to this heading"></a></h3>
+<p>Precedentemente è stata mostrata la visualizzazione tramite Singleband gray ( <a class="reference internal" href="#identification-of-zones"><span class="std std-ref">capitolo 4.2.2.1</span></a> ) con questo tipo di visualizzazione è possibile renderizzare un layer utilizzando una singola banda. La prima cosa da fare è impostare <strong>Color gradient</strong> da “Black to White” a “White to Black” <strong>(1)</strong> (<a class="reference internal" href="#id8"><span class="std std-numref">Fig. 4.2.3.1</span></a>) .
+Come già visto è possibile modificare i valori di <strong>Min</strong> e <strong>Max</strong> . E’ possibile anche esaltare le differenze, all’interno dei valori di temperatura del raster, modificando i valori <strong>Contrast Enhancement (3)</strong>.</p>
+<figure class="align-center" id="id17">
+<span id="id8"></span><img alt="../_images/4.2.3.1.png" src="../_images/4.2.3.1.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.2.3.1 </span><span class="caption-text">– Singleband gray</span><a class="headerlink" href="#id17" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="singleband-pseudocolor">
+<h3><span class="section-number">4.2.3.2. </span>Singleband-pseudocolor<a class="headerlink" href="#singleband-pseudocolor" title="Link to this heading"></a></h3>
+<p>Ora è il turno del Singleband pseudocolor (<a class="reference internal" href="#id9"><span class="std std-numref">Fig. 4.2.3.2</span></a>) . Dal menù a tendina selezionare “Singleband pseudocolor” <strong>Render Type (1)</strong>, impostare <strong>Min</strong> e <strong>Max</strong> rispettivamente a “-1” e “+1” <strong>(2)</strong>. Ora cambiare la Color ramp, facendo clic sul simbolo del triangolo rivolto verso il basso <strong>(3)</strong>, invertire la scala di colori corrente <strong>(4)</strong> oppure selezionarne una nuova selezionando: <strong>All Color Ramps (5)</strong> . Selezionare “GnBu” <strong>(6)</strong>. E’ possibile modificare la scala di colori selezionata cliccandoci sopra <strong>(7)</strong>. Lasciare <strong>Mode</strong> come continuo <strong>(8)</strong>, il che bloccherà automaticamente il numero di classi <strong>(9)</strong>, utilizzando altre modalità è invece possibile cambiarli. E’ possibile vedere un’anteprima dei risultati nella sezione centrale <strong>(10)</strong>, una volta terminato, cliccare su <strong>ok (11)</strong>.</p>
+<figure class="align-center" id="id18">
+<span id="id9"></span><img alt="../_images/4.2.3.2.png" src="../_images/4.2.3.2.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.2.3.2 </span><span class="caption-text">– Singleband-pseudocolor</span><a class="headerlink" href="#id18" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="paletted-unique-values">
+<h3><span class="section-number">4.2.3.3. </span>Paletted / unique values<a class="headerlink" href="#paletted-unique-values" title="Link to this heading"></a></h3>
+<p>Questo tipo di visualizzazione (<a class="reference internal" href="#id10"><span class="std std-numref">Fig. 4.2.3.3</span></a>) consiste nel rappresentare ogni diverso valore del raster con un colore diverso ed è spesso utilizzata per la rappresentazione della copertura del suolo. Selezionare “Paletted / Unique values” come <strong>Render Type (1)</strong>. per quanto riguarda la scala dei colori, cambiarla cliccando su <strong>Color ramp (2)</strong> (come impostazione predefinita, il software assegna un colore casuale a ciascun valore univoco). Per generare le classi, cliccare su <strong>Classify (3)</strong>, questa procedura potrebbe richiedere alcuni secondi a seconda del numero di valori univoci. Questo tipo di rappresentazione non è particolarmente adatta ai dati utilizzati, per cui cliccare su <strong>Cancel (4)</strong>.</p>
+<figure class="align-center" id="id19">
+<span id="id10"></span><img alt="../_images/4.2.3.3.png" src="../_images/4.2.3.3.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.2.3.3 </span><span class="caption-text">– Paletted-unique values</span><a class="headerlink" href="#id19" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="4_1.html" class="btn btn-neutral float-left" title="4.1. Come scaricare i dati su Copernicus browser" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../part5/part5.html" class="btn btn-neutral float-right" title="5. Ottenere dati dal Copernicus Land Monitoring Service (CLMS)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, GEOLab.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

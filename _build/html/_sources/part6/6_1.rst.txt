@@ -1,0 +1,256 @@
+.. _6.1:
+
+Cos’è il Global Human Settlement Layer (GHSL)
+================================================
+
+`Global Human Settlement Layer (GHSL) <https://ghsl.jrc.ec.europa.eu/index.php>`_  è una risorsa che fornisce strumenti e dati gratuiti atti a valutare la presenza umana sul pianeta. Il progetto mira a produrre e analizzare mappe tematiche globali relative alla superficie edificata, alla densità di popolazione e agli insediamenti umani per comprendere la presenza umana sul Pianeta Terra. Il framework di elaborazione GHSL utilizza dati eterogenei inclusi archivi globali di immagini satellitari ad alta risoluzione, dati di censimento e informazioni geografiche fornite dalla comunità. I dati vengono elaborati in modo completamente automatico e generano analisi e rapporti di conoscenza in modo obiettivo e preciso sulla presenza della popolazione e delle infrastrutture costruite. In particolare, GHS-POP è composto da un dataset raster spaziale che rappresenta il numero di persone per cella. Queste stime sono state effettuate ogni 5 anni tra il 1975 e il 2020 e sono disponibili anche proiezioni per gli anni 2025 e 2030.
+Una volta aperto il `sito GHSL web <https://ghsl.jrc.ec.europa.eu/index.php>`_ verrai accolto dalla sua homepage (:numref:`6.1.1.1`) . Dal menu in alto nella home page **(1)** è possibile raggiungere altre sezioni del sito che verranno spiegate nel capitolo successivo. Le tre pagine principali del sito: **Data and tools** , **Visual analytics** e **Degree of urbanisation** sono anche raggiungibili tramite la sezione dedicata **(2)** .
+
+.. _6.1.1.1:
+
+.. figure:: /img/6/6.1.1.1.png
+   :align: center
+
+   -- sito web GHSL - homepage pt.1
+
+Scorrere verso il basso la pagina web (:numref:`6.1.1.2`) per vedere dapprima una serie di link che portano ad aspetti tecnici, progetti e definizioni che tratteremo in seguito **(1)** . Nella sezione successiva verranno presentate le ultime notizie, eventi e pubblicazioni **(2)** . Infine, su sfondo blu, è presente l'elenco dei contatti delle istituzioni coinvolte nel progetto insieme alle note policy e legali **(3)** .
+
+.. _6.1.1.2:
+
+.. figure:: /img/6/6.1.1.2.png
+   :align: center
+
+   -- sito web GHSL - homepage pt.2
+
+Dalla homepage, per aprire la pagina di Copernicus (:numref:`6.1.1.3`) cliccare su **Copernicus (1)** . I contenuti della pagina sono elencati sul lato sinistro della pagina **(2)** . Cliccare sui link interni a quella sezione risulterà in uno scorrimento automatico della pagina fino all'argomento desiderato. A parte una breve introduzione a Copernicus e GHSL, vi è anche una sezione dedicata alla settimana CESM, questo evento è un workshop annuale per gli utenti riguardante Copernicus ESM, parla dello scopo del servizio, delle sue tappe fondamentali, dei partner che contribuiscono ma anche delle innovazioni, delle funzionalità aggiornate e delle novità aggiunte.
+
+.. _6.1.1.3:
+
+.. figure:: /img/6/6.1.1.3.png
+   :align: center
+
+   -- sito web GHSL - Copernicus
+
+Cliccare su **Data and Tools (1)** (:numref:`6.1.1.4`) per raggiungere una pagina che funziona in modo simile alla pagina Copernicus. Questa pagina è composta da una panoramica dei dati e degli strumenti prodotti da GHSL. Come prima, i contenuti della pagina sono elencati nella parte sinistra dello schermo **(2)** .
+
+.. _6.1.1.4:
+
+.. figure:: /img/6/6.1.1.4.png
+   :align: center
+
+   -- sito web GHSL - Data and Tools
+
+Posizionare il mouse su **Data and Tools** (:numref:`6.1.1.5`) senza cliccare la voce corrispondente **(1)** e selezionare la pagina **Concepts and Methodologies (2)** dal menu a tendina. Utilizzare i pulsanti sotto l'immagine **(3)** per visualizzare lo schema della metodologia GHSL.
+
+.. _6.1.1.5:
+
+.. figure:: /img/6/6.1.1.5.png
+   :align: center
+
+   -- sito web GHSL - Data and Tools - Concepts and methodologies
+
+Dal menu a tendina di **Data and Tools** (:numref:`6.1.1.6`) è possibile aprire la pagina **Datasets information (1)** .
+
+.. _6.1.1.6:
+
+.. figure:: /img/6/6.1.1.6.png
+   :align: center
+
+   -- sito web GHSL - Data and Tools - Datasets information pt.1
+
+Scorrere verso il basso per visualizzare un elenco di tutti i set di dati GHSL (:numref:`6.1.1.7`) con la possibilità di fare clic su un pulsante giallo di download **(1)** cliccare su questo pulsante visualizzare la pagina relativa al prodotto selezionato. Cliccare su **How to cite** per visualizzare il testo da riportare nel caso si stiano utilizzando informazioni prese dal corrispondente dataset GHSL. L'elenco di tutti **GLOBAL COVERAGE** i prodotti verranno riportati qui:
+
++ **GHS-BUILT-S** mostra la distribuzione spaziale delle superfici edificate, espressa in metri quadrati;
++ **GHS-BUILT-H** mostra la distribuzione spaziale delle altezze dell'edificio per cella;
++ **GHS-BUILT-V** mostra la distribuzione spaziale dei volumi edificati, espressa in metri cubi;
++ **GHS-BUILT-C** mostra il dominio spaziale di tutto l'edificio ad una scala locale di circa 100 m, questo definisce la Zona di Insediamento Morfologico (Morphological Settlement Zone - MSZ). Descrive anche la classificazione interna della morfologia e la destinazione dell'ambiente costruito;
++ **GHS-POP** mostra la distribuzione della popolazione, espressa come numero di persone per cella;
++ **GHS-SMOD** mostra le variazioni del grado di urbanizzazione su un periodo che attualmente va dal 1975 al 2030;
++ **GHS-DUC** mostra la classificazione del grado di urbanizzazione delle unità amministrative;
++ **GHS-LAND** mostra la frazione di terra per pixel;
++ **GHS-composite-S2 R2020A** è uno strato composito di bande sentinella 2 blu, verde rosso e vicino infrarosso con una risoluzione spaziale di 10 metri. La composizione serve per ottenere un'immagine della Terra libera dalle nuvole.
+
+.. _6.1.1.7:
+
+.. figure:: /img/6/6.1.1.7.png
+   :align: center
+
+   -- sito web GHSL - Data and Tools - Datasets information pt.2
+
+Altri prodotti del GHSL sono riportati qui (:numref:`6.1.1.8`):
+
+**SUPPORTING DATA**:
+
++ **GHS-SDATA** sono dati intermedi utilizzati per facilitare la produzione e il controllo qualità dell'R2023A.
+
+**ANALYTICAL DATA**:
+
++ **GHS-BUILT-LAUSTAT** contiene le statistiche riassuntive di GHS-BUILT-S dal 1975 al 2020 in intervalli di 5 anni espresse in km;
++ **Urban Centre Database UCDB R2019A** descrive i centri urbani secondo una serie di attributi tematici multitemporali. I centri urbani sono entità spaziali definite attraverso una soglia superiore alla popolazione residente e alla proporzione della superficie edificata;
++ **GHS-FUA** descrive i confini delle Aree Urbane Funzionali (FUA) dei Centri Urbani nel 2015. Tali aree vengono classificate attraverso una procedura automatica.
+
+**REGIONAL COVERAGE**:
+
++ **ENACT-POP** mostra le griglie stagionali della popolazione notturna e diurna per il 2011, espresse come numero di persone per cella;
++ **ESM 2015 - R2019** mappa gli insediamenti umani in Europa sulla base della copertura ottica ad altissima risoluzione di Copernicus per l'anno di riferimento 2015;
++ **ESM 2012** è simile a **ESM 2015 - R2019** ma si basa sulla metodologia GHSL applicata alle immagini satellitari SPOT5 e SPOT6.
+
+**PROJECTIONS**:
+
++ **BUILT-POP PROJ R2020** è un pacchetto dati contenente le griglie dell'Abitato e della Popolazione proiettate al 2100 con un intervallo di 10 anni;
++ **SMOD PROJ R2020** è un pacchetto dati contenente strati di regolamento proiettati al 2070 con un intervallo di 10 anni.
+
+.. _6.1.1.8:
+
+.. figure:: /img/6/6.1.1.8.png
+   :align: center
+
+   -- sito web GHSL - Data and Tools - Datasets information pt.3
+
+Dal menù **Data and Tools** (:numref:`6.1.1.9`) aprire la pagina **Download the data** cliccandoci sopra **(1)**. La funzionalità di questa pagina verrà spiegata nel :ref:`capitolo 6.1.1 <Download data>` .Sostanzialmente consentirà il download di prodotti specifici in base a tanti fattori come la risoluzione, l'area di interesse, l'anno ecc.
+
+.. _6.1.1.9:
+
+.. figure:: /img/6/6.1.1.9.png
+   :align: center
+
+   -- sito web GHSL -  Data and Tools - Download the data
+
+Dal menù **Data and Tools** (:numref:`6.1.1.10`) aprire la pagina **FAQ** (Domande frequenti) **(1)** cliccandoci sopra. Qui è possibile trovare le risposte alle domande più comuni riguardanti GHSL
+
+.. _6.1.1.10:
+
+.. figure:: /img/6/6.1.1.10.png
+   :align: center
+
+   -- sito web GHSL - Data and Tools -  FAQ
+
+Dal menù **Data and Tools** (:numref:`6.1.1.11`) aprire la pagina **Tools info and download (1)** cliccandoci sopra. In questa pagina sono elencati tutti gli strumenti sviluppati e utilizzati per GHSL. Per ogni strumento è possibile selezionare **Version (2)** e **Installation type (3)** prima di fare clic sul pulsante di download **(4)**.
+
+.. _6.1.1.11:
+
+.. figure:: /img/6/6.1.1.11.png
+   :align: center
+
+   -- sito web GHSL - Data and Tools -  Tools info and download
+
+Cliccare su **Visual Analytics (1)** (:numref:`6.1.1.12`) per aprire una pagina dalla quale è possibile verificare le informazioni dettagliate di ciascun prodotto GHSL aprendo le relative pagine.
+
+.. _6.1.1.12:
+
+.. figure:: /img/6/6.1.1.12.png
+   :align: center
+
+   -- sito web GHSL - Visual analytics
+
+Dal menu a tendina di **Visual analytics** (:numref:`6.1.1.13`) . E’ possibile visualizzare le mappe interattive GHSL **Global Visualization (1)**, **European Settlement Map R2019 (2)** , **ENACT-POP R2020A (3)** e **Urban Centre Database UCDB R2019A (4)** .
+
+.. _6.1.1.13:
+
+.. figure:: /img/6/6.1.1.13.png
+   :align: center
+
+   -- sito web GHSL - Visual analytics - maps
+
+Cliccare **Degree of Urbanisation (1)** (:numref:`6.1.1.14`) per aprire una pagina dalla quale è possibile visualizzare altre pagine, ciascuna dedicata ad una risorsa diversa con il tema comune del grado di urbanizzazione. Le stesse pagine sono raggiungibili dal menù a tendina del pulsante **Degree of Urbanisation** .
+La pagina **Why a Global Definition??** spiega l’importanza di avere una definizione globale e basata sulle persone di città, aree urbane e rurali. Oltre ad essere una richiesta all’interno dell’Agenda 2030 per lo sviluppo sostenibile, si spiega che ci sono molti vantaggi nell’avere un metodo armonizzato. In particolare, il metodo proposto utilizza tre classi per classificare il territorio: città, paesi, aree semi dense e aree rurali. Esempi dei vantaggi di questa classificazione sono la capacità di aggregare raccolte di dati, consentendo di catturare il continuum urbano-rurale e di ridurre le distorsioni create dalla dimensione variabile delle unità statistiche e amministrative (questo perché il metodo proposto si basa su una griglia di popolazione ). Con questo metodo è inoltre possibile catturare direttamente la concentrazione delle persone invece di recuperarla indirettamente da altri dati come ad esempio i centri abitati.
+La pagina **Definition** , detta anche **Settlement classification** nel menù a tendina, mostra esempi di classificazione che spiegano le soglie adattate.
+
+.. _6.1.1.14:
+
+.. figure:: /img/6/6.1.1.14.png
+   :align: center
+
+   -- sito web GHSL - Degree of urbanisation
+
+Dalla pagina **Country Fact Sheets (1)** (:numref:`6.1.1.15`) , è possibile selezionare un paese di interesse attraverso un menù a tendina **(2)** . Per il paese selezionato vengono mostrate una o più mappe relative al grado di urbanizzazione e una breve descrizione che spiega quale è stato il processo e i dati utilizzati per valutarlo.
+
+.. _6.1.1.15:
+
+.. figure:: /img/6/6.1.1.15.png
+   :align: center
+
+   -- sito web GHSL - Degree of urbanisation - Country Fact Sheets
+
+La pagina **Urban Centre Database (1)** (:numref:`6.1.1.16`) , permette di aprire una mappa interattiva cliccando sull'immagine **(2)** da cui è possibile visualizzare i dati e applicare alcuni filtri sul conteggio della popolazione. In questa pagina è presente anche una breve descrizione del Database Urban Center GHS-UCDB R2019A.
+
+.. _6.1.1.16:
+
+.. figure:: /img/6/6.1.1.16.png
+   :align: center
+
+   -- sito web GHSL - Degree of urbanisation - Urban Centre Database
+
+La pagina **The essential know how (1)** (:numref:`6.1.1.17`) è composta da una serie di link che rimandano ad articoli e saggi utili per comprendere più approfonditamente il grado di urbanizzazione e altri contenuti correlati.
+Strutturata in modo simile, la pagina **Capacity building and training (2)** , parla del grado di metodologia di urbanizzazione affrontando gli strumenti sviluppati da GHSL, l'obiettivo, il livello di adozione per paese e il processo di adozione.
+
+.. _6.1.1.17:
+
+.. figure:: /img/6/6.1.1.17.png
+   :align: center
+
+   -- sito web GHSL - Degree of urbanisation - The essential know-how e Capacity building and training
+
+Cliccare su **Knowledge and Training (1)** (:numref:`6.1.1.18`) per aprire una pagina che fornisce informazioni sul framework GHSL e sulle diverse astrazioni di livello e su come vengono ottenute.
+Cliccando su **About the GHSL (2)** dal menu a tendina si aprirà una pagina di informazioni riguardanti GHSL in generale, dallo scopo del progetto alla descrizione dei dataset e dei partner del progetto.
+Cliccando su **Documents (3)** dal menù a tendina si aprirà una pagina dove sarà possibile consultare un ampio elenco di elaborati.
+
+.. _6.1.1.18:
+
+.. figure:: /img/6/6.1.1.18.png
+   :align: center
+
+   -- sito web GHSL - Knowledge and training - About the GHSL e Documents
+
+La pagina **Atlases of the Human Planet (1)** (:numref:`6.1.1.19`) parla dell'obiettivo comune della GEO Human Planet Initiative e del JRC di produrre atlanti annuali del pianeta umano. Ciascun atlante evidenzia diversi aspetti come l'esposizione umana e fisica alle minacce, l'impatto delle attività umane sugli ecosistemi ecc. In questa pagina sono inoltre riportati i link ad ogni atlante già prodotto.
+
+.. _6.1.1.19:
+
+.. figure:: /img/6/6.1.1.19.png
+   :align: center
+
+   -- sito web GHSL - Knowledge and training - Atlases of the Human Planet
+
+La pagina **ENACT** (ENhancing ACTivity and population mapping) page **(1)** (:numref:`6.1.1.20`) si concentra sulla spiegazione della produzione e dell'obiettivo di sviluppare griglie di densità di popolazione coerenti, continue e ad alta risoluzione per l'Europa, considerando le principali variazioni giornaliere e mensili. Disporre di questo tipo di dati potrebbe essere utile per molte applicazioni come la valutazione della pianificazione urbana e regionale e il supporto politico in vari settori.
+
+.. _6.1.1.20:
+
+.. figure:: /img/6/6.1.1.20.png
+   :align: center
+
+   -- sito web GHSL - Knowledge and training - ENACT
+
+L'ultima pagina della sezione **Knowledge and training** è chiamata **GEO** (Group on Earth Observations)  **(1)** (:numref:`6.1.1.21`) . Il GEO è una collaborazione di organizzazioni per sviluppare soluzioni alle sfide globali. L'obiettivo principale di questa pagina è parlare della Human Planet Initiative (HPI), un'iniziativa del GEO dedicata alla valutazione dell'impatto umano sulla Terra utilizzando tecnologie di osservazione della Terra e analisi dei dati geospaziali.
+
+.. _6.1.1.21:
+
+.. figure:: /img/6/6.1.1.21.png
+   :align: center
+
+   -- sito web GHSL - Knowledge and training - GEO
+
+L'ultima sezione del sito è rappresentata dalla pagina **News** page **(1)** (:numref:`6.1.1.22`) . In questa pagina è presente un riepilogo di tutte le novità, gli aggiornamenti e gli eventi riguardanti GHSL.
+
+.. _6.1.1.22:
+
+.. figure:: /img/6/6.1.1.22.png
+   :align: center
+
+   -- sito web GHSL - News
+
+.. _Download data:
+
+Download dei dati di popolazione
+----------------------------------
+
+Per scaricare i dati aprire la pagina web `GHSL JRC <https://ghsl.jrc.ec.europa.eu/download.php?ds=pop>`_
+web page (:numref:`6.1.1.23`) e selezionare **GHS_POP Product (1)**. Impostare **2020** nel campo **Epoch (2)**, **WGS84** come **Coord. system (3)** e **3 arcsec** come **Resolution (4)** . Trovare la tessera (impronta dell'immagine) che copre l'area di interesse “Vercelli”, l’area desiderata è evidenziata all'interno del mappamondo **(5)** e utilizzare l'immagine ingrandita come riferimento **(6)** . Prima di cliccare sull’area selezionata controlla i dettagli **(7)** , devono corrispondere all'ID: "R5_C19" **(8)** . Cliccare sull'impronta con ID riquadro: "R5_C19" per avviare il download.
+
+.. note:: i dati scaricati saranno in formato .zip, dunque, sarà necessario estrarre la cartella.
+
+.. _6.1.1.23:
+
+.. figure:: /img/6/6.1.1.23.png
+   :align: center
+
+   -- Download dei dati di popolazione

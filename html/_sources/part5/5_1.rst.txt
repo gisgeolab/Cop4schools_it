@@ -6,10 +6,9 @@ CLMS
 
 
 Il `Copernicus Land Monitoring Service (CLMS) <https://land.copernicus.eu/en>`_  è un servizio del programma Copernicus che mira a fornire informazioni geografiche sull'uso e la copertura del suolo (e la sua evoluzione nel tempo), sul movimento del suolo, sullo stato della vegetazione, il ciclo dell'acqua e le variabili energetiche della superficie terrestre. Il tutto in un contesto paneuropeo e globale. Tutti i prodotti sono gratuiti e possono essere utilizzati per qualsiasi scopo.
-Una volta aperto il sito Web del CLMS, si viene accolti dalla sua home page (:numref:`5.1.1`). Dalla barra superiore della home page è possibile accedere ad altre sezioni del sito dedicate a: richiedere assistenza tecnica **(1)**, visualizzare gli aggiornamenti dei prodotti **(2)**, controllare notizie ed eventi **(3)** (verificabili direttamente in homepage) e dare un'occhiata alle opportunità di lavoro **(4)**. Si può anche registrare un nuovo account o accedere **(5)**, come mostrato in :numref:`5.1.1.2`. Infine è possibile effettuare una ricerca diretta delle informazioni di interesse utilizzando la barra di ricerca **(6)**.
-E’ possibile raggiungere le pagine principali del sito anche utilizzando il menu principale **(7)**, come verrà mostrato più avanti.
-Cliccare sulle tipologie di prodotto elencate **(8)** per accedere alla pagina del Data Viewer già filtrata sui prodotti selezionati. I set di dati sono raggruppati nelle seguenti categorie:
-
+Una volta aperto il sito Web del CLMS, si viene accolti dalla sua home page (:numref:`5.1.1`). Dalla barra superiore della home page è possibile accedere ad altre sezioni del sito dedicate a: richiedere assistenza tecnica **(1)**, visualizzare gli aggiornamenti dei prodotti **(2)**, controllare notizie ed eventi **(3)** (verificabili direttamente in homepage). Si può anche registrare un nuovo account o accedere **(5)**, come mostrato in :numref:`5.1.1.2`. Infine è possibile effettuare una ricerca diretta delle informazioni di interesse utilizzando la barra di ricerca **(5)**.
+È possibile raggiungere le pagine principali del sito anche utilizzando il menu principale **(6)**, come verrà mostrato più avanti.
+Cliccare sulle tipologie di prodotto elencate **(7)** per accedere alla pagina del Data Viewer già filtrata sui prodotti selezionati. I set di dati sono raggruppati nelle seguenti categorie:
 
 + mappatura della copertura del suolo e dell'uso del suolo, costituita da classificazioni della copertura del suolo e layer sulle caratteristiche delle aree vegetate;
 + monitoraggio delle aree prioritarie, comprese informazioni sulla copertura/uso del suolo per specifiche aree di interesse soggette a cambiamenti ambientali;
@@ -146,7 +145,7 @@ In cima alla pagina **Use Cases** (:numref:`5.1.10`), è possibile aprire la sec
    -- Sito web CLMS - Use cases pt.3
 
 
-L'ultima pagina accessibile dal menu principale contiene le informazioni sul CLMS (:numref:`5.1.11`) . Questa pagina è raggiungibile cliccando su **About Us (1)**. Si tratta di una spiegazione del servizio CLMS. Infine c'è la possibilità di contattare l'helpdesk per eventuali domande di cui non si trova risposta sul sito.
+L'ultima pagina accessibile dal menu principale contiene le informazioni sul CLMS (:numref:`5.1.11`) . Questa pagina è raggiungibile cliccando su **About (1)**. Si tratta di una spiegazione del servizio CLMS. Infine c'è la possibilità di contattare l'helpdesk per eventuali domande di cui non si trova risposta sul sito.
 
 
 .. _5.1.11:
