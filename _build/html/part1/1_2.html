@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>1.2. Introduzione a QGIS &mdash; COPERNICUS4Schools  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=8a25042d" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="2. GIS e strumenti di analisi" href="../part2/part2.html" />
+    <link rel="prev" title="1.1. Che cosa sono i Sistemi Informativi Geografici (GIS)?" href="1_1.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            COPERNICUS4Schools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="part1.html">1. Introduzione ai GIS (Sistemi Informativi Geografici )</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="1_1.html">1.1. Che cosa sono i Sistemi Informativi Geografici (GIS)?</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">1.2. Introduzione a QGIS</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#linstallazione-di-qgis">1.2.1. L’installazione di QGIS</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#scaricare-qgis-per-windows">1.2.1.1. Scaricare QGIS per Windows</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#scaricare-qgis-per-macos">1.2.1.2. Scaricare QGIS per macOS</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#scaricare-qgis-per-linux">1.2.1.3. Scaricare QGIS per Linux</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#linterfaccia-di-qgis">1.2.2. L’interfaccia di QGIS</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#aprire-un-progetto-in-qgis">1.2.2.1. Aprire un progetto in QGIS</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#importare-una-mappa-di-sfondo">1.2.2.2. Importare una mappa di sfondo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#individuare-il-sistema-di-riferimento-delle-coordinate-dei-layer-e-del-progetto">1.2.2.3. Individuare il Sistema di Riferimento delle Coordinate dei layer e del progetto</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#zoom-in-sulla-tua-citta">1.2.2.4. Zoom-in sulla tua città</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#salvare-il-progetto">1.2.2.5. Salvare il progetto</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../part2/part2.html">2. GIS e strumenti di analisi</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part3/part3.html">3. Ottenere dati da Copernicus EMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part4/part4.html">4. Immagini Sentinel-2 pre e post evento</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part5/part5.html">5. Ottenere dati dal Copernicus Land Monitoring Service (CLMS)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part6/part6.html">6. Ottenere i dati sulla popolazione del JRC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part7/part7.html">7. Calcolo delle classi di copertura di suolo colpite dall’alluvione</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part8/part8.html">8. Calcolo della popolazione colpita dall’alluvione</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../credits.html">Credits</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">COPERNICUS4Schools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="part1.html"><span class="section-number">1. </span>Introduzione ai GIS (Sistemi Informativi Geografici )</a></li>
+      <li class="breadcrumb-item active"><span class="section-number">1.2. </span>Introduzione a QGIS</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/part1/1_2.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="introduzione-a-qgis">
+<span id="id1"></span><h1><span class="section-number">1.2. </span>Introduzione a QGIS<a class="headerlink" href="#introduzione-a-qgis" title="Link to this heading"></a></h1>
+<section id="linstallazione-di-qgis">
+<h2><span class="section-number">1.2.1. </span>L’installazione di QGIS<a class="headerlink" href="#linstallazione-di-qgis" title="Link to this heading"></a></h2>
+<p>Il software QGIS è scritto nel linguaggio di programmazione C++, il suo sviluppo è iniziato nei primi anni del 2002 e il software è costantemente aggiornato attraverso rilasci regolari e correzioni di bug, grazie all’effort collaborativo di una vasta comunità di sviluppatori e utenti, sotto la supervisione della <a class="reference external" href="https://www.osgeo.org/" rel="noopener noreferrer" target="_blank">OpenSource Geospatial Foundation (OSGeo)</a> .</p>
+<p>QGIS può essere scaricato dal <a class="reference external" href="https://qgis.org/en/site/forusers/download.html" rel="noopener noreferrer" target="_blank">sito web ufficiale di QGIS</a> selezionando tra i pacchetti di installazione disponibili quello adatto al tuo sistema operativo. È sempre consigliato lavorare con la versione Long-Term Release (LTR) del software, che è l’attuale versione stabile e meglio mantenuta.</p>
+<section id="scaricare-qgis-per-windows">
+<h3><span class="section-number">1.2.1.1. </span>Scaricare QGIS per Windows<a class="headerlink" href="#scaricare-qgis-per-windows" title="Link to this heading"></a></h3>
+<p>Selezionando <a class="reference external" href="https://qgis.org/en/site/forusers/download.html" rel="noopener noreferrer" target="_blank">questo link</a> si accede alsito di QGIS. Per default si aprirà il menu a tendina <strong>Download for Windows</strong> . Per iniziare il download selezionare <strong>Looking for the most stable version? Get QGIS 3.34 LTR (1)</strong>. Seguire I passi previsti per l’installazione. (<a class="reference internal" href="#id2"><span class="std std-numref">Fig. 1.2.1.1</span></a>)</p>
+<figure class="align-center" id="id16">
+<span id="id2"></span><img alt="../_images/1.2.1.1.png" src="../_images/1.2.1.1.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 1.2.1.1 </span><span class="caption-text">– Scaricare QGIS per Windows</span><a class="headerlink" href="#id16" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="scaricare-qgis-per-macos">
+<h3><span class="section-number">1.2.1.2. </span>Scaricare QGIS per macOS<a class="headerlink" href="#scaricare-qgis-per-macos" title="Link to this heading"></a></h3>
+<p>Selezionare <a class="reference external" href="https://qgis.org/en/site/forusers/download.html" rel="noopener noreferrer" target="_blank">questo link</a> per aprire il sito di QGIS. Selezionare il menu a tendina  <strong>Download for macOS</strong>. Selezionare: <strong>Looking for the most stable version? Get QGIS 3.34 LTR (1)</strong> per inizare a scaricare il software e poi seguire I passi previsti per l’installazione. Selezionare  <strong>(2)</strong>. (<a class="reference internal" href="#id4"><span class="std std-numref">Fig. 1.2.1.2</span></a>)</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Ricorda che: “Dopo aver installato QGIS, il primo tentativo di avvio potrebbe fallire a causa delle protezioni di sicurezza. Per abilitare QGIS, fai clic destro sull’icona nella cartella Applications e seleziona Open nel menu. Comparirà una finestra di conferma dove dovrai fare nuovamente clic sul pulsante Open. Questo deve essere fatto solo una volta”.</p>
+</div>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>è richiesto macOS High Sierra (10.13) o versioni successive sono. QGIS non è ancora certificato come richiesto dalle regole di sicurezza di macOS Catalina (10.15).</p>
+</div>
+<figure class="align-center" id="id17">
+<span id="id4"></span><img alt="../_images/1.2.1.2.png" src="../_images/1.2.1.2.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 1.2.1.2 </span><span class="caption-text">– Scaricare QGIS per macOS</span><a class="headerlink" href="#id17" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="scaricare-qgis-per-linux">
+<h3><span class="section-number">1.2.1.3. </span>Scaricare QGIS per Linux<a class="headerlink" href="#scaricare-qgis-per-linux" title="Link to this heading"></a></h3>
+<p>La maggior parte delle distribuzioni Linux (distro) suddivide QGIS in diversi pacchetti, probabilmente avrai bisogno di qgis e qgis-python (per eseguire plugin). Pacchetti come qgis-grass (o qgis-plugin-grass), qgis-server possono essere saltati inizialmente e installati solo quando ne hai bisogno.
+Di seguito trovi istruzioni per l’installazione per ogni distribuzione.
+Fai clic su <a class="reference external" href="https://qgis.org/en/site/forusers/download.html" rel="noopener noreferrer" target="_blank">questo link</a> per aprire il sito di QGIS. Apri il menu a tendina e seleziona <strong>Download for Linux</strong> . Fai clic sulla distrubuzione che ti interessa <strong>(1)</strong> per iniziare il download. Poi segue I passi di installazione previsti. (<a class="reference internal" href="#id2"><span class="std std-numref">Fig. 1.2.1.1</span></a>)</p>
+<figure class="align-center" id="id18">
+<span id="id6"></span><img alt="../_images/1.2.1.3.png" src="../_images/1.2.1.3.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 1.2.1.3 </span><span class="caption-text">– Scaricare QGIS per Linux</span><a class="headerlink" href="#id18" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="linterfaccia-di-qgis">
+<h2><span class="section-number">1.2.2. </span>L’interfaccia di QGIS<a class="headerlink" href="#linterfaccia-di-qgis" title="Link to this heading"></a></h2>
+<p>Quando apri QGIS, ti appare la sua interfaccia (<a class="reference internal" href="#id7"><span class="std std-numref">Fig. 1.2.2.1</span></a>) . Nell’angolo in alto a sinistra potrai vedere il nome del progetto <strong>(1)</strong> ; Più sotto c’è la <strong>Toolbar (2)</strong> dove tutti gli strumenti messi a disposizione dal software sono mostrati esplicitamente al posto di essere “nascosti” nei vari menu. Questo è utile per raggiungere in modo veloce gli strumenti e i pIugin utilizzati più di frequente. Sulla sinistra sotto la toolbar (barra degli strumenti), c’è il pannello del <strong>Browser (3)</strong> dal quale puoi accedere alle tue basi di dati.  Sotto il pannello del browser c’è la lista dei <strong>Layers (4)</strong> , dove puoi vedere gli strati informativi che hai importato nel tuo progetto. Sulla sinistra dello schermo c’è il <strong>Processing Toolbox (5)</strong> dal quale puoi facilmente cercare gli strumenti per elaborare i tuoi dati (nel caso queto non fosse visibile, va attivato come spiegato nel seguito) Al centro puoi vedere l’area della mappa <strong>(6)</strong> dove sono visibili i layer attivi. Infine la parte più in basso è la barra di stato <strong>(7)</strong> dove puoi vedere diverse informazioni come ad esempio le coordinate del cursore, la scala della carta e il sistema di riferimento che stai utilizzando.</p>
+<figure class="align-center" id="id19">
+<span id="id7"></span><img alt="../_images/1.2.2.1.png" src="../_images/1.2.2.1.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 1.2.2.1 </span><span class="caption-text">– L’interfaccia di QGIS - pt.1</span><a class="headerlink" href="#id19" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Nel caso in cui qualche pannello non sia visibile, puoi attivarlo cliccando su <strong>View</strong> nella barra degli strumenti <strong>(1)</strong> (<a class="reference internal" href="#id8"><span class="std std-numref">Fig. 1.2.2.2</span></a>), e poi muovendo il mouse su <strong>Panels (2)</strong>. Da qui tu puoi selezionare le caselle relative ai pannelli che non vedi. Nel caso illustrato nella figura, abbiamo attivi i seguenti pannelli: <strong>Browser (3)</strong> , <strong>Layers (4)</strong> e <strong>Processing Toolbox (5)</strong>. Se i pannelli non sono posizionati come mostrato o se desideri cambiarne la posizione, puoi fare clic sul nome del pannello e, senza rilasciare il mouse, trascinarlo dove preferisci.</p>
+<figure class="align-center" id="id20">
+<span id="id8"></span><img alt="../_images/1.2.2.2.png" src="../_images/1.2.2.2.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 1.2.2.2 </span><span class="caption-text">– L’interfaccia di QGIS - pt.2</span><a class="headerlink" href="#id20" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<section id="aprire-un-progetto-in-qgis">
+<h3><span class="section-number">1.2.2.1. </span>Aprire un progetto in QGIS<a class="headerlink" href="#aprire-un-progetto-in-qgis" title="Link to this heading"></a></h3>
+<p>In questa sezione vediamo come aprire un progetto in QGIS (<a class="reference internal" href="#id9"><span class="std std-numref">Fig. 1.2.2.3</span></a>); clicchiamo <strong>Project (1)</strong> nell’angolo a sinistra della barra degli strumenti e poi clicchiamo su on <strong>New (2)</strong> . Se vogliamo possiamo anche semplicemente usare il comando breve (CTRL+N).</p>
+<figure class="align-center" id="id21">
+<span id="id9"></span><img alt="../_images/1.2.2.3.png" src="../_images/1.2.2.3.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 1.2.2.3 </span><span class="caption-text">– Aprire un nuovo progetto in  QGIS</span><a class="headerlink" href="#id21" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="importare-una-mappa-di-sfondo">
+<h3><span class="section-number">1.2.2.2. </span>Importare una mappa di sfondo<a class="headerlink" href="#importare-una-mappa-di-sfondo" title="Link to this heading"></a></h3>
+<p>Dalla barra degli strumenti clicchiamo su <strong>Plugins (1)</strong> (<a class="reference internal" href="#id10"><span class="std std-numref">Fig. 1.2.2.4</span></a>) , e quindi su <strong>Manage and install plugins… (2)</strong> . Il menu <strong>Plugins</strong> compare. Clicchiamo su <strong>All (3)</strong> per vedere la lista dei plugin e quindi scriviamo “QuickMapServices” nella barra di ricerca <strong>(4)</strong>. Clicchiamo su QuickMapServices <strong>(5)</strong> e su <strong>Install Plugin (6)</strong> .</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Per installare i plugin è necessaria una connessione internet.</p>
+</div>
+<figure class="align-center" id="id22">
+<span id="id10"></span><img alt="../_images/1.2.2.4.png" src="../_images/1.2.2.4.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 1.2.2.4 </span><span class="caption-text">– Installare il plugin QuickMapServices</span><a class="headerlink" href="#id22" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Ora clicchiamo su <strong>Web (1)</strong> (<a class="reference internal" href="#id11"><span class="std std-numref">Fig. 1.2.2.5</span></a>) e muoviamo il mouse su <strong>QuickMapServices (2)</strong> , e su <strong>Google (3)</strong> selezionando infine il <strong>Google Terrain (4)</strong> .</p>
+<figure class="align-center" id="id23">
+<span id="id11"></span><img alt="../_images/1.2.2.5.png" src="../_images/1.2.2.5.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 1.2.2.5 </span><span class="caption-text">– Lanciare il plugin QuickMapServices e importare la mappa di sfondo</span><a class="headerlink" href="#id23" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Nel caso in cui alcune mappe non vengano visualizzate, è possibile attivarle cliccando su <strong>Web</strong> nella barra degli strumenti <strong>(1)</strong> (<a class="reference internal" href="#id12"><span class="std std-numref">Fig. 1.2.2.6</span></a>) , dopodiché spostare il mouse su <strong>QuickMapService (2)</strong>. Cliccare su <strong>Settings (3)</strong>. Aprire la scheda <strong>Visibility (4)</strong>. Da questa scheda è possibile selezionare le caselle del provider di mappe mancanti, in questo caso: “google” <strong>(5)</strong> . Una volta fatto, clicca su <strong>Save (6)</strong>.</p>
+<figure class="align-center" id="id24">
+<span id="id12"></span><img alt="../_images/1.2.2.6.png" src="../_images/1.2.2.6.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 1.2.2.6 </span><span class="caption-text">Attivare le mappe di QuickMapService</span><a class="headerlink" href="#id24" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="individuare-il-sistema-di-riferimento-delle-coordinate-dei-layer-e-del-progetto">
+<h3><span class="section-number">1.2.2.3. </span>Individuare il Sistema di Riferimento delle Coordinate dei layer e del progetto<a class="headerlink" href="#individuare-il-sistema-di-riferimento-delle-coordinate-dei-layer-e-del-progetto" title="Link to this heading"></a></h3>
+<p>Uno degli aspetti più importanti da conoscere quando si lavora con i dati georeferenziati è il <a class="reference internal" href="1_1.html#crf"><span class="std std-ref">sistema di riferimento</span></a> al quale appartengono. Layer diversi possono avere diversi sistemi di riferimento. Per poter verificare qual è il sistema di riferimento delle coordinate (CRS) di un layer, fare un clic destro sul layer <strong>(1)</strong> (<a class="reference internal" href="#id13"><span class="std std-numref">Fig. 1.2.2.7</span></a>) e cliccare su  <strong>Layer CRS (2)</strong> . Si aprirà un menu a tendina, dove possiamo visualizzare il <strong>CRS (3)</strong> . Per identificare il sistema di riferimento delle coordinate del progetto ci sono diverse modalità.
+La più semplice è quella di posizionare il mouse sull’icona a sinistra dell’icona <strong>Messages</strong> nella barra di stato, aspettando qualche secondo finché il sistema di riferimento non compare <strong>(4)</strong> .</p>
+<figure class="align-center" id="id25">
+<span id="id13"></span><img alt="../_images/1.2.2.7.png" src="../_images/1.2.2.7.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 1.2.2.7 </span><span class="caption-text">– Sistemi di riferimento delle coordinate dei layer e del progetto</span><a class="headerlink" href="#id25" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="zoom-in-sulla-tua-citta">
+<h3><span class="section-number">1.2.2.4. </span>Zoom-in sulla tua città<a class="headerlink" href="#zoom-in-sulla-tua-citta" title="Link to this heading"></a></h3>
+<p>Prova ora a zommare la carta fino a visualizzare nel dettaglio la tua città, usando l’icona corrispondente al simbolo + <strong>(1)</strong> (<a class="reference internal" href="#id14"><span class="std std-numref">Fig. 1.2.2.8</span></a>).</p>
+<figure class="align-center" id="id26">
+<span id="id14"></span><img alt="../_images/1.2.2.8.png" src="../_images/1.2.2.8.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 1.2.2.8 </span><span class="caption-text">– Zommare sulla propria città</span><a class="headerlink" href="#id26" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="salvare-il-progetto">
+<span id="save-project"></span><h3><span class="section-number">1.2.2.5. </span>Salvare il progetto<a class="headerlink" href="#salvare-il-progetto" title="Link to this heading"></a></h3>
+<p>Per salvare il progetto, clicca su  <strong>Project (1)</strong> <a class="reference internal" href="#id15"><span class="std std-numref">Fig. 1.2.2.9</span></a> nell’angolo in alto a sinistra e poi seleziona <strong>Save (2)</strong> nel meno a tendina.</p>
+<figure class="align-center" id="id27">
+<span id="id15"></span><img alt="../_images/1.2.2.9.png" src="../_images/1.2.2.9.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 1.2.2.9 </span><span class="caption-text">– Salvare il progetto</span><a class="headerlink" href="#id27" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="1_1.html" class="btn btn-neutral float-left" title="1.1. Che cosa sono i Sistemi Informativi Geografici (GIS)?" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../part2/part2.html" class="btn btn-neutral float-right" title="2. GIS e strumenti di analisi" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, GEOLab.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

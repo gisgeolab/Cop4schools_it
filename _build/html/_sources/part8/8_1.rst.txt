@@ -1,0 +1,77 @@
+.. _8.1:
+
+
+Visualizzazione dei dati di popolazione GHSL-JRC in QGIS
+=========================================================
+
+
+Per questa lezione importare in QGIS i seguenti layer:
+
+
++ GHS_POP_E2020_GLOBE_R2023A_4326_3ss_V1_0_R5_C19.tif
++ ObservedEvent_UTM
++ AreaOfInterest_UTM
+
+
+Il primo è stato scaricato nella :ref:`lezione 5 <6.1>` mentre il secondo e il terzo sono stati ottenuti nella :ref:`lezione 5 <5.1>` .
+
+
+Preelaborazione dei dati
+-------------------------
+
+
+La prima cosa da fare è riproiettare il  “GHS_POP_E2020_GLOBE_R2023A_4326_3ss_V1_0_R5_C19.tif” (:numref:`8.1.1`) . Fare clic su **Raster (1)**, **Projection (2)** e quindi selezionare **Warp (Reproject) (3)**. Impostare “GHS_POP_E2020_GLOBE_R2023A_4326_3ss_V1_0_R5_C19.tif” come **Input layer (4)**. Ora bisogna impostare **Target CRS** come “WGS 84 / UTM zone 32N EPSG 32632”, per farlo, cliccare sul menù a tendina **(5)**, se è stato utilizzato di recente, questo CRS apparirà nel menu permettendo di selezionarlo direttamente. Altrimenti cliccare sull’icona **Select CRS (6)** e cercare nello stesso modo mostrato in :numref:`5.1.2.3` . Una volta terminato, fare clic su **Run (7)**.
+.. warning:: Assicurarsi che il file di output sia salvato con l'estensione .tiff.
+
+
+.. _8.1.1:
+
+
+.. figure:: /img/8/8.1.1.png
+   :align: center
+
+
+   -- Riproietta layer raster
+
+
+I dati utilizzati, a causa delle loro dimensioni, richiedono un elevato onere computazionale per essere gestiti, e sarà meglio ritagliarli nell’area di interesse (:numref:`8.1.2`) .
+Per fare ciò, fare clic su **Raster (1)**, **Extraction (2)**, **Clip Raster by Mask Layer… (3)**. Dal menù appena aperto scegliere come **Input layer** il layer che si vuole ritagliare (“Reprojected”) **(4)** e come **Mask layer** il layer corrispondente all’area di interesse (“AreaOfInterest_UTM”) **(5)**.
+Impostare **Assign a specific nodata value to output bands [optional]** come “-9999” **(6)** e scorrere verso il basso utilizzando la barra laterale **(7)**, fino a raggiungere il fondo del menù **(8)**. Fare clic sul pulsante con i tre puntini **(9)**, selezionare **Save to File (10)** e scegliere una cartella in cui salvare il layer risultante, ai fini di questa lezione lo chiameremo “Pop_UTM_Clipped”. Una volta terminato, fare clic su **Run (11)**.
+
+
+.. _8.1.2:
+
+
+.. figure:: /img/8/8.1.2.png
+   :align: center
+
+
+   -- Ritaglio del layer in formato raster con una maschera in QGIS
+
+
+Ora visualizzeremo in modo migliore il layer ritagliato (:numref:`8.1.3`) . Aprire il menù **Layer Properties** del layer ritagliato **(1)**, cliccare su **Symbology (2)** e scegliere “Singleband Pseudocolor“ **Render type (3)**.
+Scegliere “Discrete” **(4)** come **Interpolation Type**, cambiare la scala dei colori con quella che si preferisce (5) e impostare la **Label precision** a “0” **(6)**.
+Impostare il campo **Mode** come “Continuous” (7) e fare clic su **Ok (8)**.
+
+
+.. _8.1.3:
+
+
+.. figure:: /img/8/8.1.3.png
+   :align: center
+
+
+   -- Visualizzazione dei dati sulla popolazione GHSL-JRC in QGIS
+
+
+Se si vuole conoscere il valore della popolazione in un punto specifico, si può utilizzare lo strumento **Identify Features (1)** (:numref:`8.1.4`) .
+Ingrandire l'area a maggiore densità di popolazione e cliccare nel punto di interesse per conoscere il valore della popolazione **(2)**. Un menù chiamato **Identify Result** apparirà sulla destra dello schermo, da lì si potrà leggere il valore della popolazione **(4)**.
+
+.. _8.1.4:
+
+
+.. figure:: /img/8/8.1.4.png
+   :align: center
+
+
+   -- Strumento Identify Features in QGIS

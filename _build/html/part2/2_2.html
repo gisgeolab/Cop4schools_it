@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2.2. Visualizzare le immagini satellitari in Copernicus Browser &mdash; COPERNICUS4Schools  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=8a25042d" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../_static/doctools.js?v=888ff710"></script>
+        <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="3. Ottenere dati da Copernicus EMS" href="../part3/part3.html" />
+    <link rel="prev" title="2.1. Accesso gratuito alle immagini satellitari di Copernicus" href="2_1.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            COPERNICUS4Schools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../part1/part1.html">1. Introduzione ai GIS (Sistemi Informativi Geografici )</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="part2.html">2. GIS e strumenti di analisi</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="2_1.html">2.1. Accesso gratuito alle immagini satellitari di Copernicus</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">2.2. Visualizzare le immagini satellitari in Copernicus Browser</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#visualizzare-le-immagini-satellitari-con-colori-reali">2.2.1. Visualizzare le immagini satellitari con colori reali</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#calcolare-il-normalized-difference-water-index">2.2.2. Calcolare il Normalized Difference Water Index</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#funzionalita-di-visualizzazione-integrate-in-copernicus-browser">2.2.2.1. Funzionalità di visualizzazione integrate in Copernicus Browser</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#funzionalita-di-calcolo-degli-indici-in-copernicus-browser">2.2.2.2. Funzionalità di calcolo degli indici in Copernicus Browser</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#visualizzazione-di-immagini-satellitari-3d-in-copernicus-browser">2.2.3. Visualizzazione di immagini satellitari 3D in Copernicus Browser</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../part3/part3.html">3. Ottenere dati da Copernicus EMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part4/part4.html">4. Immagini Sentinel-2 pre e post evento</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part5/part5.html">5. Ottenere dati dal Copernicus Land Monitoring Service (CLMS)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part6/part6.html">6. Ottenere i dati sulla popolazione del JRC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part7/part7.html">7. Calcolo delle classi di copertura di suolo colpite dall’alluvione</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../part8/part8.html">8. Calcolo della popolazione colpita dall’alluvione</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../credits.html">Credits</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">COPERNICUS4Schools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="part2.html"><span class="section-number">2. </span>GIS e strumenti di analisi</a></li>
+      <li class="breadcrumb-item active"><span class="section-number">2.2. </span>Visualizzare le immagini satellitari in Copernicus Browser</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/part2/2_2.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="visualizzare-le-immagini-satellitari-in-copernicus-browser">
+<span id="id1"></span><h1><span class="section-number">2.2. </span>Visualizzare le immagini satellitari in Copernicus Browser<a class="headerlink" href="#visualizzare-le-immagini-satellitari-in-copernicus-browser" title="Link to this heading"></a></h1>
+<section id="visualizzare-le-immagini-satellitari-con-colori-reali">
+<h2><span class="section-number">2.2.1. </span>Visualizzare le immagini satellitari con colori reali<a class="headerlink" href="#visualizzare-le-immagini-satellitari-con-colori-reali" title="Link to this heading"></a></h2>
+<p>Di default <a class="reference external" href="https://qgis.org/en/site/forusers/download.html" rel="noopener noreferrer" target="_blank">Copernicus Browser</a> mostra le immagini in <strong>True color</strong> image <a class="reference internal" href="#id2"><span class="std std-numref">Fig. 2.2.1.1</span></a>;
+ovvero una combinazione di rosso, verde e blu; per Sentinel-2 si trovano nella banda 4, 3 e 2, ulteriori informazioni su Sentinel-2 possono essere trovate a questa <a class="reference internal" href="../part4/4_1.html#sezione-4-1-1"><span class="std std-ref">sezione</span></a>.
+In questo modo, la superficie della Terra viene mostrata come la vedrebbero gli esseri umani. Tutti i livelli sono dotati di una descrizione. Per espandere la finestra e leggerla clicca sull’icona corrispondente <strong>(1)</strong>.</p>
+<figure class="align-center" id="id13">
+<span id="id2"></span><img alt="../_images/2.2.1.1.png" src="../_images/2.2.1.1.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 2.2.1.1 </span><span class="caption-text">– Visualizzazione di immagini satellitari in colori reali</span><a class="headerlink" href="#id13" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="calcolare-il-normalized-difference-water-index">
+<h2><span class="section-number">2.2.2. </span>Calcolare il Normalized Difference Water Index<a class="headerlink" href="#calcolare-il-normalized-difference-water-index" title="Link to this heading"></a></h2>
+<p>Il  Normalized Difference Water Index (NDWI), viene utilizzato per identificare i corpi idrici. L’indice viene calcolato utilizzando una combinazione delle bande spettrali del vicino infrarosso (NIR) e del verde.</p>
+<section id="funzionalita-di-visualizzazione-integrate-in-copernicus-browser">
+<h3><span class="section-number">2.2.2.1. </span>Funzionalità di visualizzazione integrate in Copernicus Browser<a class="headerlink" href="#funzionalita-di-visualizzazione-integrate-in-copernicus-browser" title="Link to this heading"></a></h3>
+<p>Alcune combinazioni di bande sono già disponibili su <a class="reference external" href="https://qgis.org/en/site/forusers/download.html" rel="noopener noreferrer" target="_blank">Copernicus Browser</a> , per passare dall’una all’altra basta cliccare sull’indice desiderato.
+Le visualizzazioni degli indici sono elencate sotto <strong>True color</strong>. Per visualizzare l’ <strong>NDWI</strong> in <a class="reference external" href="https://qgis.org/en/site/forusers/download.html" rel="noopener noreferrer" target="_blank">Copernicus Browser</a> (<a class="reference internal" href="#id5"><span class="std std-numref">Fig. 2.2.2.1</span></a>), cliccare su <strong>NDWI</strong> nel pannello di sinistra <strong>(1)</strong>.</p>
+<figure class="align-center" id="id14">
+<span id="id5"></span><img alt="../_images/2.2.2.1.png" src="../_images/2.2.2.1.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 2.2.2.1 </span><span class="caption-text">– Visualizzazione dell’NDWI in Copernicus Browser</span><a class="headerlink" href="#id14" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p><strong>Zoom in to Vercelli</strong></p>
+<p>Utilizzare la funzionalità zoom concentrandosi su “Vercelli” per avere un’idea di dove si trovino i corpi idrici (<a class="reference internal" href="#id6"><span class="std std-numref">Fig. 2.2.2.2</span></a>).</p>
+<figure class="align-center" id="id15">
+<span id="id6"></span><img alt="../_images/2.2.2.2.png" src="../_images/2.2.2.2.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 2.2.2.2 </span><span class="caption-text">– NDWI di Vercelli in Copernicus Browser</span><a class="headerlink" href="#id15" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>In <a class="reference external" href="https://qgis.org/en/site/forusers/download.html" rel="noopener noreferrer" target="_blank">Copernicus Browser</a> gli indici hanno una legenda. Questa rappresenta la chiave di lettura dell’immagine satellitare. Si riporta di seguito un esempio di legenda relativa all’NDWI (<a class="reference internal" href="#id8"><span class="std std-numref">Fig. 2.2.2.3</span></a>).</p>
+<figure class="align-center" id="id16">
+<span id="id8"></span><img alt="../_images/2.2.2.3.png" src="../_images/2.2.2.3.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 2.2.2.3 </span><span class="caption-text">– legenda NDWI</span><a class="headerlink" href="#id16" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="funzionalita-di-calcolo-degli-indici-in-copernicus-browser">
+<h3><span class="section-number">2.2.2.2. </span>Funzionalità di calcolo degli indici in Copernicus Browser<a class="headerlink" href="#funzionalita-di-calcolo-degli-indici-in-copernicus-browser" title="Link to this heading"></a></h3>
+<p><a class="reference external" href="https://qgis.org/en/site/forusers/download.html" rel="noopener noreferrer" target="_blank">Copernicus Browser</a> offre la possibilità di effettuare calcoli basati su bande, quindi la possibilità di calcolare autonomamente gli indici applicando semplici equazioni (<a class="reference internal" href="2_1.html#image-analysis"><span class="std std-ref">Indeces formulas</span></a>). Per ottenere l’<strong>NDWI</strong> cliccare su <strong>Custom (1)</strong>. (<a class="reference internal" href="#id10"><span class="std std-numref">Fig. 2.2.2.4</span></a>)</p>
+<figure class="align-center" id="id17">
+<span id="id10"></span><img alt="../_images/2.2.2.4.png" src="../_images/2.2.2.4.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 2.2.2.4 </span><span class="caption-text">– Navigare per avviare il calcolo dell’NDWI</span><a class="headerlink" href="#id17" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Ora fare clic su <strong>Index (1)</strong> (<a class="reference internal" href="#id11"><span class="std std-numref">Fig. 2.2.2.5</span></a>) e applicare l’equazione per il calcolo dell’NDWI trascinando le bande corrispondenti <strong>(2)</strong> nell’equazione <strong>(3)</strong>. Infine, si può cambiare la combinazione di colori cliccando su <strong>Threshold (4)</strong>, che renderà disponibili più stili, fra i quali sarà possibile scegliere quello che si preferisce. Per passare alla sezione successiva, cliccare su <strong>Back (5)</strong>.</p>
+<figure class="align-center" id="id18">
+<span id="id11"></span><img alt="../_images/2.2.2.5.png" src="../_images/2.2.2.5.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 2.2.2.5 </span><span class="caption-text">– Calcolo e visualizzazione dell’NDWI</span><a class="headerlink" href="#id18" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="visualizzazione-di-immagini-satellitari-3d-in-copernicus-browser">
+<span id="d-image"></span><h2><span class="section-number">2.2.3. </span>Visualizzazione di immagini satellitari 3D in Copernicus Browser<a class="headerlink" href="#visualizzazione-di-immagini-satellitari-3d-in-copernicus-browser" title="Link to this heading"></a></h2>
+<p>Per ottenere una visualizzazione 3D del True Color Layer (<a class="reference internal" href="#id12"><span class="std std-numref">Fig. 2.2.3.1</span></a>), cliccare sull’icona <strong>3D</strong> a destra <strong>(1)</strong>, a questo punto il simbolo presente sull’icona cambierà e permetterà di tornare alla visualizzazione 2D.
+Per muoversi nello spazio 3D utilizzare la console di spostamento  <strong>(2)</strong> e la console della camera <strong>(3)</strong>.
+Fare clic su <strong>(4)</strong> e aumentare il <strong>Vertical terrain scaling (5)</strong> in modo da rendere più visibile il dislivello del terreno.</p>
+<figure class="align-center" id="id19">
+<span id="id12"></span><img alt="../_images/2.2.3.1.png" src="../_images/2.2.3.1.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 2.2.3.1 </span><span class="caption-text">– Visualizzazione 3D di immagini satellitari in Copernicus Browser</span><a class="headerlink" href="#id19" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="2_1.html" class="btn btn-neutral float-left" title="2.1. Accesso gratuito alle immagini satellitari di Copernicus" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../part3/part3.html" class="btn btn-neutral float-right" title="3. Ottenere dati da Copernicus EMS" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, GEOLab.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
