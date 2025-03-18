@@ -31,7 +31,7 @@ Dalla homepage, per aprire la pagina di Copernicus (:numref:`6.1.1.3`) cliccare 
 
    -- sito web GHSL - Copernicus
 
-Cliccare su **Data and Tools (1)** (:numref:`6.1.1.4`) per raggiungere una pagina che funziona in modo simile alla pagina Copernicus. Questa pagina è composta da una panoramica dei dati e degli strumenti prodotti da GHSL. Come prima, i contenuti della pagina sono elencati nella parte sinistra dello schermo **(2)** .
+Cliccare su **Data and Tools (1)** (:numref:`6.1.1.4`), cliccare su Overview **(2)** per  per raggiungere una pagina che funziona in modo simile alla pagina Copernicus. Questa pagina è composta da una panoramica dei dati e degli strumenti prodotti da GHSL. Come prima, i contenuti della pagina sono elencati nella parte sinistra dello schermo **(3)** .
 
 .. _6.1.1.4:
 
@@ -134,7 +134,7 @@ Dal menù **Data and Tools** (:numref:`6.1.1.11`) aprire la pagina **Tools info 
 
    -- sito web GHSL - Data and Tools -  Tools info and download
 
-Cliccare su **Visual Analytics (1)** (:numref:`6.1.1.12`) per aprire una pagina dalla quale è possibile verificare le informazioni dettagliate di ciascun prodotto GHSL aprendo le relative pagine.
+Cliccare su **Visual Analytics (1)** (:numref:`6.1.1.12`) e dopo su Overview **(2)**, per aprire una pagina dalla quale è possibile verificare le informazioni dettagliate di ciascun prodotto GHSL aprendo le relative pagine.
 
 .. _6.1.1.12:
 
@@ -172,11 +172,20 @@ Dalla pagina **Country Fact Sheets (1)** (:numref:`6.1.1.15`) , è possibile sel
 
    -- sito web GHSL - Degree of urbanisation - Country Fact Sheets
 
-La pagina **Urban Centre Database (1)** (:numref:`6.1.1.16`) , permette di aprire una mappa interattiva cliccando sull'immagine **(2)** da cui è possibile visualizzare i dati e applicare alcuni filtri sul conteggio della popolazione. In questa pagina è presente anche una breve descrizione del Database Urban Center GHS-UCDB R2019A.
+La pagina **Stats in the City R2024A (1)** (:numref:`6.1.1.16a`), permette di accedere alla pagina dove si trova la mappa interattiva cliccando sul link della **Urban Center Database (2)**.
 
-.. _6.1.1.16:
+.. _6.1.1.16a:
 
-.. figure:: /img/6/6.1.1.16.png
+.. figure:: /img/6/6.1.1.16a.png
+   :align: center
+
+   -- sito web GHSL - Degree of urbanisation – Stats in the city
+
+La pagina **Stats in the City** (:numref:`6.1.1.16b`), mostra una mappa interattiva cliccando da cui è possibile visualizzare i dati e applicare alcuni filtri sul conteggio della popolazione. In questa pagina è presente anche una breve descrizione del Database Urban Center GHS-UCDB R2019A.
+
+.. _6.1.1.16b:
+
+.. figure:: /img/6/6.1.1.16b.png
    :align: center
 
    -- sito web GHSL - Degree of urbanisation - Urban Centre Database
